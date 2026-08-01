@@ -5,6 +5,9 @@ node_modules/
 *.rpp-bak
 *.reapeaks
 reaper/media/
+reaper/Media/
+reaper/Backups/
+reaper/AutoSaves/
 
 # OS noise
 Thumbs.db

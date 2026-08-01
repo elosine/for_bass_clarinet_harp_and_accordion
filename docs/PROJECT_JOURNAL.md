@@ -27,25 +27,22 @@
 ## §2 Resume Here
 
 **Last session:** *2026-08-01 (session 1, Claude Code)* —
-- Framed the big revision: three chunks (Composer rewrite / Conversion revision / Performance minor mods).
-- Built the Composer concept map: 5 subsystems + two-entrance loop → now permanent in `PLAN.md`.
-- Instantiated the PM kit (PLAN, this journal, HOW_WE_WORK, SESSION_PROTOCOL, CLAUDE.md), adapted from piece #2's proven protocol so `/session-start` & `/session-end` work unchanged.
+- Framed the revision (3 chunks); Composer concept map + PM kit built (adapted from piece #2's protocol); 0c survey of prior repos → map in §1.
+- Spine S1–S8 adopted, **S2 (Instrument map v3) first, harp first**. S2.1 (source inventory) done: IRCAM SI2 (harp+accordion) + PP2 installed (`C:\Program Files\UVISoundBanks\`); Xsample bass clarinet installed to `C:\Users\jwloy\Documents\Xsample Sample Library\Xsample_Collection\` (Kontakt 8); all three manuals in `docs/manuals/`. PP2 entries in piece #2's map = schema template for S2.2. `reaperAutomation` repo noted as S5 context (OSC-only; bridge will need ReaScript).
+- **D6 (Reaper session storage & backups)** decided & built: `reaper/instrument_rack.rpp` in repo; rack walkthrough **R1 (create/save) ✅, R2 (auto-save prefs) ✅**.
+- Workflow rules added to HOW_WE_WORK: go/no-go before long processes · cite IDs with names · name-the-need before disk searches. §5.1 Sound Research playbook written (research escalation ladder, incl. video-frame analysis method).
 
-**Next up:** **S2** — instrument map v3, harp first. S2.1 findings (2026-08-01):
-- **IRCAM Solo Instruments 2** (UVI) — owned, installed: `C:\Program Files\UVISoundBanks\IRCAM Solo Instruments 2.ufs` (9.9 GB). Covers **harp AND accordion**.
-- **Bass clarinet = Xsample** (license pending, ~1–2 days); host **Kontakt 8** (installed, VST3). UVI Workstation VST3 also installed.
-- UVI precedent in piece #2's map: `muted_piano`/`harmonics_piano` = **IRCAM Prepared Piano 2** entries (also installed) → schema/quirks template for S2.2. Composer recalls per-bank quirks + occasional hacks to reach sounds.
-- No manuals on disk → next sub-step: download IRCAM SI2 manual/patch list into `docs/manuals/`.
-- `C:\Users\jwloy\GitHub\reaperAutomation` = voice→OSC transport-control project (Claude intent parser, phone PWA). Context for S5/1b; OSC alone can't do track/instrument setup — bridge will need ReaScript.
-- Later (S2 tail or parallel): pure instrumental research on harp/accordion extended techniques, beyond what the banks offer.
-0b (pain list) still open, drops in any time.
+**Next up:** **R3 (harp track)** — composer was mid-step, instructions already given: TRACK → [Insert virtual instrument on new track...] → UVI Workstation VST3 (answer **No** to multi-out) → Soundbanks → IRCAM Solo Instruments 2 → **WIN+SHIFT+S the harp patch tree and paste to AI** → load keyswitch harp, confirm sound, name track `'Harp SI2'`, CTRL+S. Then R4 accordion · R5 bass clarinet · R6 loopMIDI wiring. After the rack: S2.2 (schema draft, PP2 entries + SI2 manual harp chapter).
+**Mid-goal:** playable rack — three named sounding tracks reachable via loopMIDI, committed. **S2 gate:** harp capability queries answered from the map, audition-verified.
 
-**Open at session end:** Spine S1–S8 adopted, S2 moved first (composer's call). Planning style note from composer: break plans down further and keep them human-centric — refine gradually, no big changes yet.
+**Open at session end:** —
 
 **Open questions:**
 - **0d** — per-chunk reuse: fresh vs copy-forward (likely fresh for chunk 1, copy for chunk 3).
+- **0b** — composer's pain list from piece #2; drops in any time.
 - Premiere / deadline date not yet stated.
 - Chunk 3 assumption unverified: same performance model as piece #2 (synced screens)?
+- Composer meta-note: planning should keep getting more broken-down and human-centric — refine continuously.
 
 **Blockers:** none.
 
@@ -97,6 +94,9 @@
 ## §6 Done
 
 - 2026-08-01 — **0a** PM kit instantiated.
+- 2026-08-01 — **0c** orientation survey of prior repos (map → §1).
+- 2026-08-01 — **S2.1** source inventory: all three libraries installed & verified, manuals in `docs/manuals/`.
+- 2026-08-01 — **R1–R2** Reaper rack created in-repo with backup layers configured (D6).
 
 ---
 

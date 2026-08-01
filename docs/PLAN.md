@@ -44,7 +44,8 @@ S-IDs are stable; order = position. Each step gets its own broken-down plan (sub
   - **S2.1 — Source inventory** — `done 2026-08-01` (SI2 + PP2 installed & manuals in `docs/manuals/`; Kontakt 8 + UVI Workstation present; Xsample bass clarinet license pending)
   - **S2.2 — Schema draft** — `todo` — extend map schema for time-varying control; shown on one harp technique; PP2 entries as template
   - **S2.3 — Harp deep map** — `todo` — full harp entry from manual + patch data; composer spot-checks
-  - **S2.4 — Audition verification** — `doing` — Reaper `instrument_rack.rpp` build (step-by-step with composer, per D6), loopMIDI, AI MIDI probes, composer's ears confirm
+  - **S2.4 — Audition verification** — `doing` — Reaper `instrument_rack.rpp` build (step-by-step with composer, per D6 Reaper session storage & backups), then loopMIDI + AI MIDI probes, composer's ears confirm.
+    Rack-build walkthrough steps (R-prefix, to avoid collision with spine S-numbers): R1 create/save project `done` · R2 auto-save prefs `done` · R3 harp track `doing` · R4 accordion track · R5 bass clarinet track · R6 loopMIDI wiring + save/commit
   - **S2.5 — Query gate** — `todo` — real composer questions answered from the map = S2-harp done; then accordion, then bass clarinet, same steps cheaper
 - **S1 — App shell** — `todo` — modular scaffold (server + module structure); *the* architecture decision. → 1e.
 - **S3 — MIDI out** — `todo` — port the proven loopMIDI path; first sound from the new app. Needs S1.

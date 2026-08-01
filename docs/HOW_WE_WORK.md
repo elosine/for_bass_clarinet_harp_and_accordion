@@ -45,6 +45,8 @@ The single living plan. Stable IDs (`1c` stays `1c` forever), statuses, one-line
 - **Orient from docs, never by scanning the codebase.** Name the specific question first, then read only what answers it.
 - **High bar for subagents / background processes.** Default to doing the work directly; one fast targeted command beats an exhaustive audit.
 - Prior repos are reference material, consulted per named question only.
+- **Go/no-go before ANY time-consuming process** — disk searches, large codebase reads, extensive web research, long analyses. State conceptually what's needed and pause; the composer either supplies the shortcut (a path, a doc, an answer) or says *"go."* Single targeted checks of known things are always free. *(Added 2026-08-01; generalized from the disk-search case, where AI drive-crawled for libraries the composer could have pointed to instantly.)*
+- **Cite IDs with names, never bare.** Decision and plan IDs in chat always carry their short name: *"D6 (Reaper session storage & backups)"*, *"S3 (MIDI out)"* — a bare "D6" forces the composer to look it up. *(Added 2026-08-01.)*
 
 **Language**
 - Plain, conversational language first; file paths and code references as anchors, not substance.
