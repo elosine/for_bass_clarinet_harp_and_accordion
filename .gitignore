@@ -1,0 +1,11 @@
+# Node (future)
+node_modules/
+
+# Reaper — the session file (.rpp) IS committed; these are not
+*.rpp-bak
+*.reapeaks
+reaper/media/
+
+# OS noise
+Thumbs.db
+.DS_Store

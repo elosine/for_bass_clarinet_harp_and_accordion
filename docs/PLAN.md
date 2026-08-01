@@ -28,12 +28,31 @@ A notation program whose primitives are the composer's sounds: draw objects in a
   *Why:* never re-derive the plan; cheap session starts; decisions survive context loss.
 - **0b — Composer's pain list from piece #2** (from memory, no code) — `todo`
   *Why:* it is the requirements doc for the rewrite; only the composer has it.
-- **0c — Orientation pass over the two prior repos** (one pass; output = one-page map) — `todo`
-  *Why:* a cheap map makes all later reading targeted instead of exploratory.
+- **0c — Orientation pass over the two prior repos** (one pass; output = one-page map) — `done 2026-08-01`
+  *Why:* a cheap map makes all later reading targeted instead of exploratory. → Map lives in journal §1.
 - **0d — Per-chunk reuse decision:** fresh start vs copy-forward from piece #2 — `todo`
   *Why:* wrong default drags the whole rewrite; likely answer differs per chunk (fresh for 1, copy for 3).
 
-## 1. Composer (rewrite) — `todo`
+## 1. Composer (rewrite) — `doing`
+
+### Build order — the spine (adopted 2026-08-01; reorder allowed at any step boundary)
+
+S-IDs are stable; order = position. Each step gets its own broken-down plan (sub-items added here) before implementation.
+
+- **S2 — Instrument map v3** — `doing` *(moved first per composer, 2026-08-01)*
+  Carry piece #2's 82-instrument map forward; extend schema for time-varying control (CCs, keyswitches, pedaling); map bass clarinet, harp, accordion. One instrument end-to-end first (harp) as the template. → feeds 1a.
+  - **S2.1 — Source inventory** — `done 2026-08-01` (SI2 + PP2 installed & manuals in `docs/manuals/`; Kontakt 8 + UVI Workstation present; Xsample bass clarinet license pending)
+  - **S2.2 — Schema draft** — `todo` — extend map schema for time-varying control; shown on one harp technique; PP2 entries as template
+  - **S2.3 — Harp deep map** — `todo` — full harp entry from manual + patch data; composer spot-checks
+  - **S2.4 — Audition verification** — `doing` — Reaper `instrument_rack.rpp` build (step-by-step with composer, per D6), loopMIDI, AI MIDI probes, composer's ears confirm
+  - **S2.5 — Query gate** — `todo` — real composer questions answered from the map = S2-harp done; then accordion, then bass clarinet, same steps cheaper
+- **S1 — App shell** — `todo` — modular scaffold (server + module structure); *the* architecture decision. → 1e.
+- **S3 — MIDI out** — `todo` — port the proven loopMIDI path; first sound from the new app. Needs S1.
+- **S4 — Sandbox v1** — `todo` — browse instruments → click articulation → hear it. Needs S2 + S3. → 1c.
+- **S5 — Reaper bridge v1** — `todo` — programmatic track/routing setup from instrument selection. Needs S2. → 1b.
+- **S6 — Timeline + first object end-to-end** — `todo` — place it, play it. Needs S3. → 1e/1d.
+- **S7 — Object protocol** — `todo` — formalize from the first object; second object proves it. Needs S6. → 1d.
+- **S8 — Palette growth** — `todo` — motives, curve objects, new techniques; driven by actual composing. The loop.
 
 ### The five subsystems
 
