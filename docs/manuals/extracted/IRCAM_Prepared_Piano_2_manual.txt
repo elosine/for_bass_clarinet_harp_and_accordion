@@ -1,0 +1,942 @@
+=== PAGE 1 ===
+Soundbank Manual
+Software Version 1.0 
+EN 221110
+IRCAM
+PREPARED PIANO
+=== PAGE 2 ===
+2
+IRCAM
+PREPARED PIANO
+End-User License Agreement (EULA)
+Use of this product is subject to the acceptance of our End User License Agreement, available here.
+©2022 UVI. All rights reserved.
+All trademarks are the property of their respective owners.
+=== PAGE 3 ===
+3
+IRCAM
+PREPARED PIANO
+Introduction ..............................................................................................................................................4
+User Interface
+     Main Page  ...........................................................................................................................................6
+     Edit Page  .............................................................................................................................................7
+     FX Page  ................................................................................................................................................8
+     Arp Page  ..............................................................................................................................................9
+     Settings Page  .....................................................................................................................................11
+IRCAM Prepared Piano Playing Techniques .................................................................................12
+Preset and Preparations List ..............................................................................................................16
+Links ............................................................................................................................................................19
+Credits and Thanks ................................................................................................................................20
+Table of Contents
+=== PAGE 4 ===
+4
+IRCAM
+PREPARED PIANO
+Introduction
+IRCAM Prepared Piano 2
+The Ultimate Avant-Garde Piano
+IRCAM Prepared Piano 2 is an epic creative partner and 
+a near-limitless sonic canvas. Explore the sound of piano 
+like you never have before, equipping each key with any 
+2 of 45 preparations, apply powerful creative effects, 
+and then perform them in incredible new ways with a 
+duo of smart and highly customizable arpeggiators, all 
+recorded on an immaculate C7 Grand Piano at IRCAM 
+labs in Paris. Try the included preset preparations, or 
+make your own - the possibilities are endless!
+With more than 12,000 samples and 45 preparation 
+techniques, IRCAM Prepared Piano 2 gives you 
+complete control over how the preparations are used 
+and combined. Explore the timbre variety of over 40 
+different preparation styles. Utilize screws, erasers, 
+coins, clothespins, sticks and more. Excite the strings 
+with a mallet, plectrum, bow or even an EBow. Utilize 
+bar hits, Una Corda, Sustenuto, dynamics and velocity, 
+as well as independent mixing between 2 mic positions, 
+you can even layer two preparations for each note with 
+discrete level and pitch controls!
+IRCAM Prepared Piano 2 delivers powerful creative 
+effects including a frequency shifter, diode clipper, 
+convolver, EQ, Sparkverb, delay, and maximizer, 
+allowing you to add a finishing touch or radically 
+reshape and transform your sounds. Step over to 
+the Seq page and you will find a duo of featured 
+arpeggiators, including our smart arpeggiator/phraser 
+and the powerful Rain arp, adding new levels of depth 
+and creativity to your performances. IRCAM Prepared 
+Piano 2 is a powerhouse of possibility for curious minds 
+of any musical background.
+Minimum System Requirements
+• Latest version of UVI Workstation or Falcon
+• 6GB of disk space
+For more information on the installation process, please refer to 
+the document: Soundbank Installation Guide
+
+=== PAGE 5 ===
+5
+IRCAM
+PREPARED PIANO
+About IRCAM & John Cage
+IRCAM Centre Pompidou 
+http://www.ircam.fr/
+In 1969 Georges Pompidou initiated the establishment 
+of the Institut de Recherche et Coordination Acoustique/
+Musique (Institute for music/acoustic research and 
+coordination) entrusting its direction to the composer 
+and conductor Pierre Boulez. 
+IRCAM, linked to the Centre Pompidou in Paris, France,
+became, and remains today, the only center of its kind 
+across the globe, dedicated to contemporary musical 
+research and production.  
+IRCAM provides a unique framework to welcome and 
+coordinate various scientific approaches in music, 
+including physics (acoustics, mechanics), signal 
+processing, computer science, cognitive psychology, and 
+musicology. Activities are structured according to specific 
+themes, entrusted to specialized teams.  
+The personnel working within IRCAM’s Department of 
+Research and Development includes 90 researchers, 
+engineers, post-graduates, technicians and 
+administration staff under the direction of Hugues Vinet.
+John Cage (1912-1992)
+http://johncage.org/
+Over 80 years ago, John Cage modified pianos to 
+invent what we call today, prepared pianos.  The unique 
+property of a prepared piano is its transformation of 
+particular timbres through modifications to the string(s), 
+making it possible to play the piano by using the 
+keyboard in the normal way, whilst at the same time 
+producing different sounds, like an acoustic sampler. 
+It was during John Cage’s attempts to integrate the 
+piano into percussion ensembles that Cage invented 
+the prepared piano. Although in Imaginary Landscape I 
+(1939) the sound of the piano strings was transformed by 
+an assistant in real time, Second Construction in Metal 
+(1940) required a screw and the insertion of a piece of 
+cardboard between the strings. Three months later, Cage 
+composed Bacchanale (1940), the first prepared piano 
+solo work. The instrument was considered to be a kind of 
+percussion orchestra, controlled by a single conductor. 
+The technical innovation mainly consisted in progressing 
+from one to several prepared keys, creating a range of 
+tones used for playing a musical solo.
+
+=== PAGE 6 ===
+6
+IRCAM
+PREPARED PIANO
+1  Page Select
+Change current page: Main, Edit, FX and 
+Arp
+» Arpeggiator Power
+2  Settings
+Click to open the settings page
+3  Global Pitch
+Sets the global pitch
+4  Note Indicator
+Indicate the MIDI signal status when 
+MIDI Select on, for helping to visualize 
+preparations and edit
+5  Highlight Key
+Quickly determine and select the key 
+locations (octaves) you are viewing with 
+this navigation bar
+6  Layer 1/2
+» Preparation 
+ Select the preparation for the layer
+» Volume  
+ Adjust the volume of the layer
+» Tune
+Adjust the fine tuning of the layer 
+[+/- 24 semi]
+7  Menu Buttons
+Click the 
+  button of the right side of the 
+slots to manipulate the parameter
+» Preparation
+Select the layer preparation for all keys
+» Init Octave
+Reset the layer preparation/parameter of 
+the selected octave
+» Randomize Octave
+Randamize the layer preparation or 
+parameter of the selected octave
+» Copy/Paste Octave
+Copy the layer preparation/parameter 
+of the selected octave, and paste it from 
+other layer of octave
+8  Bar Hits
+ Mapped from C-1 to G#-1, each of the  
+       piano’s metal bars were recorded in      
+       unique ways.  Choose between hitting   
+       the metal bars with hands, sticks,  
+ or mallets
+9  Parameter Link
+Use to make edits across all keys, 
+or octaves of the selected key, 
+simultaneously
+10  MIDI Select
+Enables MIDI Note Indicator
+11  Randomize
+Click the 
+  button to assign a random 
+collection of preparations to all keys on 
+both Layers
+12  Reset
+Click the X button to reset all parameters
+IRCAM Prepared Piano  2 features two layers, allowing the use of two preparations per note across the entire 88 note range.
+Note: IRCAM Prepared Piano 2 can have more than 12,000 samples loaded into memory in a single instance; combined with 
+advanced scripting and effects it can be both CPU and memory intensive.
+1Page Select
+4Note Indicator
+6Layer 1 
+6Layer 2 
+5Highlight Keys
+8Bar Hits
+3 Global Pitch
+12 Reset
+7 Menu Buttons
+11 Randomize
+10 MIDI Select
+9 Parameter Links
+2 Settings
+Interface - Main
+=== PAGE 7 ===
+7
+IRCAM
+PREPARED PIANO
+1  Global Parameters
+» Release Volume
+Controls the volume of all the release 
+samples
+» Resonance Volume
+Controls the volume of the pedal-down 
+resonance effects
+» Tone
+Overall sound brightness
+2  MIcs
+» On/Off Toggle
+» Level
+» Mic 1 (DPA microphones)
+Close position mic, within the piano
+» Mic 2 (Shoeps microphones)
+Mic positioned above the player’s head
+3  Amplitude
+» Preparation [Menu]
+Select a preparation, Bow, Ebow and 
+Mutes to edit their amplitude
+» ADSR
+Adjust the amplitude [typical  
+ADSR envelope]
+» Dynamics  
+ Adjust the influence of overall dynamics
+» Velocity Curve
+Adjust the play style from more soft to 
+firm
+ 
+1Global Parameters
+3Mics
+2 Amplitude
+Interface - Edit
+=== PAGE 8 ===
+8
+IRCAM
+PREPARED PIANO
+1  Frequency Shifter
+» On/Off
+» Coarse  - Shifts the spectrum up or down
+» Spread  - Adds a shift difference between 
+the channels. Even a slight difference 
+can be used to get a full, wide stereo 
+effect
+» Mix  - Adjust the dry/wet ratio
+2  Diode Clipper
+» On/Off
+» Drive  - Set the drive amount
+» Tone  - Set the freuency of the LP filter
+» Gain  - Set the output gain
+3  Convolver
+» On/Off
+» IR  - Select an IR by drop-down menu or 
+by using the ◀▶ arrows
+» Mix  - Adjust the dry/wet ratio
+4  EQ
+» On/Off
+» High - Set the high frequency band gain
+» Mid - Set the middle frequency band 
+gain
+» Low - Set the low frequency band gain
+» Crossover Frequency ƒ - Set the 
+frequency between low and middle 
+bands, and between middle and high 
+bands
+5  Sparkeverb
+» On/Off
+» Size  - Adjust room size [4 to 50m]
+» Decay  - Adjust decay time
+» Low Decay - Adjust the low frequency 
+decay time
+» High Decay - Adjust the high frequency 
+decay time
+» Mix  - Adjust the dry/wet ratio
+6  Delay
+» On/Off
+» Time - Adjust delay timing in musical 
+division
+» Feedback - Increase or decrease the 
+amount of re-injecting signal
+» Hi Cut - Directly control delay’s LP filter 
+cutoff
+» Low Cut - Directly control delay’s HP 
+filter cutoff
+» In Width- Adjust the stereo width of the 
+effect at input stage
+» Out Width- Adjust the stereo width of 
+the effect at output stage
+» Mix  - Adjust the dry/wet ratio
+7  Maximizer
+» On/Off
+» Threshold  - Sets the level at which 
+limiting will be applied
+3Convolver
+4EQ
+1Freuency Shifter
+2Diode Clipper
+Interface - Effects
+7 Maximizer
+6 Delay
+5 Sparkverb
+=== PAGE 9 ===
+9
+IRCAM
+PREPARED PIANO
+1  Arpeggiator
+ Click ARP to select the Arpeggiator
+» Mode  - Click to set the arpeggiator 
+mode: Arpeggiator, or Phraser
+» Octave Low/High - Lock the sequence 
+in a specific octave range, with lowest 
+and highest octave [Phraser mode only]
+» Motion - Click to set the arpeggiator 
+motion as played, up, down, or up+down 
+[Arp mode only]
+» Speed -  Set the step duration
+» Steps - Set the number of steps
+» Octave -  Set the octave range of the 
+arpeggiation
+2  Preset
+» Preset - Change presets by drop-down 
+menu or by using the ◀▶ arrows
+3  Chord Detector
+» Chord  - Indicates the chord type 
+detected from current incoming MIDI 
+notes
+4  Shift
+» Shift  - Move all sequence steps left or 
+right
+5  Step Editor
+» Velocity  - Click-drag to set the velocity
+» Link  - Enable to sustain the previous 
+step
+» Mode  - Set the step type (Basic, 
+Harmonized or Chord) based on mode
+» Pitch  - Set a pitch offset in semitones
+» Octave  - Set a pitch offset in octaves
+» Gate  - Set the step gate duration
+» Pan  - Set the step pan
+» Menus  
+  - Click the ▼ button to right 
+side of each row to either initialize, 
+randomize, or select a preset. 
+1Arpeggiator
+Interface - Arp
+Shift4
+Step Editor5
+Chord Detector3
+Preset2
+=== PAGE 10 ===
+10
+IRCAM
+PREPARED PIANO
+1  Rain Arpeggiator
+ Click RAIN to select the Rain arpeggiator
+ The Rain arp is a chromatic 8-step 
+velocity sequencer with per-note 
+control over speed and velocity multiple.
+2  Step Editor
+» Menus  
+  - Click the ▼ button to the 
+right side of each row to either initialize, 
+randomize, copy/paste, or assign a 
+template pattern to the line. 
+» Velocity  - Click-drag to set the velocity
+» Reset - Click the [X] button to initialize 
+the values of all rows 
+» Randomize - Click the 
+  button to 
+randomize the values of all row steps
+3  Speed
+ Sets the step speed per note
+» Link - Allows all speed paramaters to be  
+adjusted simultaneously 
+» Speed - Click-drag to set the speed 
+» Reset - Click the [X] button to initialize 
+the values of the row 
+» Randomize - Click the at 
+  button to 
+randomizes the values of the row
+4  Velocity X
+ Sets the step velocity multiply amount 
+per note
+» Link - Allows all speed paramaters to be  
+adjusted simultaneously 
+» Velocity Multiplier - Click-drag to set 
+the multiply amount
+» Reset - Click the [X] button to initialize 
+the values of the row 
+» Randomize - Click the 
+  button to 
+randomize the values of the row
+2Step Editor
+1Rain Arp
+3Speed
+4Velocity
+Interface - Rain Arp
+=== PAGE 11 ===
+11
+IRCAM
+PREPARED PIANO
+1  Una Corda CC
+Select a CC to control the Una Corda 
+pedal [only affects preparations utilizing 
+the 2 and 3 strings]
+2  Sustenuto CC
+Select a CC to control the Sustenuto 
+pedal
+3  Extra Length CC
+Strumming the unused part of the 
+strings in a piano with a plectrum is 
+often done as an effect in prepared 
+pianos. These knobs simulate that 
+strumming effect and you can control 
+them with the CC of your choice
+» Extra Length CC1 / Extra Length CC2 
+- Set the modulation amount for the 
+control
+» CC#  - Click the number under the knobs 
+to set the MIDI control number 
+1Una Corda 
+3Extra Length CCs
+2 Sustenuto
+Interface - Settings
+=== PAGE 12 ===
+12
+IRCAM
+PREPARED PIANO
+IRCAM Prepared Piano Playing Techniques
+NOTE: To reflect the fact that certain effects or 
+preparations cannot be performed in all registers, the full 
+range of preparations are not available for all keys when 
+using IRCAM Prepared Piano within UVI Workstation.  
+For example, you will not find a screw preparation for 
+the bass keys because the lowest bass keys have only 
+one string, making it impossible to place a screw on the 
+lowest bass keys.
+Normal Playing Techniques 
+Sustain and Empty
+A normal piano sound. The strings are struck by 
+hammers, triggered by the notes played on the keyboard. 
+Use of the una corda and forte pedals is possible. There is 
+no object in or on the strings modifying the sound.
+The empty preparation setting does not refer to there 
+being no object or preparation modifying the sound of 
+the string, but rather to the lack of sound produced by 
+playing this key -  a form of preparation that is impossible 
+without breaking the hammer.  This setting can be very 
+useful in preventing the sounding of misplayed notes, or 
+for playing Gyorgy Ligeti’s Etude: Touches bloquées (by 
+cheating, a little...)
+Expanded Playing Techniques
+Striking the Strings
+Mallets: The strings are struck with a vibraphone mallet. 
+The resulting sound is similar to a normal key strike, but 
+is slightly softer due differences between the mallet and 
+the normal hammer action.
+Wooden Stick: The strings are struck directly with wooden 
+sticks, making the attack harder and shorter. The timbre 
+is similar to that of a dulcimer and can be activated by 
+pressure on the forte pedal.
+Stick Rebound: This setting features the same technique 
+and resulting timbre as the Wooden Stick setting, but 
+allows the stick to bounce on the string after the initial 
+strike.
+Muted Stick Rebound: This setting features the same 
+technique as Stick Rebound, but uses the stick on muted 
+strings (see mutes).
+Plucking or Strumming the Strings with the Fingers
+Pizz: The strings are plucked with a plectrum, one string 
+only per note. This results in a sound resembling that of 
+
+=== PAGE 13 ===
+13
+IRCAM
+PREPARED PIANO
+IRCAM Prepared Piano Playing Techniques  [continued]
+a guitar. It is a widely used effect, for example by Georg 
+Crumb in Makrokosmos, or by Gerard Pesson  
+in Rescousse.
+Scratch: A fast scraping action by the nail along the 
+string. When used on the bass strings, this causes a 
+burst of harmonics. One can hear this technique, in 
+combination with numerous other piano string effects,  
+in Clepsydre by Horacio Radulescu (for 16 sound icons,  
+or pianos installed vertically and played exclusively on 
+the strings).
+Sustained Sounds
+Bow: Rosin horsehair (a single strand of a violin bow) 
+causing the two or three strings that comprise a single 
+pitch to vibrate. The resulting sound is continuous. 
+Changes in the direction of the bow are always audible 
+and give transient color to the timbre. This effect is 
+sometimes made with fishing line rosin.
+Ebow: A small device normally used on electric guitars, 
+causing the strings of the piano to vibrate through a 
+magnetic field. This produces a continuous sound with a 
+masked attack, resulting in a delicate and subtle timbre.
+Other String Playing Techniques
+Harmonics: The default harmonic is the octave, activated 
+by finger pressure in the middle of the string. The key 
+is then played normally from the keyboard. It is also 
+possible to transpose this harmonic, thereby simulating 
+any harmonic of the string. A specific digital chord can 
+be played by double clicking on the detune button. This 
+technique is greatly used in solo music, as in Crumb’s 
+work, for example, and may even found in a transcript 
+of Johann Sebastian Bach’s Contrapunctus XIX by Marc-
+Andre Dalbavie.
+For the following preparations, the string is normally 
+struck by the hammer. Objects can be placed on the 
+strings, altering the manner in which they sound. The 
+ones placed on the strings in this manner would normally 
+affect several notes in succession on a real piano, which is 
+not mandatory in IRCAM Prepared Piano.
+Other objects may be inserted between the strings. From 
+the treble keys down to medium bass (F1), there are three 
+strings per note. In this range it is possible to insert one 
+object between strings 1 & 2, and another in the strings  
+2 & 3. 
+Similarly, in IRCAM PREPARED PIANO, you can continue 
+to add several more objects or playing techniques from 
+those available when there are only two strings (F # 
+0 - E1) or one (as for F0). When the una corda pedal is 
+pressed, only the preparations on strings 2 and 3 are 
+activated, meaning that the pedal is functioning in line 
+with organ techniques.
+Objects Placed on the Strings
+Paper: Sheet of writing paper, rolled up and placed on 
+the strings. Its design and the resulting tone echo the 
+bassoon of some pianofortes.
+Aluminum: Aluminum foil placed flat on the strings. This 
+gives a fairly long and characteristically metallic vibration. 
+It is similar to preparations that consist of placing metal 
+chains on the strings, as in the first work, Primeval 
+Sounds, in Georg Crumb’s Makrokosmos I.
+iPhone: An iPhone resting flat on the strings. This gives a 
+slightly metallic damping effect, as well as an occasional 
+bouncing of the iPhone when the strings are struck.  
+This is due to the iPhone not being tethered to the  
+piano strings.
+=== PAGE 14 ===
+14
+IRCAM
+PREPARED PIANO
+Mutes: The string is dampened with a finger, close to 
+the bridge. This category of dampened sounds includes 
+preparations inserted between the strings, using fabric, 
+felt [Felt Temperament Strip], or window seal, as well as 
+variations in angle that influence the overall time effect 
+of the damping. Studies by Michael Levinas exploit  
+this technique.
+Objects Inserted Between the Strings
+Rubber: Large pencil erasers are used for this preparation, 
+producing a sound similar to that of a deep bass gong. In 
+the first movement of John Cage’s Amores, three notes 
+are muted with rubber giving a «touches bloquées» 
+effect in contrast to other resonant preparations.
+Half Spring-type Clothespin: The half-spring pegs 
+found here represent preparations made from wood. 
+The hardness of the wood used in the pegs results in 
+the production of gong-like sonorities. To simulate 
+preparations using softer wood (which give a duller, 
+dampened sound), half spring pegs can be combined 
+with muted or rubber preparations. Wooden preparations 
+sometimes touch the soundboard, producing a short, 
+hard attack when the string is struck. It is possible to 
+achieve this effect by simultaneously selecting both 
+Clothes Pin and Eraser preparations.
+Screw / Bolt [tapered screw / bolt screw]: The screw, or 
+bolt, is the most common preparation. There are screws 
+of varying lengths and thicknesses, as well as screws with 
+large heads, small heads, tapered heads or un-tapered 
+heads. All of these factors affect the sonic characteristics 
+when applied as a preparation to a piano string.
+The preparation chosen uses a wide range of materials 
+to create a variety of timbres from one note to another. 
+The sounds are generally rich and resonant; they remain 
+within the gong family, featuring a small vibration when 
+the note is played forte.
+All of Cage’s works use at least one screw. Prelude for 
+Meditation contains only four notes, surrounded by 
+numerous silences. Each note in the piece is prepared 
+with bolts in addition to the normal sound of the piano, 
+making it possible to hear the preparations clearly. By 
+contrast, in Daughters of the Lonesome Island thirty-
+nine keys are prepared, almost all of them with screws, 
+resulting in an abundance of timbres which remind the 
+listener of a gamelan ensemble.
+IRCAM Prepared Piano Playing Techniques  [continued]
+=== PAGE 15 ===
+15
+IRCAM
+PREPARED PIANO
+Screw / Bolt + Loose Nut (buzz): The same preparation 
+described above, but with a loose nut around the screw 
+which bounces when the note is played, creating a 
+«buzz». An example of this preparation can be found in 
+the first movement of John Cage’s Amores, where two 
+notes prepared using screws must also be topped with 
+nuts. This work also serves as a concise overview of the 
+preparations Cage employed using mixed materials.
+Coins: A coin is inserted between the strings (above 1 and 
+3 and below 2), greatly enriching the sound. The result 
+resembles a rich yet soft gong, sometimes featuring 
+a very slight vibration. The sound is generally more 
+rounded than when the strings are prepared with screws. 
+The low notes of John Cage’s A Room are a fine example 
+of the use of coins, combined with screws used on  
+other notes.
+Effects
+Glass Slide: A stemless glass is held on the strings, 
+maintaining constant pressure, and slid lengthwise 
+along them. The glissando is ascending or descending, 
+depending on whether the slide is moving towards or 
+away from the dampers. 
+Bar Hits: A percussive impact on the bars of the piano’s 
+cast-iron plate, above the soundboard. Three playing 
+techniques are used: the hands, soft drumsticks and hard 
+drumsticks. These samples are played on the lowest bass 
+notes beyond A-1. In Caravan, from Jacky Terrasson’s 
+album Mirror, there is an improvisation using the hands 
+inside the piano frame (video: http://www.youtube.com/
+watch?v=RxTi9lJSHyY). The phrase featured at 2:35 would 
+be completely applicable within the IRCAM Prepared 
+Piano software.
+Extra Length: A plectrum slide along the part of the 
+strings located between the bridge and the tuning 
+pins. Since this is an unusual two-handed polyphonic 
+technique, two potentiometers are used to produce  
+this effect.
+IRCAM Prepared Piano Playing Techniques  [continued]
+=== PAGE 16 ===
+16
+IRCAM
+PREPARED PIANO
+01 Preparations
+Ancient Hammer
+Arctic Rune
+Bacchanale
+Broken Harpsichord
+Chance
+Cinematic Distance
+Circle of Fifths
+Cloud Hill
+Cold Graph
+Desert Stick
+Desolation
+Dreamy Fifth
+Furr Texture
+Glass Orchestra
+Harmonics
+Heritage
+Lullaby
+Magical Fourth
+Music Box
+Octave Grand
+Skelliga
+Super Mellow
+Suspenseful Forms
+Tiny Radio
+Tomorrow
+Toy Keys
+Underwater
+War Piano
+Wednesday Adams
+Well Tempered
+Western
+02 Natural
+Ancient Hammer
+Arctic Rune
+Bacchanale
+Broken Harpsichord
+Chance
+Cinematic Distance
+Circle of Fifths
+Cloud Hill
+Cold Graph
+Desert Stick
+Desolation
+Dreamy Fifth
+Furr Texture
+Glass Orchestra
+Harmonics
+Heritage
+Lullaby
+Magical Fourth
+Music Box
+Octave Grand
+Skelliga
+Super Mellow
+Suspenseful Forms
+Tiny Radio
+Tomorrow
+Toy Keys
+Underwater
+War Piano
+Wednesday Adams
+Well Tempered
+Western
+03 Prepared
+Caverns
+Cosmic Tale
+Curly Sine
+Dark Chimes
+Deepnest
+Djangle
+Drone Bow
+Dry & Broken
+Elvish Dream
+Flying Saucepan
+Hokusai
+Jamboree
+Last Arrival
+Machine Ghost
+Midnight Factory
+Miners
+Octave Platter
+Paname Papers
+Purple Silk
+Reverse Screws
+Spectres
+Starving
+Time Piano
+Untroubled Aspects
+Variations
+04 Animated
+Acadie
+Across Country
+Amapiano
+Azure Pulse
+City Adventure
+Cold Stir
+Documentaries
+Encompass
+Fiddler Inside
+Harmonic Motion
+Juicy Pluck
+Metallic Toy
+Octet
+Orbion
+Passing Time
+Phantom
+Picking Rain
+Pinguin Dancer
+Pitter Patter
+Stone Cloud
+Sunburst 1K
+Sweet Moon
+Wood Choral
+05 Percussive
+Brodin
+Crippled Branches
+Crusher
+Dark Journey
+Dysphoric
+Industrial Hand
+Jumanji
+Kisenso
+Kitchen Beat 1K
+Mecanical Oil
+Metal Room Kit
+Metal Tribe
+Optical
+Parade
+Robotic Echo
+Slapback Conga
+Tribal Pursuit
+06 Performance Split
+Baroque Castle
+Capoeira
+Dream Atmosphere
+Island Hills
+Medieval Dream
+Multitimbral Keys
+Old Arranger
+Percussionist
+Short Harmonics
+Spooky Mansion
+Preset List
+=== PAGE 17 ===
+17
+IRCAM
+PREPARED PIANO
+Preparations
+Sustain 
+from A-1 to C7 
+Sustain Pick
+from A-1 to C7 
+Sustain Mallet 
+from A-1 to D5
+Sustain Stick 
+from A-1 to C7 
+Sustain Stick 
+rebound
+from F1 to C#6 
+Mutes
+from A-1 to C7 
+Mutes Pick
+from A-1 to C7 
+Mutes Mallet
+from A-1 to C7 
+Mutes Stick
+from A-1 to C7 
+Mutes Stick 
+rebound 
+from A-1 to C7 
+Harmonics 
+from A-1 to F5 
+Harmonics Pick
+from A-1 to F5
+Harmonics Mallets
+from A-1 to F5
+Harmonics Stick
+from A-1 to F5
+Eraser
+from A-1 to G4
+Eraser Pick
+from A-1 to G4
+Eraser mallet
+from A-1 to G4
+Eraser Stick
+from A-1 to G4
+iPhone
+from A-1 to B6
+iPhone Pick
+from A-1 to G4
+iPhone mallet
+from A-1 to G4
+iPhone Stick
+from A-1 to G4
+Coins
+from F1 to D#5 
+Coins Pick
+from A-1 to G4
+Coins mallet
+from A-1 to G4
+Coins Stick
+from A-1 to G4
+Preparation List
+=== PAGE 18 ===
+18
+IRCAM
+PREPARED PIANO
+Clothes pin
+from A-1 to C7 
+Clothes pin Pick
+from A-1 to G4
+Clothes pin mallet
+from A-1 to G4
+Clothes pin Stick
+from A-1 to G4
+Screw
+from A-1 to C7 
+Screw Pick
+from A-1 to G4
+Screw mallet
+from A-1 to G4
+Screw Stick 
+from A-1 to G4
+Screw+Nut
+from A-1 to C7 
+Screw+Nut Pick
+from A-1 to G4
+Screw+Nut mallet
+from A-1 to G4
+Screw+Nut Stick
+from A-1 to G4
+Bow
+from A-1 to C7 
+Ebow
+from A-1 to C7 
+Scratch
+from A-1 to E1
+Glass Slide Up
+from E2 to F5
+Glass Slide Down
+from E2 to F5
+Aluminum Foil
+from A-1 to F6
+Paper
+from A-1 to A#5
+Empty
+No Sound
+Preparation List
+=== PAGE 19 ===
+19
+IRCAM
+PREPARED PIANO
+Links
+UVI
+Home                                                                                     uvi net/ 
+UVI Portal                                                                                uvi net/uvi-portal 
+Manage Your Products                                                                 uvi net/download-with-portal 
+Soundbank Installation Guide                                                         installing_uvi_soundbanks_en pdf 
+UVI Workstation User Guide                                                           uviworkstation_user_guide_en pdf  
+Your Registered Product Serial Numbers and Download Links                  uvi net/my-products 
+FAQ                                                                                       uvi net/faq 
+Tutorial and Demo Videos                                                             youtube com/
+Support                                                                                   uvi net/contact-support 
+iLok
+Home                                                                                     ilok com/ 
+iLok License Manager                                                                 ilok com/ilm html 
+FAQ                                                                                       ilok com/supportfaq 
+=== PAGE 20 ===
+IRCAM
+PREPARED PIANO
+Produced by UVI
+Documentation / Expertise
+Yan Maresz
+Nicolas Mondon
+Nathaniel Reeves
+Kai Tomita
+Presets
+Théo Gallienne
+Kévin Guilhaumou
+Thomas Kowalski
+Floriane Palmkrantz
+Software + Scripting
+Olivier Tristan
+Rémy Muller
+Arnaud Sicard @ Acousticsamples
+User Interface
+Nathaniel Reeves
+Graphic Design
+Anthony Hak
+Nathaniel Reeves
+Documents
+Nathaniel Reeves
+Kai Tomita
+Special Thanks
+Frederic Roussau
+Hugues Vinet
+IRCAM
+PREPARED PIANO

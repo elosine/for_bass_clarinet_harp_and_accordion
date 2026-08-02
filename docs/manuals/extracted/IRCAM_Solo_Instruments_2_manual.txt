@@ -1,0 +1,3327 @@
+=== PAGE 1 ===
+Soundbank Manual
+Software Version 2.0 
+EN 200701
+
+=== PAGE 2 ===
+2
+End-User License Agreement (EULA)
+Use of this product is subject to the acceptance of our End User License Agreement, available here.
+©2022 UVI. All rights reserved.
+All trademarks are the property of their respective owners.
+=== PAGE 3 ===
+3
+Introduction ..............................................................................................................................................4
+The Players ...............................................................................................................................................5
+About IRCAM ............................................................................................................................................7
+User Interface ..........................................................................................................................................8
+Layers & Key Switches ..........................................................................................................................10
+Instrument List ........................................................................................................................................50
+Playing Techniques and Suggested Notation ..............................................................................63
+Preset List .................................................................................................................................................73
+Multiphonics List ....................................................................................................................................76
+Links ............................................................................................................................................................78
+Credits and Thanks ................................................................................................................................79
+Table of Contents
+=== PAGE 4 ===
+4
+Introduction
+IRCAM Solo Instruments 2
+The Avant-Garde Solo Instrument Collection
+Featuring over 550 different playing styles performed by professional 
+instrumentalists and recorded in the world-renowned IRCAM Institute, 
+IRCAM Solo Instruments 2 presents a vivid and detailed exposé of 
+16 orchestral instruments. Each instrument includes both standard 
+playing styles and numerous advanced and experimental articulations, 
+providing a sophisticated and creative sound resource for modern 
+composers and producers looking for more natural, varied and unique 
+instrumental sounds. IRCAM Solo Instruments 2 allows users to go 
+beyond the basic playing styles presented in typical sample libraries, 
+adding depth and detail that’s simply not available elsewhere.
+Building on decades of expertise and research in acoustics and sound 
+recording, UVI and IRCAM recruited the finest musicians, artistic 
+directors and engineers available to produce IRCAM Solo Instruments 
+2. A massive endeavour, years in the making, we’re proud to present 
+to you this seamless blend of traditional and experimental techniques. 
+Old world instruments meet new world performers in this deep and 
+profound library exploring the broader spectrum of sounds possible 
+from these beloved instruments.
+A MODERN CLASSIC
+With over 550 playing techniques comprising classical, experimental, 
+and extended styles, IRCAM Solo Instruments 2 is unparalleled in 
+scope and depth. Discover the unique and intricate voice of each 
+instrument with the highest fidelity. Techniques like multi-phonic, 
+aeolian, hit-on-body, buzz and crushed, transitions like Sul tasto, 
+Ordinario, and Ordinario to Sul ponticello are all covered.
+OLD AND NEW WORLDS
+With over 400 presets you have instant access to a huge variety of 
+instrumental variation. Easily switch between modern and classical 
+techniques to find what works best in your music, Italian titles most 
+often represent traditional styles while English names indicate 
+contemporary techniques.
+PERFORMANCE-ORIENTED
+IRCAM Solo Instruments 2 makes tremendous use of key switch 
+groups, allowing you to seamlessly navigate the different tones that 
+each instrument is capable of. Certain groups also include special 
+parameters unique to their category, such as stringed instruments, 
+which were recorded string by string, allowing you to choose 
+which string you would like to play a note on via the key switch, for 
+maximum control over timbre.
+IMPROVED WORKFLOW
+An all-new user interface dramatically enhances the aesthetics and 
+usability of ISI2, placing everything you need in an intuitive, clearly 
+organized and modern panel. From the new Keyswitch HUD to 
+improved performance and effect sections, the new design simplifies 
+and improves use across all instruments.
+Whether you’re looking for your first high-quality instrument library or 
+to take your instrumentation and production to the next level, IRCAM 
+Solo Instruments 2 is a remarkable resource that provides immaculate 
+sound quality and unique samples found nowhere else.
+Minimum System Requirements
+• Latest version of UVI Workstation or Falcon
+• 10.53GB of disk space
+For more information on the installation process, please refer to 
+the document: Soundbank Installation Guide
+
+=== PAGE 5 ===
+5
+The Players
+Don’t forget that the most important actors of this kind of 
+project are the players, especially for solo instruments, where 
+musical experience and playing techniques are essential. IRCAM 
+did collaborate with the very best musicians to achieve an 
+exceptional and musical result. Each instrument and sample has 
+a natural human sound.
+We are proud to introduce these 16 inspired musicians to you:
+Hae-Sun Kang – Violin
+Soloist for the Ensemble InterContemporain since 1994, 
+concertmaster of the Orchestre de Paris, and winner of several 
+international competitions, Hae-Sun Kang is a professor at the 
+Conservatoire National Supérieur de Musique de Paris.
+Pascal Robault - Viola
+Violinist and violist, Pascal Robault won several international 
+prices like the Evian International String Quartet Competition. 
+He has participated in numerous concerts, exploring the most 
+vast and varied forms of the chamber and contemporary music 
+repertoires, performing with groups such as the Ensemble 
+InterContemporain, Alternance, and Court-circuit.
+Antoine Ladrette - Cello
+- Instrument Played: Caussin, France, end of XIX century.
+A former student of André Navarra and Bernard Michelin at 
+the Conservatoire de Paris, André Ladrette developed a taste 
+for early music, driving him to participate in groups such as 
+Les Arts Florissants, La Chappelle Royale, La Grande Ecurie 
+et la Chambre du Roy, Les Musiciens du Louvre, the London 
+Fortepiano Trio, and, for fifteen years, the Stradivaria Ensemble 
+directed by Daniel Cuiller.
+Didier Meu - Contrabass
+- Instrument Played: 3/4, Germany, end of XIX century
+Member of the ensembles Court-circuit, Sillage, and Fa, he 
+also performs on a regular basis with Ars Nova, the Ensemble 
+InterContemporain, the Ensemble Modern, and the Ensemble 
+Recherche. Didier Meu works in close collaboration with Ircam. 
+He also created the Acrobass association, a group devoted to 
+promoting instruments with a bass range and is also involved in 
+projects where jazz and contemporary music intersect.
+Jens McManama - French Horn
+Born in Portland, Oregon, Jens McManama performed his first 
+solo concert at the age of thirteen with the Seattle Orchestra. 
+After studying in Cleveland with Myron Bloom, he became the 
+horn soloist at La Scala in Milan under the direction of Claudio 
+Abbado. As a soloist for the Ensemble InterContemporain since 
+1979, Jens McManama performed in numbers of pieces like the 
+premiere of Karlheinz Stockhausen’s In Freundschaft arranged 
+for horn in Baden-Baden in 1988.
+Laurent Bomont - Trumpet
+Admitted to the Conservatoire national supérieur de musique 
+de Paris in 1989, he won first prize in chamber music in 1991, 
+followed by a first prize in trumpet performance the next year. 
+Then he was invited to perform on a regular basis as a soloist at 
+various festivals, and with prominent orchestras and groups. He 
+has performed under the direction of Christoph von Dohnany, 
+Sir Simon Rattle, Sir Georg Solti, James Conlon, Peter Eotvös, 
+David Robertson... as well as Pierre Boulez.
+Benny Sluchin - Trombone
+Benny Sluchin studied music at the Conservatory of Tel Aviv, 
+his hometown, and at the Academy of Music in Jerusalem. 
+Sluchin played with the Israel Philharmonic Orchestra for 
+two years before becoming a co-soloist in the Jerusalem 
+Symphony Orchestra (Radio Orchestra) where he remained for 
+four years. Since 1976, he has been a member of the Ensemble 
+InterContemporain, performing the contemporary repertoire. 
+Benny Sluchin also gives conferences all over the world.
+Gerard Buquet - Bass Tuba
+- Instrument played: Bass Tuba in F with 6 valves, Germany, 
+manufactered by Fabien Levy Gerard Buquet has given 
+numerous premieres and has been an invited soloist at many of 
+the major contemporary music festivals. He has played with the 
+Orchestre de Paris, the Orchestre National de France, and the 
+Orchestre Philharmonique de Radio France, as well as in various 
+jazz combos. From 1976 to 2001, Buquet was the tuba player for 
+the Ensemble InterContemporain.
+Claude Delangle - Alto Saxophone
+- Instrument played: SELMER Série2 n°434775 plated gold
+Concert artist, researcher and teacher, Claude Delangle has 
+expanded the contemporary repertoire by working with the 
+greatest composers of our time and by promoting recordings 
+of their work on labels such as BIS, Deutsche Grammophon, 
+Harmonia Mundi, Erato and Vérany. he has worked with Pierre 
+Boulez, D. Robertson, P. Eötvös, K. Nagano, E.P. Salonel, and 
+M.W. Chung. Delangle’s research on saxophone acoustics has 
+resulted in a collaboration with Henri-Selmer-Paris in the 
+creation of their prototypes.
+Catherine Bowie - Flute in C
+Catherine Bowie began her musical studies in her native New 
+Zealand. Winner of the Young Musicians Competition, she 
+entered the Conservatoire national supérieur de Paris, where 
+she studied with Michel Debost and Pierre-Yves Artaud. A 
+member of Ensemble Court-circuit from 1991 to 2002, she 
+currently lives in New Zealand and plays with the Auckland 
+Philharmonia.
+=== PAGE 6 ===
+6
+The Players
+Helene De Villeneuve - Oboe
+In October 1994, she was the winner of the fourth Tokyo 
+International Oboe Contest. From 1992 to 1995 Hélène 
+Devilleneuve played solo oboe for the Flanders Royal 
+Philharmonic Orchestra. She then went on to become the 
+first oboe super-soloist for the Orchestre philharmonique de 
+Radio France in 1995. In the latter domain, she is a part of the 
+ensemble Court-circuit and is regularly invited to play with the 
+Ictus ensemble (Brussels), the Fa ensemble (Dominique My), 
+and more.
+Pierre Dutrieu - Clarinet
+- Instrument played: Buffet-Crampon Prestige 1996 using 
+Fineber system
+His interest in the contemporary repertoire has led him to 
+premiere numerous concert works worldwide. As a soloist, 
+Dutrieu has performed some of the most difficult pieces found 
+in the contemporary repertoire such as the famous Dialogue de 
+lʼombre double by Pierre Boulez. Pierre Dutrieu is a permanent 
+member of the groups Court-circuit, S.I.C. and Sillages, and 
+is regularly invited by other groups, such as the Ensemble 
+InterContemporain.
+Laurent Le Chenadec - Basson
+First place bassoonist at the Conservatoire national supérieur 
+de musique de Paris, Laurent Le Chenadec has played the 
+modern bassoon with the Paris-Bastille octet, the Ensemble 
+InterContemporain under the direction of Pierre Boulez, and the 
+group Court-circuit.
+Tania Chagnot - Guitar
+- Instrument played : Daniel Friederich n°627
+Winner of numerous international competitions, Tania Chagnot 
+has given concerts all over the world, and has participated 
+in radio and television programs in Europe and in the United 
+States. Although Tania feels her vocation is to spread knowledge 
+of contemporary music, especially through premiering new 
+works, her repertoire extends from early music to today’s music.
+Virginie Tarrete - Harp
+After having completed her studies at the Conservatoire 
+national supérieur de musique de Paris, where she took first 
+place in both harp performance and chamber music, she 
+continued her studies with Ursula Holliger at the Staatliche 
+Hochschule für Musik in Freiburg. Soloist in the ensemble
+l’Itinéraire, a large part of Virginie Tarrête’s performance activity 
+is dedicated to contemporary music, which has led to numerous 
+collaborations with composers like Mark André Dalbavie, Klaus 
+Huber, Helmut Lachenmann...
+Pascal Contet - Accordion
+- Instrument played: ZEROSETTE number B32C64T58 Levy 
+special
+Virtuoso with an impressive reputation, festival director, 
+accordion collector, and lecturer, Pascal Contet isn’t afraid 
+to take risks in order to make his instrument vibrate. He has 
+improvised with Joëlle Léandre, Andy Emler, Jean-Pierre 
+Drouet. In addition, has collaborated with Pierre Boulez.
+=== PAGE 7 ===
+7
+About IRCAM
+IRCAM Centre Pompidou 
+http://www.ircam.fr/
+In 1969 Georges Pompidou initiated the establishment of the 
+Institut de Recherche et Coordination Acoustique/Musique 
+(Institute for music/acoustic research and coordination) 
+entrusting its direction to the composer and conductor Pierre 
+Boulez. IRCAM became, and remains today, the only center of 
+its kind across the globe, dedicated to contemporary musical 
+research and production and linked to the Centre Pompidou.
+Initially the project of one man, Pierre Boulez, composer, 
+conductor and author of several works, the project to create 
+IRCAM incarnated the utopian aspirations and aesthetic 
+conceptions of its founder.
+His objective was to bring science and art together in order to 
+widen instrumentarium and rejuvenate musical language. In the 
+late 1970’s IRCAM offered the most advanced reflection into 
+computer music in the world.
+With the arrival of Laurent Bayle in 1992, the institution opened 
+its doors to new artistic forms and worked at attracting a larger 
+public, notably via the establishment of the Agora festival. In 
+addition, anticipating the importance of the Internet the Forum 
+went online enabling IRCAM’s “know-how” to be accessed 
+across the entire globe.
+In 2002, the philosopher Bernard Stiegler took over IRCAM’s 
+direction, reaffirming the primary vocation of the institute: the 
+coordination between research and creation. Seeking to renew 
+relations between art and science, IRCAM’s project has both 
+feet firmly based in contemporary questions such as the links 
+between cultural industries and creation.
+Strongly supported by the presence of composers and artists 
+invited to dialogue with the scientific teams, IRCAM contributes 
+to debates incited by current issues, whether theoretical, 
+musical, aesthetical or political.
+Research & Development
+IRCAM provides a unique framework to welcome and coordinate 
+various scientific ways of approaching music, including physics 
+(acoustics, mechanics), signal processing, computer science,
+cognitive psychology and musicology. Activities are structured 
+according to specific themes, entrusted to specialized teams. 
+Each team assumes responsibility for all the work carried out 
+within its domain: research, software development, contracts, 
+collaborative projects, and diffusion.
+The personnel working within IRCAM’s Department of Research 
+and Development (90 researchers, engineers, post-graduates, 
+technicians and administration staff) under the direction of 
+Hugues Vinet.
+
+=== PAGE 8 ===
+8
+Interface
+1  Keyswitch Layer
+Change the active layer; MIDI note at 
+right can also be used to switch between 
+layers
+2  Stretch
+Accelerate/decelerate the played sample  
+from 0.5x to 2x (available only for a 
+selection of presets or layers)
+3  Play Mode
+» Play Mode
+Select the play mode
+Polyphonic - Standard polyphonic mode, 
+allow the voicing of multiple notes 
+simultaneously
+Monophonic - Standard monophonic 
+mode, only one note can be voiced at a 
+time, previous notes are cutoff as new 
+notes are struck
+Legato - Monophonic mode with 
+portament/legato fade control and script 
+processes to mimic the real behaviour
+Poly Legato - Polyphonic legato mode. 
+Ideals for playing chords and legato 
+melodic lines
+Portamento - Monophonic mode with 
+portamento/legato fade control. New 
+notes bend into pitch from the direction 
+of last note struck. Ideal for the “classic” 
+glissando, or a stepped portamento 
+depending on the instrument
+Poly Portamento - Polyphonic 
+portamento mode. Ideal for possibility of 
+playing chords and portamento melodic 
+lines
+» Portamento On Pedal (Legato modes only)
+Use a Sustain pedal to switch between 
+legato and portamento modes 
+» Range (Portamento modes only)
+Set the maximum portamento range: 
+if the note is out of the range, the 
+play mode will switch to Legato. For 
+portamento stepped, it sets the number 
+of steps
+» Time
+Adjust the rate at which new notes 
+arrive at full volume in Legato modes. 
+And adjust the duration of pitch bend in 
+Portamento modes
+» Auto (Legato and Portamento modes only)
+Activates a time detector between the 
+played notes, and automatically adjusts 
+the fade time accordingly. If a trill is 
+played with a long fade time, the value 
+will automatically adjust to a lower 
+value.
+» By String (Strings instruments only)
+Select the vertical postion mode
+Classic - Changes the played string 
+immediatly
+Advanced - Play with virtual hand 
+positioning
+» Force String On/Off
+Click to force use of the selected string
+» String Force Selection
+Select the string to play
+5Dynamic
+3Play Mode
+4Amplitude
+1 Keyswitch Layer
+2 Stretch
+7 Timbre
+8 Equalizer
+6 Expression
+9 Reverb
+=== PAGE 9 ===
+9
+Interface
+4  Amplitude
+» Attack
+After triggering a note, the time until full 
+note volume is met
+» Release
+After a note is released, the time it takes 
+to fade to ∞
+5  Dynamic
+» Amount
+Set the dynamic range valid for all 
+expression modes
+» Curve
+Drag to remap the MIDI information 
+for dynamics (Velocity, Modwheel...) 
+according to curve
+6  Expression
+» Expression Mode
+Select the expression mode
+Velocity - Note velocity determines note 
+volume and timbre (when relevant). 
+Click on the Constant to play with fixed 
+velocity value
+Modwheel - Use your MIDI controllers 
+Mod Wheel to determine note volume 
+and timbre
+Poly Aftertouch - Use the MIDI Poly 
+Aftertouch information to determine 
+note volume and timbre
+MPE - Use your MPE controllers Y (ABS 
+or REL) or Z axis controller to determine 
+note volume and timbre, and X axis to 
+control the pitch
+» Expand Range
+Expands the playable range beyond the 
+actual instrument
+7  Timber
+» Color
+Shifts the tonal colour based on adjacent 
+samples
+8  Equalizer
+» Power
+» Bass / Mid / Treble
+Adjust band gain/attenuation (+/-15dB)
+9  IR Reverb
+» Power
+» Impulse Response Menu [IR]
+Select the reverbs room shape
+» Dry
+Adjust the amount of Dry signal
+» Wet
+Adjust the amount of Wet signal
+5Dynamic
+3Play Mode
+4Amplitude
+1 Keyswitch Layer
+2 Stretch
+7 Timbre
+8 Equalizer
+6 Expression
+9 Reverb
+=== PAGE 10 ===
+10
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Flute
+Ordinario ................. C1
+Sforzando ................ C#1
+Staccato ................. D1
+Flatterzunge ............. D#1
+Trill min 2 ................ E1
+Trill maj 2 ................ F1
+Pizzcato .................. F#1
+0.5s ...................... G1
+1s ........................ G#1
+Fortepiano ............... A1
+Classical KS
+0.5s ...................... C2
+1s ........................ C#2
+Durations KS
+Trill min 2 ................ C1
+Trill maj 2 ................ C#1
+Trills KS
+Aeolian & Ordinario ....... C1
+Aeolian .................. C#1
+Quatertones Ordinario .... D1
+Harmonic Fingering ....... D#1
+Discolored Fingering ...... E1
+Play & Sing C4 ............ F1
+Play & Sing Unison ........ F#1
+Multiphonics Menu ....... G1
+Jet Whistle ............... G#1
+Key Click ................. A1
+Tongue Ram ............. A#1
+Extended KS
+
+=== PAGE 11 ===
+11
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Flute
+Aeolian & Ordinario ....... C1
+Aeolian .................. C#1
+Aeolian KS
+Harmonic Fingering ....... C1
+Discolored Fingering ...... C#1
+Finger Modes KS
+Jet Whistle ............... C1
+Key Click ................. C#1
+Tangue Ram. . . . . . . . . . . . . .D1
+FX KS
+Play & Sing C4 ............ C1
+Play & Sing Unison ........ C#1
+Play & Sing KS
+
+=== PAGE 12 ===
+12
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Flute
+Ordinario ................. C1
+Ordinario to Aeolian ...... C#1
+Aeolian to Ordinario ...... D1
+Ordinario to Flatterzunge . D#1
+Flatterzunge to Ordinario . E1
+Crescendo ................ F1
+Crescendo to Decrescendo F#1
+Decrescendo ............. G1
+Chromatic Scale .......... G#1
+Transitions KS
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo KS
+Ordinario to Flatterzunge . C1
+Flatterzunge to Ordinario . C#1
+Ordinario to Flatterzunge KS
+Ordinario to Aeolian ...... C1
+Aeolian to Ordinario ...... C#1
+Ordinario & Aeolian KS
+
+=== PAGE 13 ===
+13
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Oboe
+Ordinario ................. C1
+Vibrato ................... C#1
+Sforzando ................ D1
+Staccato ................. D#1
+Flatterzunge ............. E1
+Fortepiano ............... F1
+Trill min 2 ................ F#1
+Trill maj 2 ................ G1
+0.5s ...................... G#1
+1s ........................ A1
+Classical KS
+0.5s ...................... C2
+1s ........................ C#2
+Durations KS
+Trill maj2 ................. C1
+Trill min2 ................. C#1
+Trills KS
+Mute Ordinario ........... C1
+Quatertones Ordinario .... C#1
+Harmonic Fingering ....... D1
+Discolored Fingering ...... D#1
+Double Trill maj2 Up ...... E1
+Double Trill min2 Up ...... F1
+Multiphonics Menu ....... F#1
+Blow Without Reed ....... G1
+Kiss ...................... G#1
+Key Click ................. A1
+Extended KS
+
+=== PAGE 14 ===
+14
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Oboe
+Double Trill maj2 Up ...... C1
+Double Trill min2 Up ...... C#1
+Double Trill KS
+Harmonic Fingering ....... C1
+Discolored Fingering ...... C#1
+Finger Modes KS
+Blow Without Reed ....... C1
+Kiss ...................... C#1
+Key Click ................. D1
+FX KS
+Ordinario ................. C1
+Crescendo ................ C#1
+Crescendo to Decrescendo D1
+Decrescendo ............. D#1
+Lip Glissando Down Slow .... E1
+Lip Glissando Down Medium F1
+Lip Glissando Down Fast ..... F#1
+Chromatic Scale .......... G1
+Transitions KS
+
+=== PAGE 15 ===
+15
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Oboe
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo KS
+Lip Glissando Down Slow .... C1
+Lip Glissando Down Medium C#1
+Lip Glissando Down Fast ..... D1
+Lip Glissando Up Slow ....... D#1
+Lip Glissando Up Medium ... E1
+Lip Glissando Up Fast ........ F1
+Lip Glissando KS
+
+=== PAGE 16 ===
+16
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Clarinet
+Ordinario ................. C1
+Sforzando ................ C#1
+Staccato ................. D1
+Flatterzunge ............. D#1
+Trill min 2 ................ E1
+Trill maj 2 ................ F1
+0.5s ...................... F#1
+1s ........................ G1
+Fortepiano ............... G#1
+Classical KS
+0.5s ...................... C1
+1s ........................ C#1
+Durations KS
+Trill min 2 ................ C1
+Trill maj 2 ................ C#1
+Trills KS
+Aeolian & Ordinario ....... C1
+Quatertones Ordinario .... C#1
+Multiphonics Menu ....... D1
+Key Click ................. D#1
+Extended KS
+
+=== PAGE 17 ===
+17
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Clarinet
+Ordinario ................. C1
+Crescendo ................ C#1
+Crescendo to Decrescendo D1
+Decrescendo ............. D#1
+Glissando Slow Menu ........ E1
+Glissando Medium Menu .... F1
+Glissando Fast Menu ........ F#1
+Transitions KS
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo KS
+
+=== PAGE 18 ===
+18
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Bassoon
+Ordinario ................. C0
+Vibrato ................... C#0
+Sforzando ................ D0
+Staccato ................. D#0
+Flatterzunge ............. E0
+Trill min 2 ................ F0
+Trill maj 2 ................ F#0
+0.5s ...................... G0
+1s ........................ G#0
+Fortepiano ............... A0
+Classical KS
+0.5s ...................... C0
+1s ........................ C#0
+Durations KS
+Trill min 2 ................ C0
+Trill maj 2 ................ C#0
+Trills KS
+Mute Ordinario ........... C0
+Quatertones Ordinario .... C#0
+Harmonic Fingering ....... D0
+Multiphonics Menu ....... D#0
+Blow Without Reed ....... E0
+Extended KS
+
+=== PAGE 19 ===
+19
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Bassoon
+Throat Glissando Up Slow ........ C0
+Throat Glissando Up Medium .... C#0
+Throat Glissando Up Fast ......... D0
+Throat Glissando Up KS
+Ordinario ................. C0
+Crescendo ................ C#0
+Crescendo to Decrescendo D0
+Decrescendo ............. D#0
+Throat Glissando Down Slow ..... E0
+Throat Glissando Down Medium F0
+Throat Glissando Down Fast. . . . . . F#0
+Throat Glissando Up Slow ........ G0
+Throat Glissando Up Medium .... G#0
+Throat Glissando Up Fast ......... A0
+Chromatic Scale ............. A#0
+Transitions KS
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo KS
+Throat Glissando Down Slow ..... C0
+Throat Glissando Down Medium C#0
+Throat Glissando Down Fast. . . . . . D0
+Throat Glissando Down KS
+
+=== PAGE 20 ===
+20
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Saxophone Alto
+Ordinario ................. C1
+Fortepiano ............... C#1
+Staccato ................. D1
+Flatterzunge ............. D#1
+Trill min 2 ................ E1
+Trill maj 2 ................ F1
+Classical KS
+Trill min 2 ................ C1
+Trill maj 2 ................ C#1
+Trills KS
+Double Tonguing ......... C0
+Quatertones Ordinario .... C#0
+Discolored Fingering ...... D0
+Harmonic Fingering ....... D#0
+Slap Pitched .............. E0
+Slap Unpitched ........... F0
+Exploding Slap Pitched .... F#0
+Bell Down to Up .......... G0
+Bell Left to Right .......... G#0
+Bisbigliando .............. A0
+Play & Sing M2 Up ........ A#0
+Play & Sing Glissando ..... B0
+Play & Sing Unison ........ C1
+Multiphonics Menu ....... C#1
+Backward ................ D1
+Key Click ................. D#1
+Aeolian .................. E1
+Blow Without Reed ....... F1
+Extended KS
+Discolored Fingering ...... C1
+Harmonic Fingering ....... C#1
+Finger Modes KS
+
+=== PAGE 21 ===
+21
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Saxophone Alto
+Bell Down to Up .......... C1
+Bell Left to Right .......... C#1
+Moving Bell
+Play & Sing M2 Up ........ C1
+Play & Sing Glissando ..... C#1
+Play & Sing Unison ........ D1
+Play & Sing
+Slap Pitched .............. C1
+Slap Unpitched ........... C#1
+Exploding Slap Pitched .... D1
+Slap Modes
+Ordinario ................. C1
+Ordinario to Flatterzunge . C#1
+Flatterzunge to Ordinario . D1
+Crescendo ................ D#1
+Crescendo to Decrescendo E1
+Decrescendo .............  F1
+Glissando Slow Menu ........ F#1
+Glissando Medium Menu .... G1
+Glissando Fast Menu ........ G#1
+Chromatic Scale ............. A1
+Transitions KS
+
+=== PAGE 22 ===
+22
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Saxophone Alto
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo KS
+Glissando Slow .............. C2
+Glissando Medium. . . . . . . . . . .C#2
+Glissando Fast ............... D2
+Glissando Menu KS
+Ordinario to Flatterzunge . C1
+Flatterzunge to Ordinario . C#1
+Ordinario to Flatterzunge KS
+Alto Harmonics Glissando . C0
+Alto Kiss ................. C#0
+FX KS
+
+=== PAGE 23 ===
+23
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - French Horn
+Ordinario ................. C-1
+Sforzando ................ C#-1
+Staccato ................. D-1
+Flatterzunge ............. D#-1
+Trill min 2 ................ E-1
+Trill maj 2 ................ F-1
+Fortepiano ............... F#-1
+0.5s ...................... G-1
+1s ........................ G#-1
+Classical KS
+0.5s ...................... C0
+1s ........................ C#0
+Durations
+Trill min 2 ................ C0
+Trill maj 2 ................ C#0
+Trills KS
+Mute Ordinario ........... C0
+Mute Flatterzunge ........ C#0
+Stopped Ordinario ........ D0
+Stopped Flatterzunge ..... D#0
+Cuivre. . . . . . . . . . . . . . . . . . . .E0
+Slap Pitched .............. F0
+Extended KS
+
+=== PAGE 24 ===
+24
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - French Horn
+Ordinario ................. C0
+Ordinario to Flatterzunge . C#0
+Flatterzunge to Ordinario . D0
+Ordinario to Cuivre ........ D#0
+Cuivre to Ordinario ........ E0
+Open to Stopped ......... F0
+Stopped to Open ......... F#0
+Chromatic Scale ............. G0
+Transitions KS
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo KS
+Open to Stopped ......... C0
+Stopped to Open ......... C#0
+Open & Stopped KS
+Ordinario to Cuivre ........ C0
+Cuivre to Ordinario ........ C#0
+Ordinario & Cuivre KS
+
+=== PAGE 25 ===
+25
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - French Horn
+Ordinario to Flatterzunge . C0
+Flatterzunge to Ordinario . C#0
+Ordinario to Flatterzunge
+
+=== PAGE 26 ===
+26
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trumpet
+Ordinario ................. C1
+Sforzando ................ C#1
+Staccato ................. D1
+Flatterzunge ............. D#1
+Trill min 2 ................ E1
+Trill maj 2 ................ F1
+Classical KS
+0.5s ...................... C1
+1s ........................ C#1
+Durations
+Mute Cup Ordinario ....... C1
+Mute Cup Flatterzunge .... C#1
+Mute Cup
+Mute Straight Ordinario ............. C0
+Mute Straight Flatterzunge ......... C#0
+Mute Harmon Ordinario ............ D0
+Mute Harmon Flatterzunge ........ D#0
+Mute Wahwah Ordinario Open ..... E0
+Mute Wahwah Ordinario Closed. . . . F0
+Mute Wahwah Flatterzunge Open .F#0
+Mute Wahwah Closed to Open ..... G0
+Mute Wahwah Open to Closed ..... G#0
+Mute Cup Ordinario ............ A0
+Mute Cup Flatterzunge ........ A#0
+Cuiver ........................... B0
+Pedal Tone ...................... C1
+Slap Pitched ..................... C#1
+Vocalize on Harmonics ......... D1
+Increasing Intervals Legato .... D#1
+Extended KS
+
+=== PAGE 27 ===
+27
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trumpet
+Mute Straight Ordinario ... C1
+Mute Straight Flatterzunge C#1
+Mute Straight
+Mute Wahwah Ordinario Open ...... C1
+Mute Wahwah Ordinario Closed ..... C#1
+Mute Wahwah Flatterzunge Open .. D1
+Mute Wahwah Closed to Open ...... D#1
+Mute Wahwah Open to Closed ...... E1
+Mute Wahwah
+Ordinario ................. C1
+Ordinario to Flatterzunge . C#1
+Flatterzunge to Ordinario . D1
+Ordinario to Cuivre ........ D#1
+Cuivre to Ordinario ........ E1
+Crescendo ................ F1
+Crescendo to Decrescendo F#1
+Decrescendo ............. G1
+Glissando Half Valve Menu .. G#1
+Glissando Embouchre Menu .A1
+Glissando Harmonics Menu .A#1
+Transitions KS
+Mute Harmon Ordinario ... C1
+Mute Harmon Flatterzunge C#1
+Mute Harmon
+
+=== PAGE 28 ===
+28
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trumpet
+Ordinario to Cuivre ........ C1
+Cuivre to Ordinario ........ C#1
+Ordinario & Cuivre
+Ordinario to Flatterzunge . C1
+Flatterzunge to Ordinario . C#1
+Ordinario to Flatterzunge
+Glissando Half Valve Menu .. C1
+Glissando Embouchre Menu .C#1
+Glissando Harmonics Menu .D1
+Glissando Menu
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo
+
+=== PAGE 29 ===
+29
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trombone
+Ordinario ................. C-1
+Sforzando ................ C#-1
+Flatterzunge ............. D-1
+Fortepiano ............... D#-1
+Staccato ................. E-1
+Classical KS
+0.5s ...................... C0
+1s ........................ C#0
+Durations
+Mute Cup Ordinario ....... C0
+Mute Cup Flatterzunge .... C#0
+Mute Cup
+Mute Straight Ordinario ............. C-1
+Mute Straight Flatterzunge ......... C#-1
+Mute Harmon Ordinario ............. D-1
+Mute Harmon Flatterzunge ......... D#-1
+Mute Wahwah Ordinario Open ..... E-1
+Mute Wahwah Ordinario Closed .... F-1
+Mute Wahwah Flatterzunge Closed F#-1
+Mute Wahwah Flatterzunge Open .G-1
+Mute Wahwah Closed to Open ..... G#-1
+Mute Wahwah Open to Closed ..... A-1
+Mute Cup Ordinario .................. A#-1
+Mute Cup Flatterzunge .............. B-1
+Cuiver ................................. C0
+No Mouthpiece ....................... C#0
+Pedal Tone ............................ D0
+Slap Pitched .......................... D#0
+Extended KS
+
+=== PAGE 30 ===
+30
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trombone
+Mute Straight Ordinario ... C0
+Mute Straight Flatterzunge C#0
+Mute Straight
+Mute Wahwah Ordinario Open ...... C0
+Mute Wahwah Ordinario Closed ..... C#0
+Mute Wahwah Flatterzunge Open .. D0
+Mute Wahwah Flatterzunge Closed . D#0
+Mute Wahwah Closed to Open ...... E0
+Mute Wahwah Open to Closed ...... F0
+Mute Wahwah
+Mute Harmon Ordinario ... C0
+Mute Harmon Flatterzunge C#0
+Mute Harmon
+Ordinario ................. C-1
+Ordinario to Flatterzunge . C#-1
+Flatterzunge to Ordinario . D-1
+Ordinario to Cuivre ........ D#-1
+Cuivre to Ordinario ........ E-1
+Crescendo ................ F-1
+Crescendo to Decrescendo F#-1
+Decrescendo ............. G-1
+Glissando Menu ............. G#-1
+Transitions KS
+
+=== PAGE 31 ===
+31
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Trombone
+Ordinario to Flatterzunge . C0
+Flatterzunge to Ordinario . C#0
+Ordinario to Flatterzunge
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo
+Ordinario to Cuivre ........ C0
+Cuivre to Ordinario ........ C#0
+Ordinario & Cuivre
+
+=== PAGE 32 ===
+32
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Tuba
+Ordinario ................. C-1
+Fortepiano ............... C#-1
+Staccato ................. D-1
+Flatterzunge ............. D#-1
+Trill min2 ................. E-1
+Trill maj2 ................. F-1
+Classical KS
+Discolored Fingering ...... C0
+Harmonic Fingering ....... C#0
+Finger Modes
+Play & Sing Unison ........ C0
+Play & Sing aug4 Up ...... C#0
+Play & Sing M2 Up ........ D0
+Play & Sing M7 Up ........ D#0
+Play & Sing P5 Up ......... E0
+Play & Sing
+Slap Pitched .............. C1
+Slap Unpitched ........... C#1
+Slap Modes
+
+=== PAGE 33 ===
+33
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Tuba
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo
+Ordinario to Flatterzunge . C0
+Flatterzunge to Ordinario . C#0
+Ordinario to Flatterzunge
+Ordinario ................. C-1
+Ordinario to Flatterzunge . C#-1
+Flatterzunge to Ordinario . D-1
+Crescendo ................ D#-1
+Crescendo to Decrescendo E-1
+Decrescendo ............. F-1
+Glissando Menu ............. F#-1
+Chromatic Scale .......... G-1
+Transitions KS
+
+=== PAGE 34 ===
+34
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Accordion
+Ordinario ................. C-1
+Sforzando ................ C#-1
+Staccato ................. D-1
+Classical KS
+DBL1 ..................... C-1
+DBL2  .................... C#-1
+DBL3 ..................... D-1
+DBL4 .................... D#-1
+DBL5  .................... E-1
+Ordinario Registers
+Register Combination 1 ... C-1
+Register Combination 2 ... C#-1
+Backwards ............... D-1
+Extended KS
+Ordinario ................. C-1
+Crescendo ................ C#-1
+Crescendo to Decrescendo D-1
+Decrescendo ............. D#-1
+Transitions KS
+
+=== PAGE 35 ===
+35
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Accordion
+Crescendo ................ C-1
+Crescendo to Decrescendo C#-1
+Decrescendo ............. D-1
+Crescendo & Decrescendo
+Bellowshake .............. C0
+Breath ................... C#0
+Difference Tone .......... D0
+Key Click ................. D#0
+Tap on Body .............. E0
+FX
+
+=== PAGE 36 ===
+36
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Guitar
+Ordinario ................. C0
+Pizzicato ................. C#0
+Sul Ponticello ............. D0
+Sul Tasto ................. D#0
+Classical KS
+Dedillo ................... C0
+Rasguado ................ C#0
+Pizzicato Bartok .......... D0
+Harmonic Fingering ....... D#0
+High Register ............. E0
+Slide ..................... F0
+Tap on Body .............. F#0
+FX ....................... G0
+Extended KS
+
+=== PAGE 37 ===
+37
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Harp
+Ordinario ................. C-1
+Ordinario Soft ............ C#-1
+Ordinario Hard. . . . . . . . . . . .D-1
+Damped. . . . . . . . . . . . . . . . . .D#-1
+Bisbigliando .............. E-1
+Xylophonic ............... F-1
+Classical KS
+Glissando Menu .......... C0
+Glissando with Stick ....... C#0
+Glissando with Pedal ...... D0
+Glissando Modes Menu
+Bisbigliando with Stick .... C-1
+Puzzicato Bartok. . . . . . . . . .C#-1
+Near the Board ........... D-1
+Near the Board with Nail .. D#-1
+Near the Peg ............. E-1
+Harmonic in Wood ........ F-1
+Tap with Stick ............ F#-1
+Scratch with Nail. . . . . . . . . .G-1
+Buzzing Pedal ............ G#-1
+Glissando Menu .......... A-1
+Glissando with Stick ....... A#-1
+Glissando with Pedal ...... B-1
+Extended KS
+Near the Board ........... C-1
+Near the Board with Nail .. C#-1
+Near the Board
+
+=== PAGE 38 ===
+38
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Violin
+Ordinario ................. C0
+Ordinario Non Vibrato ..... C#0
+Tremolo .................. D0
+Fortepiano ............... D#0
+Sforzando ................ E0
+Staccato ................. F0
+Pizzicato ................. F#0
+Pizzicato Secco ........... G0
+Trill maj2 ................. G#0
+Trill min2 ................. A0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Classical KS
+0.5s ...................... C1
+1s ........................ C#1
+Durations
+Natural Harmonics Glissando Up Slow ........ C1
+Natural Harmonics Glissando Down Slow ..... C#1
+Natural Harmonics Glissando Up Medium .... D1
+Natural Harmonics Glissando Down Medium . D#1
+Natural Harmonics Glissando Up Fast. . . . . . . . . E1
+Natural Harmonics Glissando Down Fast ..... F1
+Natural Harmonics Glissandi Menu
+Lead Mute Ordinario ...... C0
+Lead Mute Non Vibrato ... C#0
+Lead Mute Tremolo ....... D0
+Mute Ordinario ........... D#0
+Mute Non Vibrato ........ E0
+Mute Tremolo ............ F0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Muted KS
+
+=== PAGE 39 ===
+39
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Violin
+Ordinario to Sul Tasto ..... C1
+Sul Tasto to Ordinario ..... C#1
+Ordinario & Sul Tasto
+Ordinario to Pressured .... C0
+Pressured to Ordinario .... C#0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Ordinario & Pressured
+Ordinario to Sul Ponticello .C1
+Sul Ponticello to Ordinario .C#1
+Ordinario & Sul Ponticello
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo
+
+=== PAGE 40 ===
+40
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Violin
+Sul Ponticello to Sul Tasto .C1
+Sul Tasto to Sul Ponticello .C#1
+Sul Ponticello & Sul Tasto
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+by String Presets
+Ordinario to Tremolo ...... C0
+Tremolo to Ordinario ...... C#0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Ordinario & Tremolo
+
+=== PAGE 41 ===
+41
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Viola
+Ordinario ................. C0
+Ordinario Non Vibrato ..... C#0
+Tremolo .................. D0
+Fortepiano ............... D#0
+Sforzando ................ E0
+Staccato ................. F0
+Pizzicato ................. F#0
+Pizzicato Secco ........... G0
+Trill maj2 ................. G#0
+Trill min2 ................. A0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Classical KS
+0.5s ...................... C1
+1s ........................ C#1
+Durations
+Natural Harmonics Glissando Up Slow ........ C1
+Natural Harmonics Glissando Down Slow ..... C#1
+Natural Harmonics Glissando Up Medium .... D1
+Natural Harmonics Glissando Down Medium . D#1
+Natural Harmonics Glissando Up Fast. . . . . . . . . E1
+Natural Harmonics Glissando Down Fast ..... F1
+Natural Harmonics Glissandi Nemu
+Mute Ordinario ........... C0
+Mute Non Vibrato ........ C#0
+Mute Tremolo ............ D0
+Lead Mute Ordinario ...... D#0
+Lead Mute Non Vibrato ... E0
+Lead Mute Tremolo ....... F0
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+Muted KS
+
+=== PAGE 42 ===
+42
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Viola
+Ordinario to Sul Tasto ..... C1
+Sul Tasto to Ordinario ..... C#1
+Ordinario & Sul Tasto
+Ordinario to Pressured .... C0
+Pressured to Ordinario .... C#0
+Ordinario & Pressured
+Ordinario to Sul Ponticello .C1
+Sul Ponticello to Ordinario .C#1
+Ordinario & Sul Ponticello
+Crescendo ................ C1
+Crescendo to Decrescendo C#1
+Decrescendo ............. D1
+Crescendo & Decrescendo
+
+=== PAGE 43 ===
+43
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Viola
+Sul Ponticello to Sul Tasto .C1
+Sul Tasto to Sul Ponticello .C#1
+Sul Ponticello & Sul Tasto
+G-String ................. C1
+D-String ................. C#1
+A-String ................. D1
+E-String .................. D#1
+by String Presets
+Ordinario to Tremolo ...... C1
+Tremolo to Ordinario ...... C#1
+Ordinario & Tremolo
+
+=== PAGE 44 ===
+44
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Cello
+Ordinario ................. C-1
+Ordinario Non Vibrato ..... C#-1
+Tremolo .................. D-1
+Fortepiano ............... D#-1
+Sforzando ................ E-1
+Staccato ................. F-1
+Pizzicato ................. F#-1
+Pizzicato Secco ........... G-1
+Trill maj2 ................. G#-1
+Trill min2 ................. A-1
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+Classical KS
+0.5s ...................... C0
+1s ........................ C#0
+Durations
+Natural Harmonics Glissando Up Slow ........ C0
+Natural Harmonics Glissando Down Slow ..... C#0
+Natural Harmonics Glissando Up Medium .... D0
+Natural Harmonics Glissando Down Medium . D#0
+Natural Harmonics Glissando Up Fast. . . . . . . . . E0
+Natural Harmonics Glissando Down Fast ..... F0
+Natural Harmonics Glissandi Menu
+Lead Mute Ordinario ...... C-1
+Lead Mute Non Vibrato ... C#-1
+Lead Mute Tremolo ....... D-1
+Mute Ordinario ........... D#-1
+Mute Non Vibrato ........ E-1
+Mute Tremolo ............ F-1
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+Muted KS
+
+=== PAGE 45 ===
+45
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Cello
+Ordinario to Sul Tasto ..... C0
+Sul Tasto to Ordinario ..... C#0
+Ordinario & Sul Tasto
+Ordinario to Pressured .... C0
+Pressured to Ordinario .... C#0
+Ordinario & Pressured
+Ordinario to Sul Ponticello .C0
+Sul Ponticello to Ordinario .C#0
+Ordinario & Sul Ponticello
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo
+
+=== PAGE 46 ===
+46
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Cello
+Sul Ponticello to Sul Tasto .C0
+Sul Tasto to Sul Ponticello .C#0
+Sul Ponticello & Sul Tasto
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+by String Presets
+Ordinario to Tremolo ...... C0
+Tremolo to Ordinario ...... C#0
+Ordinario & Tremolo
+
+=== PAGE 47 ===
+47
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Contrabass
+Ordinario ................. C-1
+Ordinario Non Vibrato ..... C#-1
+Tremolo .................. D-1
+Fortepiano ............... D#-1
+Sforzando ................ E-1
+Staccato ................. F-1
+Pizzicato ................. F#-1
+Pizzicato Secco ........... G-1
+Trill maj2 ................. G#-1
+Trill min2 ................. A-1
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+Classical KS
+0.5s ...................... C-1
+1s ........................ C#-1
+Durations
+Natural Harmonics Glissando Up Slow ........ C0
+Natural Harmonics Glissando Down Slow ..... C#0
+Natural Harmonics Glissando Up Medium .... D0
+Natural Harmonics Glissando Down Medium . D#0
+Natural Harmonics Glissando Up Fast. . . . . . . . . E0
+Natural Harmonics Glissando Down Fast ..... F0
+Natural Harmonics Glissandi
+Mute Ordinario ........... C-1
+Mute Non Vibrato ........ C#-1
+Mute Tremolo ............ D-1
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+Muted KS
+
+=== PAGE 48 ===
+48
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Contrabass
+Ordinario to Sul Tasto ..... C0
+Sul Tasto to Ordinario ..... C#0
+Ordinario & Sul Tasto
+Ordinario to Pressured .... C0
+Pressured to Ordinario .... C#0
+Ordinario & Pressured
+Ordinario to Sul Ponticello .C0
+Sul Ponticello to Ordinario .C#0
+Ordinario & Sul Ponticello
+Crescendo ................ C0
+Crescendo to Decrescendo C#0
+Decrescendo ............. D0
+Crescendo & Decrescendo
+
+=== PAGE 49 ===
+49
+Red keys are key switches. Blue keys are string select switches. Yello keys are extended range of the Instrument. Gray keys have no sample mapped to them.
+Layers & Keyswitches - Contrabass
+Sul Ponticello to Sul Tasto .C0
+Sul Tasto to Sul Ponticello .C#0
+Sul Ponticello & Sul Tasto
+G-String ................. C0
+D-String ................. C#0
+A-String ................. D0
+E-String .................. D#0
+by String Presets
+Ordinario to Tremolo ...... C0
+Tremolo to Ordinario ...... C#0
+Ordinario & Tremolo
+
+=== PAGE 50 ===
+50
+Instrument List
+FLUTE (in C)
+OBOE
+ OBOE WITH MUTE
+CLARINET (in Bb)
+BASSOON
+ BASSOON WITH MUTE
+ALTO SAXOPHONE (in Eb)
+FRENCH HORN
+ FRENCH HORN WITH MUTE
+TRUMPET (in C)
+ TRUMPET in C with CUP MUTE
+ TRUMPET in C with HARMON MUTE
+ TRUMPET in C with STRAIGHT MUTE
+ TRUMPET in C with WAWA MUTE
+ TROMBONE (Tenor/bass)
+ TROMBONE with CUP MUTE
+ TROMBONE with HARMON MUTE
+ TROMBONE with STRAIGHT MUTE
+ TROMBONE with WAWA MUTE
+BASS TUBA (in F)
+ BASS TUBA WITH MUTE
+ACCORDION
+GUITAR
+HARP
+VIOLIN
+ VIOLIN WITH MUTE
+ VIOLIN WITH LEAD MUTE
+VIOLA
+ VIOLA WITH MUTE
+ VIOLA WITH LEAD MUTE
+VIOLONCELLO
+ VIOLONCELLO WITH MUTE
+ VIOLONCELLO WITH LEAD MUTE
+CONTRABASS
+ CONTRABASS WITH MUTE
+=== PAGE 51 ===
+51
+Instrument List
+WOODWINDS
+Detail of available playing techniques for each woodwind 
+instrument
+The ranges are given in international format : middle C = C4
+All musical notations are in sounding pitches (untransposed)
+FLUTE in C
+Instrumentist : Catherine Bowie - Artistic direction: Joshua 
+Fineberg - Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Ranges in sounding pitches : (B3 with special extension) C4 – C7 
+(+)
+aeolian
+aeolian-and-ordinario
+aeolian-to-ordinario
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+decrescendo
+discolored-fingering
+flatterzunge
+flatterzunge-to-ordinario
+harmonic-fingering
+jet-whistle
+key-click
+note-durations
+ordinario
+ordinario-1q
+ordinario-to-aeolian
+ordinario-to-flatterzunge
+pizzicato
+play-and-sing
+play-and-sing-unison
+sforzando
+staccato
+tongue-ram
+trill-major-second-up
+trill-minor-second-up
+whistle-tones
+whistle-tones-sweeping
+OBOE
+Instrumentist : Hélène Devilleneuve - Artistic director : Joshua 
+Fineberg - Sound engieeners : François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : Bb3 – G6 (+)
+blow-without-reed
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+decrescendo
+discolored-fingering
+double-trill-major-second-up
+double-trill-minor-second-up
+flatterzunge
+harmonic-fingering
+key-click
+kiss
+lip-glissando
+multiphonics
+note-durations
+ordinario
+ordinario-1q
+sforzando
+staccato
+trill-major-second-up
+trill-minor-second-up
+vibrato
+OBOE CON SORDINA
+ordinario
+=== PAGE 52 ===
+52
+Instrument List
+CLARINET in Bb
+Instrumentist : Pierre Dutrieu - Instrument : Buffet-Crampon 
+Prestige 1996 (Boehm system) - Artistic direction: Joshua 
+Fineberg- Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written a major second higher
+Range in sounding pitches : D3-F6 (+)
+aeolian-and-ordinario
+crescendo
+crescendo-to-decrescendo
+decrescendo
+flatterzunge
+flatterzunge-high-register
+glissando
+key-click
+multiphonics
+note-durations
+ordinario
+ordinario-1q
+ordinario-high-register
+sforzando
+staccato
+trill-major-second-up
+trill-minor-second-up
+BASSOON
+Instrumentist : Laurent Le Chenadec - Artistic direction: Joshua 
+Fineberg - Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : Bb1-Eb5 (+)
+blow-without-reed
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+decrescendo
+flatterzunge
+glissando-with-throat
+harmonic-fingering
+key-click
+multiphonics
+note-durations
+ordinario
+ordinario-1q
+sforzando
+staccato
+trill-major-second-up
+trill-minor-second-up
+vibrato
+BASSON CON SORDINA
+ordinario
+=== PAGE 53 ===
+53
+Instrument List
+BRASS
+Detail of available playing techniques for each brass instrument
+The ranges are given in international format : middle C = C4
+All musical notations are in sounding pitches (untransposed)
+TRUMPET in C
+Instrumentist : Laurent Bomont - Artistic direction: Joshua 
+Fineberg - Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : F#3-Bb5 (+)
+crescendo
+crescendo-to-decrescendo
+cuivré
+cuivré-to-ordinario
+decrescendo
+flatterzunge
+flatterzunge-to-ordinario
+glissando-embouchure
+half-valve-glissando
+harmonics-glissando
+increasing-intervals-legato
+note-durations
+ordinario
+ordinario-to-cuivré
+ordinario-to-flatterzunge
+pedal-tone
+sforzando
+slap-pitched
+staccato
+trill-major-second-up
+trill-minor-second-up
+vocalize-on-harmonics
+C TRUMPET CUP MUTE
+flatterzunge
+ordinario
+C TRUMPET HARMON MUTE
+flatterzunge
+ordinario
+C TRUMPET STRAIGHT MUTE
+flatterzunge
+ordinario
+C TRUMPET WAWA MUTE
+closed-to-open
+flatterzunge-open
+open-to-closed
+ordinario-closed
+ordinario-open
+=== PAGE 54 ===
+54
+Instrument List
+ALTO SAXOPHONE in Eb
+Instrumentist: Claude Delangle - Instrument: SELMER Serie 
+2 n°434775 gold plated (with high register key, Mouthpiece 
+Vandoren strenght 3,5 - Artistic direction: Fabien Levy - Sound 
+engineers: Vérène Valat - Editing : Cécile Lenoir, Gérard Delia.
+Instrument part to be written a major sixth higher
+Range in sounding pitches : (-) Db3-A5 (+)
+aeolian
+backwards
+bisbigliando
+blow-without-reed
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+decrescendo
+discolored-fingering
+double-tonguing
+exploding-slap-pitched
+flatterzunge
+flatterzunge-to-ordinario
+glissando
+harmonic-fingering
+harmonics-glissando
+key-click
+kiss
+move-bell-from-down-to-up
+move-bell-from-left-to-right
+multiphonics
+ordinario
+ordinario-1q
+ordinario-high-register
+ordinario-to-flatterzunge
+play-and-sing-glissando
+play-and-sing-m2-up
+play-and-sing-unison
+sforzando
+slap-pitched
+slap-unpitched
+staccato
+trill-major-second-up
+trill-minor-second-up
+FRENCH HORN in F
+Instrumentist : Jens McManama - Artistic direction: Joshua 
+Fineberg - Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written a perfect fifth higher
+Range in sounding pitches : (-) B1-F4 (+)
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+cuivré
+cuivré-to-ordinario
+decrescendo
+flatterzunge
+flatterzunge-stopped
+flatterzunge-to-ordinario
+note-durations
+open-to-stopped
+ordinario
+ordinario-to-cuivré
+ordinario-to-flatterzunge
+sforzando
+slap-pitched
+staccato
+stopped
+stopped-to-open
+trill-major-second-up
+trill-minor-second-up
+FRENCH HORN CON SORDINA
+flatterzunge
+ordinario
+=== PAGE 55 ===
+55
+Instrument List
+TROMBONE (tenor-bass)
+Instrumentist : Benny Sluchin - Artistic direction: Joshua Fineberg 
+- Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : (-) E2-D5 (+)
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+cuivré
+cuivré-to-ordinario
+decrescendo
+flatterzunge
+flatterzunge-no-mouthpiece
+flatterzunge-to-ordinario
+glissando
+note-durations
+ordinario
+ordinario-no-mouthpiece
+ordinario-to-cuivré
+ordinario-to-flatterzunge
+pedal-tone
+sforzando
+slap-pitched
+staccato
+TROMBONE SORD CUP
+flatterzunge
+ordinario
+TROMBONE SORD HARMON
+flatterzunge
+ordinario
+TROMBONE SORD STRAIGHT
+flatterzunge
+ordinario
+TROMBONE SORD WAWA
+closed-to-open
+flatterzunge-closed
+flatterzunge-open
+open-to-closed
+ordinario-closed
+ordinario-open
+=== PAGE 56 ===
+56
+Instrument List
+BASS TUBA
+Instrumentist : Gérard Buquet - Instrument : Bass Tuba in F with 
+six valves, German - Artistic direction: Fabien Levy - Sound
+engineers: Vérène Valat - Editing : Cécile Lenoir, Gérard Delia.
+Instrument part to be written at actual pitch
+Range in sounding pitches : (-) F1-C4 (+)
+bisbigliando
+blow
+breath
+buzz
+chromatic-scale
+crescendo
+crescendo-to-decrescendo
+cuivré
+decrescendo
+discolored-fingering
+discolored-fingering-1q
+exploding-slap-pitched
+exploding-slap-unpitched
+filtered-by-voice
+flatterzunge
+flatterzunge-and-voice-unison
+flatterzunge-to-ordinario
+glissando
+growl
+inhaled
+kiss
+multiphonics
+ordinario
+ordinario-1q
+ordinario-high-register
+ordinario-to-flatterzunge
+pedal-tone
+percussion-embouchure
+play-and-sing-aug4-up
+play-and-sing-glissando
+play-and-sing-m2-up
+play-and-sing-M7-up
+play-and-sing-P5-up
+play-and-sing-unison
+sforzando
+single-tonguing
+slap-pitched
+slap-unpitched
+speak-into-instrument
+staccato
+trill-major-second-up
+trill-minor-second-up
+BASS TUBA SORDINA
+ordinario
+=== PAGE 57 ===
+57
+Instrument List
+FREE REED
+Available playing techniques
+The ranges are given in international format : middle C = C4
+All musical notations are in sounding pitches (untransposed)
+ACCORDION
+Instrumentist : Pascal Contet - Instrument : ZEROSETTE number 
+B32C64T58 IND n°1 special - Artistic direction: Fabien Levy - 
+Sound engineers: Vérène Valat - Editing : Cécile Lenoir, Gérard 
+Delia.
+Instrument part to be written at actual pitch
+Range in sounding pitches : E1-A7 (C8)
+backwards
+bellowshake
+breath
+crescendo
+crescendo-to-decrescendo
+decrescendo
+difference-tones
+key-click
+sforzando
+staccato
+tap-on-body
+=== PAGE 58 ===
+58
+Instrument List
+PLUCKED STRINGS
+Available playing techniques
+The ranges are given in international format : middle C = C4
+All musical notations are in sounding pitches (untransposed)
+GUITAR
+Instrumentist : Tania Chagnot - Instrument : Daniel Friederich 
+n°627. - Artistic direction: Fabien Levy - Sound engineers:
+Vérène Valat - Editing : Cécile Lenoir, Gérard Delia.
+Instrument part to be written an octave higher
+Range in sounding pitches : E2-E5 (+)
+behind-the-frog
+bell-effect
+bottleneck
+chromatic-scale
+dedillo
+drum-effect
+glissando
+harmonic-fingering
+ordinario
+pizzicato
+pizzicato-bartok
+rasguado
+scratch-with-nail
+slide
+sul-ponticello
+sul-tasto
+tap-on-body
+tap-with-stick
+HARP
+Instrumentist : Virginie Tarrete
+Instrument part to be written at actual pitch
+Range in sounding pitches : C1-G#7
+bisbigliando
+bisbigliando-with-stick
+buzzing-pedal
+clusters
+clusters-with-nail
+damped
+double-glissando
+glissando
+glissando-fluido-with-stick
+glissando-near-the-board
+glissando-with-nail
+glissando-with-pedal
+glissando-with-stick
+harmonic-fingering
+harmonic-in-wood
+near-the-board
+near-the-board-with-nail
+near-the-pegs
+ordinario
+pizzicato-bartok
+scratch-with-nail
+tap-on-body
+tap-with-stick
+tremolo-with-fingertips
+xylophonic sounds
+=== PAGE 59 ===
+59
+Instrument List
+STRINGS
+Detail of available playing techniques for each string instrument
+The ranges are given in international format : middle C = C4
+All musical notations are in sounding pitches (untransposed)
+VIOLIN
+Instrumentist : Hea Sun Kang - Artistic direction: Joshua Fineberg 
+- Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : G3-G7 (+)
+artificial-harmonic (mixed strings and individual strings)
+artificial-harmonic-tremolo (mixed strings and individual 
+strings)
+behind-the-bridge
+behind-the-fingerboard
+chromatic-scale
+col-legno-battuto (mixed strings and individual strings)
+col-legno-tratto (mixed strings and individual strings)
+crescendo
+crescendo-to-decrescendo
+pressured-to-ordinario
+decrescendo
+hit-on-body
+natural-harmonics-glissandi
+non-vibrato (mixed strings and individual strings)
+note-durations
+on-the-tailpiece
+on-the-tuning-pegs
+ordinario (mixed strings and individual strings)
+ordinario-to-pressured
+ordinario-to-sul-ponticello
+ordinario-to-sul-tasto
+ordinario-to-tremolo
+pizzicato-bartok (mixed strings and individual strings)
+pizzicato-l-vib (mixed strings and individual strings)
+pizzicato-secco (mixed strings and individual strings)
+sforzato
+staccato
+sul-ponticello (mixed strings and individual strings)
+sul-ponticello-to-ordinario
+sul-ponticello-to-sul-tasto
+sul-ponticello-tremolo
+sul-tasto (mixed strings and individual strings)
+sul-tasto-to-ordinario
+sul-tasto-to-sul-ponticello
+tremolo (mixed strings and individual strings)
+tremolo-to-ordinario
+trill-major-second-up (mixed strings and individual strings)
+trill-minor-second-up (mixed strings and individual strings)
+VIOLIN CON SORDINA
+non-vibrato (mixed strings and individual strings)
+ordinario (mixed strings and individual strings)
+tremolo (mixed strings and individual strings)
+VIOLIN CON SORDINA PIOMBO
+non-vibrato
+ordinario
+tremolo
+=== PAGE 60 ===
+60
+Instrument List
+VIOLA
+Instrumentist : Pascal Robault - Artistic direction: Joshua 
+Fineberg - Sound engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : C3-C6 (+)
+artificial-harmonic (mixed strings and individual strings)
+artificial-harmonic-tremolo (mixed strings and individual 
+strings)
+behind-the-bridge
+behind-the-fingerboard
+chromatic-scale
+col-legno-battuto (mixed strings and individual strings)
+col-legno-tratto (mixed strings and individual strings)
+crescendo
+crescendo-to-decrescendo
+pressured-to-ordinario
+decrescendo
+hit-on-body
+natural-harmonics-glissandi
+non-vibrato (mixed strings and individual strings)
+note-durations
+on-the-bridge
+on-the-frog
+on-the-tuning-pegs
+ordinario (mixed strings and individual strings)
+ordinario-to-pressured
+ordinario-to-sul-ponticello
+ordinario-to-sul-tasto
+ordinario-to-tremolo
+pizzicato-bartok (mixed strings and individual strings)
+pizzicato-l-vib (mixed strings and individual strings)
+pizzicato-secco (mixed strings and individual strings)
+sforzato
+staccato (mixed strings and individual strings)
+sul-ponticello (mixed strings and individual strings)
+sul-ponticello-to-ordinario
+sul-ponticello-to-sul-tasto
+sul-ponticello-tremolo
+sul-tasto (mixed strings and individual strings)
+sul-tasto-to-ordinario
+sul-tasto-to-sul-ponticello
+sul-tasto-tremolo
+tremolo (mixed strings and individual strings)
+tremolo-to-ordinario
+trill-major-second-up (mixed strings and individual strings)
+trill-minor-second-up (mixed strings and individual strings)
+VIOLA CON SORDINA
+non-vibrato (mixed strings and individual strings)
+ordinario (mixed strings and individual strings)
+tremolo (mixed strings and individual strings)
+VIOLA CON SORDINA PIOMBO
+non-vibrato
+ordinario, tremolo
+=== PAGE 61 ===
+61
+Instrument List
+VIOLONCELLO
+Instrumentist : Antoine Ladrette - Instrument : Caussin, France, 
+end of XIX - Artistic direction: Joshua Fineberg, Sound
+engineers: François Eckert, Antoine Mercier.
+Instrument part to be written at actual pitch
+Range in sounding pitches : C2-A5 (++)
+artificial-harmonic (mixed strings and individual strings)
+artificial-harmonic-tremolo (mixed strings and individual 
+strings)
+behind-the-bridge
+chromatic-scale
+col-legno-battuto (mixed strings and individual strings)
+col-legno-tratto (mixed strings and individual strings)
+crescendo
+crescendo-to-decrescendo
+pressured-to-ordinario
+decrescendo
+hit-on-body
+natural-harmonics-glissandi
+non-vibrato (mixed strings and individual strings)
+note-durations
+on-the-bridge
+on-the-frog
+on-the-tailpiece
+on-the-tuning-pegs
+ordinario (mixed strings and individual strings)
+ordinario-to-pressured
+ordinario-to-sul-ponticello
+ordinario-to-sul-tasto
+ordinario-to-tremolo
+pizzicato-bartok (mixed strings and individual strings)
+pizzicato-l-vib (mixed strings and individual strings)
+pizzicato-secco (mixed strings and individual strings)
+sforzato
+staccato
+sul-ponticello (mixed strings and individual strings)
+sul-ponticello-to-ordinario
+sul-ponticello-to-sul-tasto
+sul-ponticello-tremolo
+sul-tasto (mixed strings and individual strings)
+sul-tasto-to-ordinario
+sul-tasto-to-sul-ponticello
+sul-tasto-tremolo
+tremolo (mixed strings and individual strings)
+tremolo-to-ordinario
+trill-major-second-up (mixed strings and individual strings)
+trill-minor-second-up (mixed strings and individual strings)
+VIOLONCELLO CON SORDINA
+non-vibrato (mixed strings and individual strings)
+ordinario (mixed strings and individual strings)
+tremolo
+VIOLONCELLO CON SORDINA PIOMBO
+non-vibrato
+ordinario, tremolo
+=== PAGE 62 ===
+62
+Instrument List
+CONTRABASS
+Instrumentist : Didier Meu - Instrument : 3/4, Germany, end of 
+XIX - Artistic direction: Joshua Fineberg - Sound engineers:
+François Eckert, Antoine Mercier.
+Instrument part to be written an octave higher
+Range in sounding pitches : (C1 with five strings) E1-G4 (++)
+artificial-harmonic (mixed strings and individual strings)
+artificial-harmonic-tremolo (mixed strings and individual 
+strings)
+behind-the-bridge
+chromatic-scale
+col-legno-battuto (mixed strings and individual strings)
+col-legno-tratto (mixed strings and individual strings)
+crescendo
+crescendo-to-decrescendo
+pressured-to-ordinario
+decrescendo
+hit-on-body
+natural-harmonics-glissandi
+non-vibrato
+note-durations
+on-the-bridge
+on-the-tailpiece
+on-the-tuning-pegs
+ordinario (mixed strings and individual strings)
+ordinario-to-pressured
+ordinario-to-sul-ponticello
+ordinario-to-sul-tasto
+ordinario-to-tremolo
+pizzicato-bartok (mixed strings and individual strings)
+pizzicato-l-vib (mixed strings and individual strings)
+pizzicato-secco (mixed strings and individual strings)
+sforzato
+staccato
+sul-ponticello (mixed strings and individual strings)
+sul-ponticello-to-ordinario
+sul-ponticello-to-sul-tasto
+sul-ponticello-tremolo
+sul-tasto (mixed strings and individual strings)
+sul-tasto-to-ordinario
+sul-tasto-to-sul-ponticello
+sul-tasto-tremolo
+tremolo (mixed strings and individual strings)
+tremolo-to-ordinario
+trill-major-second-up (mixed strings and individual strings)
+trill-minor-second-up (mixed strings and individual strings)
+CONTRABASS CON SORDINA
+non-vibrato (mixed strings and individual strings)
+ordinario (mixed strings and individual strings)
+tremolo (mixed strings and individual strings)
+=== PAGE 63 ===
+63
+Playing Techniques and Suggested Notation
+GENERAL Playing Techniques
+Ordinario
+Normal playing on instrument with three dynamic layers (except 
+in some particular cases)
+Note that the “ordinario” instruments in this collection are almost 
+without vibrato. This is the normal performance
+practice in contemporary music.
+Ordinario-1q
+Quarter tone notes to complete the “ordinario” instrument
+Sforzando
+Write “sfz” below the emphasized notes.
+Staccato
+Trill-major-second-up
+Use small note in parenthesis to show the note to trill to.
+Trill-minor-second-up
+Use small note in parenthesis to show the note to trill to.
+Vibrato
+Write vib. Above the notes. Additional indications can include 
+poco, molto and/or a wavy line to indicate the amplitude of the 
+vibrato.
+Notes
+ 
+For all special playing techniques, it is common to indicate “ord.” 
+when returning to normal playing. A bracket can also be used to 
+affect an entire passage without writing “ord.”.
+For all progressive techniques (technique 1 – to – technique 2), 
+use an arrow in between the text indications.
+=== PAGE 64 ===
+64
+Playing Techniques and Suggested Notation
+WOODWINDS Playing Techniques
+Aeolian
+Sounds produced by taking away the tone partially or totally to 
+leave only the sound of the air.
+Aeolian-and-ordinario
+Aeolian-to-ordinario
+Blow-without-reed
+Double-trill-major-second-up
+Double-trill-minor-second-up
+Trills produced by alternating two different fingerings for the 
+same trill. The result is twice as fast.
+Flatterzunge
+Playing technique achieved by rolling the tongue or the throat 
+along with the stream of air.
+Flatterzunge-to-ordinario
+Glissando-with-throat
+On the bassoon, glissando technique to bend the tone a semitone 
+higher or lower. Available in 2 directions (up, down) and 3 
+different speeds (slow, medium, fast).
+Harmonic-fingering
+Tone having as origin a fundamental note which is not produced 
+by it’s real fingering.
+Jet-whistle
+Fast and forced ascending harmonics glissando. It is possible to 
+indicate on which fundamental pitch the jet is executed with a 
+small note.
+Key-click
+Percussive playing technique achieved by hitting one or more 
+keys forcefully. Can be used as a complement of normal sound 
+or like an independent technique. Generally effective only on the 
+lower octave plus a fifth (12th) of the instruments.
+Kiss – smacking sound
+Playing technique available only on double reed instruments 
+(oboe, bassoon, saxophone)
+Lip-glissando
+On the oboe, glissando technique for bending the tone a 
+semitone higher or lower. Available in 2 directions (up,
+down) and 3 different speeds (slow, medium, fast).
+Multiphonics
+Complex sounds, chords, achieved with special fingerings and 
+various embouchure positions.
+Ordinario-to-aeolian
+
+=== PAGE 65 ===
+65
+Playing Techniques and Suggested Notation
+Ordinario-to-flatterzunge
+Pizzicato – slap
+Percussive playing technique achieved by the slamming of the 
+tongue against the palate to create a strong “t”. Pitch can be 
+perceived according to the position of the embouchure.
+Play-and-sing
+Play-and-sing-unison
+The voice can be used simultaneously with the normal 
+instrumental playing. According to the complexity of the writing, 
+the voice is sometimes notated on a different stave. In all cases, 
+use rectangular shaped note-heads for the voice.
+Tongue-ram
+Percussive playing technique achieved by a fast sinking in (ram) 
+of the tongue in the embouchure. A brief vibration is produced 
+in the air column resulting in a pitch sounding about a seventh 
+(major or minor according to fingerings) under the pitch of the 
+fingering. Notate the intended pitch in a black square shaped 
+note-head.
+Whistle-tones
+On the flutes, harmonics produced by blowing a very small 
+amount of air into the flute. Only possible in very soft dynamic 
+levels (from pppp to p). Use of a specific fundamental pitch to be 
+notated in diamond shaped note.
+Example of whistle tone pitches for a C4 fundamental
+Whistle-tones-sweeping
+On the flutes, whistle-tones sweeping, freely permuted. Use a 
+freely draw line to suggest sweeping shape. Available in two 
+different speeds, slow and fast.
+=== PAGE 66 ===
+66
+Playing Techniques and Suggested Notation
+BRASS Playing Techniques
+Aeolian
+Available only for saxophone. See definition in woodwinds.
+Backwards
+Inhaled sounds, giving the impression of a backwards playing 
+tape.
+Bisbigliando
+Sounds obtained by alternating two ore more different fingerings 
+producing the same pitch.
+Cuivré
+“Brassy”, forced sounds. Write “cuivré” above note or passage. 
+Write “ord.” to return to normal playing.
+Cuivré-to-ordinario
+Buzz
+Sound of embouchure by itself. It is the sounds that enter the 
+tube of brass instruments putting the air column in vibration.
+Closed-to-open
+For the wawa mute. Gradual opening of the tube with the hand.
+Discolored-fingering - _ valve
+Discolored-fingering-1q – _ valve -1q
+Available only in valve instruments. Playing with the valve(s) 
+being pressed half way resulting in a weaker, somewhat 
+unfocused pitch.
+Exploding-slap-pitched
+Percussive playing technique achieved by the slamming of the 
+tongue against the palate to create a strong “t”. Equivalent of 
+Pizzicato.
+Exploding-slap-unpitched
+Flatterzunge
+Playing technique achieved by rolling the tongue or the throat 
+along with the stream of air.
+Flatterzunge-and-voice-unison
+Flatterzunge-closed
+Flatterzungue playing with the mute closed (closed tube of the 
+wawa mute)
+Flatterzunge-no-mouthpiece
+Flatterzunge-open
+Flatterzungue playing with the mute unclosed (open tube of the 
+wawa mute or open position for the horn)
+Flatterzunge-stopped
+On the horn, flatterzungue playing with the bell stopped by the 
+fist.
+Flatterzunge-to-ordinario
+Growl
+Low pitched throat flatterzungue. Notate like regular flatt. But 
+use the indication “Growl”.
+Half-valve-glissando
+
+=== PAGE 67 ===
+67
+Playing Techniques and Suggested Notation
+Harmonic-fingering
+Available only for saxophone. See definition in woodwinds.
+Inhaled
+Key-click
+Available only for saxophone. See definition in woodwinds.
+Kiss – smacking sound
+See definition in woodwinds.
+Move-bell-from-down-to-up
+Move-bell-from-left-to-right
+Available only for the saxophone
+Open-to-closed
+Open-to-stopped
+On the horn, progressive closing of the bell with the fist.
+Ordinario-closed
+Normal playing with wawa mute tube closed by the hand.
+Ordinario-open
+Normal playing with wawa mute tube open.
+Ordinario-to-cuivré
+Ordinario-to-flatterzunge
+Pedal-tone
+Fundamental tone on which rest the harmonic series available by 
+the use of valves. They have to be used with care since they are 
+difficult to produce and cannot be played in loud dynamics.
+Percussion-embouchure
+Slap effect obtained by slamming the embouchure with the palm 
+of the hand.
+Play-and-sing-aug4-up
+Play-and-sing-glissando
+Play-and-sing-m2-up
+Play-and-sing-m7-up
+Play-and-sing-p5-up
+Play-and-sing-unison
+See in woodwinds for voice notation
+Slap-pitched
+Percussive playing technique achieved by the slapping of the 
+tongue in the embouchure.
+Slap-unpitched
+Percussive playing technique achieved by the slapping of the 
+tongue in the embouchure.
+Speak-into-instrument
+Sounds produced when the instrumentist speaks while playing.
+Stopped
+On the horn, sounds with the bell blocked by the fist. The result is 
+a characteristic metallic sound.
+Stopped-to-open
+On the horn, gradual opening of the bell by the fist.
+=== PAGE 68 ===
+68
+Playing Techniques and Suggested Notation
+GUITAR Special Playing Techniques
+Behind-the-frog
+Produced by playing the strings behind the frog
+Bell-effect
+Bottleneck
+Polished metal or glass tube which fits on to the left hand index 
+or little finger and which has the same width than the neck of the 
+guitar. Allows free sliding between pitches.
+Dedillo
+Tremolo like effect which can be rhythmically measured.
+Drum-effect
+Percussive sound imitating the snare drum obtained by crossing 
+the 5th and 6th strings at the level of fret V or VI.
+Glissando
+Effective when played fast before the sound is lost.
+Harmonic-fingering
+Regular natural or artificial harmonic sounds.
+Pizzicato
+Produced by muting the resonance of the string with the right 
+hand palm placed half on the bridge and half on the strings.
+Pizzicato-bartok
+Produced by pulling the string upwards and allowing it to snap 
+sharply against the fingerboard.
+Rasgueado
+Rhythmic strumming right hand patterns in which the strings 
+are not plucked but hammered with one ore more fingers. This 
+technique is most often associated with flamenco.
+Scratch-with-nail
+Produced by scratching the string with the nail along it’s length.
+Slide
+Portamento effect obtained by sliding the finger from one fret to 
+another or by slurring to the second note without reattack.
+Sul-ponticello
+Played near the bridge.
+Sul-tasto
+Played near or above the fingerboard.
+Tap-on-body
+Percussive effects resulting from tapping on different areas of the 
+body of the instrument. The resulting pitches are indefinite.
+Tap-with-stick
+Percussive effect produced by hitting the body of the instrument 
+with a stick.
+=== PAGE 69 ===
+69
+Playing Techniques and Suggested Notation
+HARP Special Playing Techniques
+Bisbigliando
+Produced by rapidly alternating to pitches (equal or not) on two 
+different strings using one or two fingers from each hand. The 
+samples in this collection alternate two equal pitches tuned on two 
+enharmonically tuned strings. Current notation practice uses the small 
+note in parenthesis to indicate the second note. Above the note or 
+passage, use the indication “bisb.” along with the trill like wavy line.
+Bisbigliando-with-stick
+Produced by rapidly alternating a metal stick between two 
+strings. The samples in this collection alternate two stings tuned 
+enharmonically on equal pitches.
+Buzzing-pedal
+Buzzing sounds achieved by holding the pedal(s) halfway 
+between two notches while playing the string(s). Possible only on 
+the metal strings (that is, up to G1).
+Clusters
+A collection of clusters on three areas (high-medium-low) of the 
+range and on three dynamic levels.
+Clusters-with-nails
+Damped
+The sound is muffled right after the note by putting firmly the flat 
+of the hand upon the strings in order to also damp sympathetic 
+resonance.
+Glissando-fluido-with-stick
+Produced by sliding a stick along the string length to alter the 
+sounding pitch.
+Glissando-near-the-board
+See near the board.
+Glissando-with-nail
+Use the “nail” 
+ symbol above note or passage
+Glissando-with-pedal
+Produced by changing the position of the pedal in the resonance 
+of the tone.
+Glissando-with-stick
+Produced by sliding a stick along the string length to do a 
+glissando from the sounding pitch.
+Harmonic-fingering
+Harmonic-in-wood (Xylharmonic sound)
+Near-the-board
+Produced by playing near the lowest extremity of the string, close 
+to the board of the instrument. Write “near the board” above 
+note or passage. Known as “près de la table”.
+Near-the-board-with-nail
+Produced by playing with the nail near the lowest extremity of 
+the string, close to the board of the instrument. The resulting 
+sound is close to a plectrum sound.
+Near-the-pegs
+Produced by playing near the highest extremity of the string, 
+near the pegs.
+Pizzicato-bartok
+Produced by letting the articulated part of the finger hit the body 
+of the instrument right after striking the note.
+Scratch-with-nail
+The string is scratched on its length by the nail.
+Tap-on-body
+Percussive effects by tapping the body of the instrument.
+Tap-with-stick
+Percussive effect produced by hitting the body of the instrument 
+with a stick.
+Tremolo-with-fingertips
+Produced by gently hitting the strings with the fingertips, almost 
+like playing on keys.
+Xylophonic sounds
+Percussive like sounds produced by firmly pressing the fingertips 
+of the left hand on the lowest extremity of the strings (diamond 
+shaped notation) while the right hand plays in the centre of the 
+same strings. The role of each hand can be inverted according to 
+requirements. Use diamond shaped note-heads to indicate the 
+strings to be damped, or simply write “xyl” above note or passage.
+=== PAGE 70 ===
+70
+Playing Techniques and Suggested Notation
+STRINGS Playing Techniques
+Artificial-harmonic
+In order to produce as harmonics notes that are not overtones 
+of the open strings, the string is pressed down by the first finger 
+on a note which will be the fundamental and the fourth finger 
+touches the string lightly at a point a perfect fourth higher 
+which is equivalent to dividing the unstopped portion of the 
+string into quarters, resulting in a harmonic two octaves above 
+the fundamental pitch. This corresponds to the fourth partial 
+produced on an open string. The resulting sound can also be 
+notated in small note and in parenthesis to avoid confusion since 
+artificial harmonics at the third and fifth also exist.
+Artificial-harmonic-tremolo
+Natural-harmonics-glissandi
+Available in 3 different speeds (slow, medium, fast) and 2 
+directions (up, down). Natural harmonics are simply overtones 
+(or partials) of the open strings. They are produced by lightly 
+touching the string at the right point. 
+Resulting natural harmonic pitches for string instruments.
+Behind-the-bridge
+Produced by drawing the bow behind the bridge. The sounds are 
+of indeterminate pitch but may vary in pitch according to the 
+string.
+Behind-the-fingerboard
+Produced by drawing the bow across the back of the fingerboard. 
+The sounds is of indeterminate pitch.
+Col-legno-battuto
+Produced by striking the string with the wood of the neck. Write 
+“ord.” to return to normal playing mode.
+Col-legno-tratto
+Produced by drawing the wood part of the bow across the string. 
+Write “ord.” to return to normal playing mode.
+=== PAGE 71 ===
+71
+Playing Techniques and Suggested Notation
+Pressured-to-ordinario
+Produced by excessive bow pressure and then a gradual release 
+of this pressure. A notation symbol can be used to indicate 
+pressured sound instead of text for separate notes.
+Hit-on-body
+Non-vibrato – Senza vibrato
+write “ non vib”or “ senza vib.”.
+On-the-bridge
+Produced by playing “on” the bridge (as distinguished from near it 
+“sul ponticello”).
+On-the-tailpiece
+Produced by playing on the tailpiece. On the cello and 
+contrabass, this results in a low groaning noise. Behind the 
+tailpiece produces a very shrill and penetrating tone.
+On-the-tuning-pegs
+Produced by playing on the tuning pegs.
+Ordinario-to-pressured
+See pressured-to-ordinario.
+Ordinario-to-sul-ponticello
+Ordinario-to-sul-tasto
+Ordinario-to-tremolo
+Pizzicato-bartok
+Produced by pulling the string upwards and allowing it to ‘snap’ 
+sharply against the fingerboard.
+Pizzicato-l-vib
+Resonating pizzicato. It is possible to add a “let vibrate” sign after 
+the notes.
+Pizzicato-secco
+Dry pizzicato. It is possible to add dots under the notes for an 
+entire passage.
+Sul-ponticello
+Played near the bridge. Use “Molto pont.” to have a more 
+metallic, “on” the bridge playing.
+Sul-ponticello-to-ordinario
+Sul-ponticello-to-sul-tasto
+Sul-ponticello-tremolo
+Sul-tasto
+Playing above or very close to the fingerboard.
+=== PAGE 72 ===
+72
+Playing Techniques and Suggested Notation
+Sul-tasto-to-ordinario
+Sul-tasto-to-sul-ponticello
+Sul-tasto-tremolo
+Tremolo (tremolo)
+Tremolo-to-ordinario
+
+=== PAGE 73 ===
+73
+01 Contrabass
+Classical
+_Contrabass Classical KS Vel 
+_Contrabass Classical KS Wheel 
+Contrabass Durations 
+Contrabass Fortepiano 
+Contrabass Ordinario by String 
+Contrabass Ordinario Non Vibrato by String 
+Contrabass Pizzicato by String 
+Contrabass Pizzicato Secco by String 
+Contrabass Sforzando 
+Contrabass Staccato 
+Contrabass Tremolo by String 
+Contrabass Trill maj2 by String 
+Contrabass Trill min2 by String 
+Extended
+Contrabass Artificial Harmonic by String 
+Contrabass Artificial Harmonic Tremolo by String
+Contrabass Behind The Bridge 
+Contrabass Col Legno Battuto by String 
+Contrabass Col Legno Tratto by String 
+Contrabass Natural Harmonics Glissandi Menu
+Contrabass On The Tuning Pegs 
+Contrabass Pizzicato Bartok by String 
+Contrabass Sul Ponticello by String 
+Contrabass Sul Ponticello Tremolo by String
+Contrabass Sul Tasto by String 
+Contrabass Sul Tasto Tremolo by String 
+Muted
+_Contrabass Muted KS Vel 
+_Contrabass Muted KS Wheel 
+Contrabass Mute Non Vibrato by String 
+Contrabass Mute Ordinario by String 
+Contrabass Mute Tremolo by String 
+Transitions
+Contrabass Chromatic Scale 
+Contrabass Crescendo & Decrescendo 
+Contrabass Ordinario & Pressured 
+Contrabass Ordinario & Sul Ponticello 
+Contrabass Ordinario & Sul Tasto 
+Contrabass Ordinario & Tremolo 
+Contrabass Sul Ponticello & Sul Tasto 
+02 Cello
+Classical
+_Cello Classical KS Vel 
+_Cello Classical KS Wheel 
+Cello Durations 
+Cello Fortepiano 
+Cello Non Vibrato by String 
+Cello Ordinario by String 
+Cello Pizzicato by String 
+Cello Pizzicato Secco by String 
+Cello Sforzando 
+Cello Staccato 
+Cello Tremolo by String 
+Cello Trill maj2 by String 
+Cello Trill min2 by String 
+Extended
+Cello Artificial Harmonic by String 
+Cello Artificial Harmonic Tremolo by String 
+Cello Col Legno Battuto by String 
+Cello Col Legno Tratto by String 
+Cello Natural Harmonics Glissandi Menu 
+Cello On The Tuning Pegs 
+Cello Pizzicato Bartok by String 
+Cello Sul Ponticello by String 
+Cello Sul Ponticello Tremolo by String 
+Cello Sul Tasto by String 
+Cello Sul Tasto Tremolo by String 
+Muted
+_Cello Muted KS Vel 
+_Cello Muted KS Wheel 
+Cello Lead Mute Non Vibrato by String 
+Cello Lead Mute Ordinario by String 
+Cello Lead Mute Tremolo by String 
+Cello Mute Non Vibrato by String 
+Cello Mute Ordinario by String 
+Cello Mute Tremolo by String 
+Transitions
+Cello Chromatic Scale 
+Cello Crescendo & Decrescendo 
+Cello Ordinario & Pressured 
+Cello Ordinario & Sul Ponticello 
+Cello Ordinario & Sul Tasto 
+Cello Ordinario & Tremolo 
+Cello Sul Ponticello & Sul Tasto 
+03 Viola
+Classical
+_Viola Classical KS Vel 
+_Viola Classical KS Wheel 
+Viola Durations 
+Viola Fortepiano 
+Viola Ordinario by String 
+Viola Ordinario Non Vibrato by String 
+Viola Pizzicato by String 
+Viola Pizzicato Secco by String 
+Viola Sforzando 
+Viola Staccato 
+Viola Tremolo by String 
+Viola Trill maj2 by String 
+Viola Trill min2 by String 
+Extended
+Viola Artificial Harmonic by String 
+Viola Artificial Harmonic Tremolo by String 
+Viola Behind the Bridge 
+Viola Behind the Fingerboard 
+Viola Col Legno Battuto by String 
+Viola Col Legno Tratto by String 
+Viola Natural Harmonics Glissandi Menu 
+Viola On The Tuning Pegs 
+Viola Pizzicato Bartok by String 
+Viola Sul Ponticello by String 
+Viola Sul Ponticello Tremolo by String 
+Viola Sul Tasto by String 
+Viola Sul Tasto Tremolo by String 
+Muted
+_Viola Muted KS Vel 
+_Viola Muted KS Wheel 
+Viola Lead Mute Non Vibrato 
+Viola Lead Mute Ordinario 
+Viola Lead Mute Tremolo 
+Viola Mute Non Vibrato by String 
+Viola Mute Ordinario by String 
+Viola Mute Tremolo by String 
+Transitions
+Viola Chromatic Scale 
+Viola Crescendo & Decrescendo 
+Viola Ordinario & Pressured 
+Viola Ordinario & Sul Ponticello 
+Viola Ordinario & Sul Tasto 
+Viola Ordinario & Tremolo 
+Viola Sul Ponticello & Sul Tasto 
+04 Violin
+Classical
+_Violin Classical KS Vel 
+_Violin Classical KS Wheel 
+Violin Durations 
+Violin Fortepiano 
+Violin Ordinario by String 
+Violin Ordinario Non Vibrato 
+Violin Pizzicato by String 
+Violin Pizzicato Secco by String 
+Violin Sforzando 
+Violin Staccato 
+Violin Tremolo by String 
+Violin Trill maj2 by String 
+Violin Trill min2 by String 
+Extended
+Violin Artificial Harmonic by String 
+Violin Artificial Harmonic Tremolo by String
+Violin Behind the Bridge 
+Violin Col Legno Battuto by String 
+Violin Col Legno Tratto by String 
+Violin Natural Harmonics Glissandi Menu 
+Violin On the Tuning Pegs 
+Violin Pizzicato Bartok by String 
+Violin Sul Ponticello by String 
+Violin Sul Ponticello Tremolo by String 
+Violin Sul Tasto by String 
+Muted
+_Violin Muted KS Vel 
+_Violin Muted KS Wheel 
+Violin Lead Mute Non Vibrato by String 
+Violin Lead Mute Ordinario by String 
+Violin Lead Mute Tremolo by String 
+Violin Mute Non Vibrato by String 
+Violin Mute Ordinario by String 
+Violin Mute Tremolo by String 
+Transitions
+Violin Chromatic Scale 
+Violin Crescendo & Decrescendo 
+Violin Ordinario & Pressured 
+Violin Ordinario & Sul Ponticello 
+Violin Ordinario & Sul Tasto 
+Violin Ordinario & Tremolo 
+Violin Sul Ponticello & Sul Tasto 
+Preset List
+=== PAGE 74 ===
+74
+05 Flute
+Classical
+_Flute Classical KS Vel 
+_Flute Classical KS Wheel 
+Flute Durations 
+Flute Flatterzunge 
+Flute Fortepiano 
+Flute Ordinario 
+Flute Pizzicato 
+Flute Sforzando 
+Flute Staccato 
+Flute Trill maj2 
+Flute Trill min2 
+Extended
+_Flute Extended KS Vel 
+_Flute Extended KS Wheel 
+Flute Aeolian 
+Flute Finger Modes 
+Flute FX 
+Flute Multiphonics Menu 
+Flute Play & Sing 
+Flute Quartertones Ordinario 
+Flute Whistle Tones 
+Transitions
+_Flute Transitions KS Vel 
+_Flute Transitions KS Wheel 
+Flute Chromatic Scale 
+Flute Crescendo & Decrescendo 
+Flute Ordinario & Aeolian 
+Flute Ordinario & Flatterzunge 
+06 Oboe
+Classical
+_Oboe Classical KS Vel 
+_Oboe Classical KS Wheel 
+Oboe Durations 
+Oboe Flatterzunge 
+Oboe Fortepiano 
+Oboe Ordinario 
+Oboe Sforzando 
+Oboe Staccato 
+Oboe Trill maj2 
+Oboe Trill min2 
+Oboe Vibrato 
+Extended
+_Oboe Extended KS Vel 
+_Oboe Extended KS Wheel 
+Oboe Double Trill 
+Oboe Finger Modes 
+OOboe FX 
+Oboe Multiphonics Menu 
+Oboe Mute Ordinario 
+Oboe Quartertones Ordinario 
+Transitions
+_Oboe Transitions KS Vel 
+_Oboe Transitions KS Wheel 
+Oboe Chromatic Scale 
+Oboe Crescendo & Decrescendo 
+Oboe Lip Glissando - Down 
+Oboe Lip Glissando - Up 
+07 Clarinet in Bb
+Classical
+_Clarinet Classical KS Vel 
+_Clarinet Classical KS Wheel 
+Clarinet Durations 
+Clarinet Flatterzunge 
+Clarinet Fortepiano 
+Clarinet Ordinario 
+Clarinet Sforzando 
+Clarinet Staccato 
+Clarinet Trill maj2 
+Clarinet Trill min2 
+Extended
+_Clarinet Extended KS Vel 
+_Clarinet Extended KS Wheel 
+Clarinet Aeolian & Ordinario 
+Clarinet Key Click 
+Clarinet Multiphonics Menu 
+Clarinet Quartertones Ordinario 
+Transitions
+_Clarinet Transitions KS Vel 
+_Clarinet Transitions KS Wheel 
+Clarinet Crescendo & Decrescendo 
+Clarinet Glissando Menu 
+08 Bassoon
+Classical
+_Bassoon Classical KS Vel 
+_Bassoon Classical KS Wheel 
+_Bassoon Classical KS 
+Bassoon Durations 
+Bassoon Flatterzunge 
+Bassoon Fortepiano 
+Bassoon Ordinario 
+Bassoon Sforzando 
+Bassoon Staccato 
+Bassoon Trill maj2 
+Bassoon Trill min2 
+Bassoon Vibrato 
+Extended
+_Bassoon Extended KS Vel 
+_Bassoon Extended KS Wheel 
+Bassoon Blow Without Reed 
+Bassoon Harmonic Fingering 
+Bassoon Key Click 
+Bassoon Multiphonics Menu 
+Bassoon Mute Ordinario 
+Bassoon Quartertones Ordinario 
+Transitions
+_Bassoon Transitions KS Vel 
+_Bassoon Transitions KS Wheel 
+Bassoon Chromatic Scale 
+Bassoon Crescendo & Decrescendo 
+Bassoon Throat Glissando - Down 
+Bassoon Throat Glissando - Up 
+09 Saxophone Alto in Eb
+Classical
+_Saxophone Alto Classical KS Vel 
+_Saxophone Alto Classical KS Wheel 
+Saxophone Alto Flatterzunge 
+Saxophone Alto Fortepiano 
+Saxophone Alto Ordinario 
+Saxophone Alto Sforzando 
+Saxophone Alto Staccato 
+Saxophone Alto Trill maj2 
+Saxophone Alto Trill min2 
+Extended
+_Saxophone Alto Extended KS Vel 
+_Saxophone Alto Extended KS Wheel 
+Saxophone Alto Aeolian 
+Saxophone Alto Backwards 
+Saxophone Alto Bisbigliando 
+Saxophone Alto Blow Without Reed 
+Saxophone Alto Double Tonguing 
+Saxophone Alto Finger Modes 
+Saxophone Alto FX KS
+Saxophone Alto Key Click 
+Saxophone Alto Moving Bell 
+Saxophone Alto Multiphonics Menu 
+Saxophone Alto Play & Sing 
+Saxophone Alto Quartertones Ordinario 
+Saxophone Alto Slap Modes 
+Transitions
+_Saxophone Alto Transitions KS Vel 
+_Saxophone Alto Transitions KS Wheel 
+Saxophone Alto Chromatic Scale 
+Saxophone Alto Crescendo & Decrescendo 
+Saxophone Alto Glissando Menu 
+Saxophone Alto Ordinario & Flatterzunge 
+10 French Horn
+Classical
+_French Horn Classical KS Vel 
+_French Horn Classical KS Wheel 
+French Horn Durations 
+French Horn Flatterzunge 
+French Horn Fortepiano 
+French Horn Ordinario 
+French Horn Sforzando 
+French Horn Staccato 
+French Horn Trill maj2 
+French Horn Trill min2 
+Extended
+_French Horn Extended KS Vel 
+_French Horn Extended KS Wheel 
+French Horn Cuivre 
+French Horn Mute Flatterzunge 
+French Horn Mute Ordinario 
+French Horn Slap Pitched 
+French Horn Stopped Flatterzunge 
+French Horn Stopped Ordinario 
+Transitions
+_French Horn Transitions KS Vel 
+_French Horn Transitions KS Wheel 
+French Horn Chromatic Scale 
+French Horn Crescendo & Decrescendo 
+French Horn Open & Stopped 
+French Horn Ordinario & Cuivre 
+French Horn Ordinario & Flatterzunge 
+11 Trumpet in C
+Classical
+_Trumpet Classical KS Vel 
+_Trumpet Classical KS Wheel 
+Trumpet Durations 
+Trumpet Flatterzunge 
+Trumpet Fortepiano 
+Trumpet Ordinario 
+Trumpet Sforzando 
+Trumpet Staccato 
+Trumpet Trill maj2 
+Trumpet Trill min2
+Extended
+_Trumpet Extended KS Vel 
+_Trumpet Extended KS Wheel 
+Trumpet Cuivre 
+Trumpet Increasing Intervals Legato 
+Trumpet Mute Cup 
+Trumpet Mute Harmon 
+Trumpet Mute Straight 
+Trumpet Mute Wahwah 
+Trumpet Pedal Tone 
+Trumpet Slap Pitched 
+Trumpet Vocalize on Harmonics 
+Transitions
+_Trumpet Transitions KS Vel 
+_Trumpet Transitions KS Wheel 
+Trumpet Crescendo & Decrescendo 
+Trumpet Glissando Menu 
+Trumpet Ordinario & Cuivre 
+Trumpet Ordinario & Flatterzunge 
+12 Trombone
+Classical
+_Trombone Classical KS Vel 
+_Trombone Classical KS Wheel 
+Trombone Durations 
+Trombone Flatterzunge 
+Trombone Fortepiano 
+Trombone Ordinario 
+Trombone Sforzando 
+Trombone Staccato 
+Extended
+_Trombone Extended KS Vel 
+_Trombone Extended KS Wheel 
+Trombone Cuivre
+Trombone Flatterzunge No Mouthpiece 
+Trombone Mute Cup 
+Trombone Mute Harmon 
+Trombone Mute Straight 
+Trombone Mute Wahwah 
+Trombone No Mouthpiece 
+Trombone Pedal Tone 
+Trombone Slap Pitched 
+Transitions
+_Trombone Transitions KS Vel 
+_Trombone Transitions KS Wheel 
+Trombone Chromatic Scale
+Trombone Crescendo & Decrescendo 
+Trombone Glissando Menu 
+Trombone Ordinario & Cuivre 
+Trombone Ordinario & Flatterzunge 
+Preset List
+=== PAGE 75 ===
+75
+13 Tuba
+Classical
+_Tuba Classical KS Vel 
+_Tuba Classical KS Wheel 
+Tuba Flatterzunge 
+Tuba Fortepiano 
+Tuba Ordinario 
+Tuba Sforzando 
+Tuba Staccato 
+Tuba Trill maj2 
+Tuba Trill min2 
+Extended
+Tuba Bisbigliando 
+Tuba Cuivre 
+Tuba Filtered by Voice 
+Tuba Finger Modes 
+Tuba Flatterzunge & Voice Unison 
+Tuba FX 
+Tuba High Register Ordinario 
+Tuba Mute Ordinario 
+Tuba Pedal Tone 
+Tuba Play & Sing 
+Tuba Quartertones Ordinario 
+Tuba Single Tonguing 
+Tuba Slap Modes 
+Transitions
+_Tuba Transitions KS Vel 
+_Tuba Transitions KS Wheel 
+Tuba Chromatic Scale 
+Tuba Crescendo & Decrescendo 
+Tuba Glissando Menu 
+Tuba Ordinario & Flatterzunge 
+14 Accordion
+Classical
+_Accordion Classical KS Vel 
+_Accordion Classical KS Wheel 
+Accordion Fortepiano 
+Accordion Ordinario Registers 
+Accordion Ordinario 
+Accordion Staccato 
+Extended
+_Accordion Extended KS Vel 
+_Accordion Extended KS Wheel 
+Accordion Backwards 
+Accordion FX
+Accordion Register Combinaison 1 
+Accordion Register Combinaison 2 
+Transitions
+_Accordion Transitions KS Vel 
+_Accordion Transitions KS Wheel 
+Accordion Crescendo & Decrescendo 
+15 Guitar
+Classical
+_Guitar Classical KS 
+Guitar Ordinario 
+Guitar Pizzicato 
+Guitar Sul Ponticello 
+Guitar Sul Tasto 
+Extended
+_Guitar Extended KS 
+Guitar Dedillo 
+Guitar FX
+Guitar Glissando 
+Guitar Harmonic Fingering 
+Guitar High Register 
+Guitar Pizzicato Bartok 
+Guitar Rasguado 
+Guitar Slide Menu 
+Guitar Tap on Body 
+16 Harp
+Classical
+_Harp Classical KS 
+Harp Bisbigliando 
+Harp Damped 
+Harp Ordinario Hard 
+Harp Ordinario Soft 
+Harp Ordinario 
+Harp Xylophonic 
+Extended
+_Harp Extended KS 
+Harp Bisbigliando with Stick 
+Harp Buzzing Pedal 
+Harp Glissando Modes Menu 
+Harp Harmonic in Wood 
+Harp Near the Board 
+Harp Near the Pegs 
+Harp Pizzicato Bartok 
+Harp Scratch with Nail 
+Harp Tap with Stick 
+Preset List
+=== PAGE 76 ===
+76
+FLUTE Multiphonics
+C3  --  A#4+-D5+-mf
+C#3  --  A#4-A#5+-C#6-A4+-mf
+D3  --  A#5-G#4-C#6-C5-mf
+D#3  --  A#5-G#4-C#6-mf
+E3  --  A#5-G4+-C#6+-mf
+F3  --  A#5-G4-G#4-C#6-mf
+F#3  --  A5+-G4-D6-mf
+G3  --  A5-G4-mf
+G#3  --  B5+-D#4+-G6+-mf
+A3  --  B5-G#4+-D6-mf
+A#3  --  C#6+-C5+-D#5-G5-mf
+B3  --  C6-E4+-D#5-F#4+-mf
+C4  --  D#6+-F#5+-C6+-mf
+C#4  --  D#6+-G#5+-mf
+D4  --  D4+-E4-G#5-mf
+D#4  --  D5-D#4-A6-mf
+E4  --  D5-F5-mf
+F4  --  D6+-A5+-D4+-mf
+F#4  --  E5-F4-mf
+G4  --  E6+-A5-mf
+G#4  --  F#4-C#6-mf
+A4  --  F#4-C5-mf
+A#4  --  F#5+-G#4-B5-mf
+B4  --  F#5+-G#4-mf
+C5  --  F#5-G#4-mf
+C#5  --  F6+-D6+-A#6+-mf
+D5  --  G#4-D#6-G5-mf
+D#5  --  G#5+-G4+-C#6-mf
+E5  --  G#5-G4+-D6-mf
+F5  --  G4+-A5-mf
+F#5  --  G5-F4-C#6-mf
+G5  --  G5-G#4-D6-mf
+OBOE Multiphonics
+C2  --  A#5+-C5+-f
+C#2  --  A#5-G#4-C5-f
+D2  --  A4+-C6+-F#6+-D#4-f
+D#2  --  A4+-C6-D5-D#4-f
+E2  --  A4-B4-D6-G#4-f
+F2  --  A4-B5-C#4-G5-f
+F#2  --  A4-C#6-E5-G5+-f
+G2  --  A4-C6+-D#5-B4-f
+G#2  --  A4-C6+-D#5-E5-f
+A2  --  A5+-D5-f
+A#2  --  B4+-A#5+-B4-f
+B2  --  B4+-A#5+-C5-D6-f
+C3  --  B4+-B4-B5+-f
+C#3  --  B4+-C#6-A#4-A#5+-f
+D3  --  B4+-C5-A#5+-f
+D#3  --  B4-A#4-B5+-f
+E3  --  B4-B5+-B4+-C#6-f
+F3  --  B4-C#5-A#4-B5+-f
+F#3  --  B4-G#5+-A5-C#6-f
+G3  --  B5+-A#4+-C#5+-G5-f
+G#3  --  B5+-C#4-F#5+-f
+A3  --  B5+-D4-G5-f
+A#3  --  B5+-D5-A4+-f
+B3  --  B5+-D5-A4-C#4-f
+C4  --  B5-B3+-D#6-G#5-f
+C#4  --  B5-C#4+-F5-D#5-f
+D4  --  B5-C4+-F5+-D#4-f
+D#4  --  C#4+-G#5-C4+-f
+E4  --  C#4-B5+-G#5-D#6-f
+F4  --  C#5+-B5+-F#5+-f
+F#4  --  C#5-A5+-F5+-f
+G4  --  C#5-F#6-A#4-f
+G#4  --  C#6+-A4+-E5+-A5+-f
+A4  --  C#6-A4+-E5+-A#4-f
+A#4  --  C#6-A4+-E5-A5+-f
+B4  --  C5+-A#5-B4-A#5+-f
+C5  --  C5+-A#5-B4-f
+C#5  --  C5+-A#5-G4-f
+D5  --  C6+-A#4+-D5+-f
+D#5  --  C6+-A#4-D5+-G5-f
+E5  --  C6+-A#4-E5-f
+F5  --  C6+-A4+-D#5-A5+-f
+F#5  --  C6+-D#5+-A#4-f
+G5  --  C6-A#4-D5-F5-f
+G#5  --  C6-D4-G5-f
+A5  --  C6-D5+-A#4-f
+A#5  --  C6-G5+-D5-A#3-f
+B5  --  D#5-A4+-C6+-A#4-f
+C6  --  D#5-C#4-A5+-F4-f
+C#6  --  D#5-C6+-A#4-D5-f
+D6  --  D4+-F4-A#5-C#5-f
+D#6  --  D4-B5+-F#5-C#4-f
+E6  --  D5+-A#4+-C6+-f
+F6  --  D5+-G5+-B5-G4-f
+F#6  --  D5-B5+-A4-E4-f
+G6  --  D5-D#5-A5-C6-f
+G#6  --  D5-D5+-A5-C#6-f
+A6  --  D5-G6-B5-f
+A#6  --  D6-C5-A5-F#7-f
+B6  --  E4-B5-A#5-F4-f
+C7  --  E4-F4-C6-F#5-f
+C#7  --  F#4+-G#5-A#4-D6-f
+D7  --  F#4+-G4-G#5+-B4-f
+D#7  --  F#6-C5+-A#5+-f
+E7  --  F4+-C#6-E4+-G5-f
+F7  --  F4+-F#4-C6+-G5-f
+F#7  --  F4-E4-G4-A4-f
+G7  --  F4-F#4-F5+-C6-f
+G#7  --  G#4+-G#4-B5+-G#5+-f
+A7  --  G#4-A#5-C5+-E5+-f
+A#7  --  G#4-B5+-D5-G#5-f
+B7  --  G#4-C6-D#5+-G#5-f
+C8  --  G#5-B5+-A#5-G#3-f
+C#8  --  G4-A#5+-C#5-f
+D8  --  G4-A5-B5-D6+-f
+D#8  --  G4-C6+-F#5-D#4-f
+E8  --  G5-C4+-C6+-A#4-f
+CLARINET Multiphonics
+C2  --  A#3+-A5-D#4+-D6-mf
+D2  --  A#3-C#6+-mf
+E2  --  A4-mf
+F2  --  A5+-B3+-E5-D#5-mf
+G2  --  A5-C4-D#5-D6-mf
+A2  --  B3+-D#6+-B5-F#5-mf
+B2  --  B3-D6-F#5+-mf
+C3  --  B5-C#4+-F#5-D#5-mf
+D3  --  B5-C#4-F5+-D#6-mf
+E3  --  B5-C4+-D#6-F5+-mf
+F3  --  C#4+-A#5-D#6-E5-mf
+G3  --  C#4+-B5+-F#5-E6-mf
+A3  --  C#6+-D4-G#5-G5+-mf
+B3  --  C#6+-F4+-mf
+C4  --  C4+-A#5+-F5-D#6-mf
+D4  --  C4+-D#5-mf
+E4  --  C6+-C#4+-G5+-mf
+F4  --  C6+-D4+-G5-A#5-mf
+G4  --  C6+-F#4-mf
+A4  --  C6-D#4-G5-mf
+B4  --  D#4+-G6+-D#6+-mf
+C5  --  D#4-F#5-A6-D#5-mf
+D5  --  D3-mf-1
+E5  --  D3-mf-2
+F5  --  D3-mf
+G5  --  D4-G6+-C6+-C7+-mf
+A5  --  D6+-E4-A5-G4-mf
+B5  --  E4-A5+-D6+-G4-mf
+C6  --  E4-D6-F#5-G5-mf
+D6  --  E5-C#4-G#5-A#5-mf
+E6  --  F#5+-A3+-C#5-A5-mf
+F6  --  F#5+-C4+-B5-D#4-mf
+G6  --  F4+-C6-mf
+A6  --  G#3-C#6-D#5-A#5-mf
+B6  --  G5+-A#3-D5-mf
+Multiphonics List
+=== PAGE 77 ===
+77
+BASSOON Multiphonics
+C1  --  A#1+-A#2+-mf
+C#1  --  A#1+-D4+-F3+-mf
+D1  --  A#1+-D4+-mf
+D#1  --  A#1-C#2-C2-C#5-mf
+E1  --  A#1-D#4-F#3-D4-mf
+F1  --  A#2-C#4-E3-mf
+F#1  --  A#3+-B1+-G#3-B2-mf
+G1  --  A#3+-B1-G#3-C#2-mf
+G#1  --  A#3-B2-A3-mf
+A1  --  A1-A2+-C#4-E4-mf
+A#1  --  A3+-G#1+-mf
+B1  --  A3-G#2-B2+-D4-mf
+C2  --  B1+-A4-F#3+-E4-mf
+C#2  --  B1-D#4-B2-C#3-mf
+D2  --  B1-D#4-F#5-mf
+D#2  --  C#2-F4-G#3-F3-mf
+E2  --  C#3-C3-C#4-mf
+F2  --  C#3-C3-C2-C#4-mf
+F#2  --  C#3-C3-mf
+G2  --  C#3-C4-D3+-mf
+G#2  --  C#3-D3-C#4-B4-mf
+A2  --  C#4-A#1-C#3-C3+-mf
+A#2  --  C2+-A#4-C2-C#3+-mf
+B2  --  C2+-A#4-G3+-C#4-mf
+C3  --  C3+-E3+-mf
+C#3  --  C3-B4-G4-F#4-mf
+D3  --  C3-C#4-A#1-mf
+D#3  --  C4-D#4-D4-G#3-mf
+E3  --  D#2-D#2+-A#3-G4-mf
+F3  --  D#3+-D#2-B4-C#4-mf
+F#3  --  D#3+-D3-D4-A5+-mf
+G3  --  D#3-A4-D4-A#4-mf
+G#3  --  D#3-F#3-E3-D#5-mf
+A3  --  D#4-C#3-A#3-G3-mf
+A#3  --  D#4-F#3-A#4-C#5-mf
+B3  --  D2-F#4-A3-C3-mf
+C4  --  D3-C#3-C#4-A4-mf
+C#4  --  D3-E2+-A4-E4-mf
+D4  --  E2+-C3-E4-A#5-mf
+D#4  --  E2+-C5-D#4-F#3-mf
+E4  --  E3+-E2-C5-E4+-mf
+F4  --  E3-C3+-G4-D3-mf
+F#4  --  E3-F3+-E4-mf
+G4  --  E4-C#3-A#4-F#3-mf
+G#4  --  E4-C4+-C#3-C5-mf
+A4  --  F#4+-C#4-mf
+A#4  --  F2+-B4-B2+-C#4-mf
+B4  --  F2+-C4+-A4+-F4+-mf
+C5  --  F2-C4-F#3-G3-mf
+C#5  --  F2-D5-A4-C4-mf
+D5  --  F3+-A#3+-F3-mf
+D#5  --  F3+-C5-F2-A#5-mf
+E5  --  F3-D#3+-E4+-mf
+F5  --  G#2-D#4-C5-C3-mf
+F#5  --  G2-B4-D4-G3-mf
+G5  --  G2-D4-B4-A3+-mf
+SAXOPHONE Multiphonics
+C2  --  A3-A#3-E5+-A4+-mf
+C#2  --  A3-A3+-E5-mf
+D2  --  A4-G#5-F#4-mf
+D#2  --  B3+-C#5+-G#5-mf
+E2  --  C#4+-D4+-D5-A#5-mf
+F2  --  C#4+-F4-D5-mf
+F#2  --  C#4-C#4+-A5-mf
+G2  --  C#4-D#5-D#4-A#5-mf
+G#2  --  C#4-G#5-C4+-C#5-mf
+A2  --  C4+-A5-C#4-D5+-mf
+A#2  --  C4+-C#4-C5-G#5+-mf
+B2  --  C4+-D#5-A5-C4-mf
+C3  --  C4-C#5-G#5-mf
+C#3  --  C4-D5-G#5-p
+D3  --  D#4+-E4-B5-mf
+D#3  --  D#4+-F5+-mf
+E3  --  D#4+-G4-F5+-mf
+F3  --  D#4-D#5+-A#5+-mf
+F#3  --  D#4-E5+-B5-mf
+G3  --  D#4-E5-F#4-p
+G#3  --  D4+-D#4-A#5-mf
+A3  --  D4+-D#5+-A#5+-mf
+A#3  --  D4+-E5-A#5-mf
+B3  --  D4+-F5-B5-mf
+C4  --  D4-E5+-mf
+C#4  --  E3+-C#5-E4+-F5+-mf
+D4  --  E4+-C#5-A5+-p
+D#4  --  E4+-F5-C6-mf
+E4  --  E4-E4+-E5+-mf
+F4  --  E4-F5+-G4-mf
+F#4  --  E4-G4-F#5+-mf
+G4  --  E4-G4-F#5+-p
+G#4  --  F#3-C#5-F#4-F#5-mf
+A4  --  F#4+-F#5-p
+A#4  --  F#4-D5-B5-mf
+B4  --  F#4-G5+-A4-p
+C5  --  F#4-G5-G#5+-p
+C#5  --  F3+-C#5-F#4-F#5-mf
+D5  --  F3-F#5-G4+-A#5-mf
+D#5  --  G#3+-F#5+-mf
+E5  --  G#3+-F5+-B5-mf
+F5  --  G#3-D#5+-G#4-mf
+F#5  --  G#3-E5-B4-A5-mf
+G5  --  G3+-D5+-G#3-G4+-p
+G#5  --  G3+-D5+-G#4+-mf
+A5  --  G3-D#5-F#4+-mf
+A#5  --  G3-D5+-G#4-mf
+Multiphonics List
+=== PAGE 78 ===
+78
+Links
+UVI
+Home                                                                                     uvi net/ 
+UVI Portal                                                                                uvi net/uvi-portal 
+Soundbank Installation Guide                                                         installing_uvi_soundbanks_en pdf 
+UVI Workstation User Guide                                                           uviworkstation_user_guide_en pdf  
+Your Registered Product Serial Numbers and Download Links                  uvi net/my-products 
+FAQ                                                                                       uvi net/faq 
+Tutorial and Demo Videos                                                             youtube com/
+Support                                                                                   uvi net/contact-support 
+iLok
+Home                                                                                     ilok com/ 
+iLok License Manager                                                                 ilok com/ilm html 
+FAQ                                                                                       ilok com/supportfaq 
+=== PAGE 79 ===
+Produced by UVI
+Soloists
+Pascal Robault Viola Antoine Ladrette Cello Hae Sun Kang Violin Didier Meu Double Bass 
+Jens Mc Manama Horn  Laurent Bomont Trumpet Benny Sluchin Trombone (tenor/bass) 
+Gérard Buquet Tuba Claude Delangle Saxophone (alto in Eb) Catherine Bowie Flute 
+Hélène Devilleneuve Oboe Pierre Dutrieu Clarinet  Laurent Le Chenadec Bassoon 
+Tania Chagniot Guitar  Virginie Tarrete Harp Pascal Contet Accordion
+Documentation / Expertise
+Yan Maresz
+Nathaniel Reeves
+Kai Tomita
+Software + Scripting
+Thomas Kowalski
+Remy Muller
+Olivier Tristan
+Graphic Design
+Anthony Hak
+Nathaniel Reeves
+Special Thanks
+Laurent Ghys, Serge Lemouton, Yan Maresz
+French Ministry of Industry within the context of the Information 
+Superhighway Call for Projects, 
+Ministry of Culture and Communication Research and Technology Mission

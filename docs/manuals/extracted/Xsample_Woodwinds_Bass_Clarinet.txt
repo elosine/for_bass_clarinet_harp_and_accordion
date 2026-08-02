@@ -1,0 +1,125 @@
+=== PAGE 1 ===
+Thank you for choosing an Xsample instrument!
+Features
+• easy and comfortably playable instruments
+• „all in one“ instruments (all playing styles clearly in one instrument)
+• fully chromatically sampled and multilayer
+• natural and vivid loops for all sustained notes
+• seamless dynamics and timbre by xfades: 
+continuous sound from ppp to fff
+• Stereo and mono version (switchable in the instrument)
+• Room Walker script for effects within a virtual two-dimensional space
+• 61 IR Samples (room impulses)
+• A variety of modulators
+ 
+Software requirements
+• Full version of Native Instruments Kontakt (Version 5.5 or higher)
+With the free Kontakt Player version, the library can only be operated
+in demo mode for 15 minutes.
+ 
+Playing styles and articulations
+playing style / articulation dynamic layers round robin (emulated)
+senza vibrato 3 3
+natural vibrato 1 3
+crescendo / decresc. (slow) 1 3
+staccato 2*2 3
+flutter tongue 2 3
+slap tongue 1 -
+multiphonics 1 -
+glissandi 1 -
+air noises 1 -
+key noises 1 -
+breath noises 1 -
+playing noises 1 -
+undefined tones 1 -
+
+=== PAGE 2 ===
+Fixed patches
+The fixed patches have fixed built-in presets. The keyswitches or cc#0 values apply across 
+instruments. That means that e.g. a „staccato“ of the bass flute is on the same keyswitch as 
+the „staccato“ of the piccolo.
+• Patch: Bassclarinet play.nki
+ 
+Keyswitch cc#0 value Preset
+A0 0 senza vibrato cc#1
+A#0 1 senza vibrato velocity
+B0 2 staccato velocity
+C1 3 flutter tongue cc#1
+C#1 4 flutter tongue cc#1
+D1 5 multiphonics
+D#1 6 key noises velocity
+E1 7 key noises velocity
+F1 8 slap tongue
+F#1 9 slap tongue
+G1 10 glissandi
+• Patch: Bassclarinet score.nki
+Layer 1 = velocity 1  80 (or layer switch A#7)→
+Layer 2 = velocity >80 (or layer switch B7)
+ 
+Keyswitch cc#0 value Preset
+Layer 1 A0 0 senza vibrato cc#1
+A#0 1 senza vibrato cc#1
+B0 2 staccato velocity
+C1 3 flutter tongue cc#1
+C#1 4 slap tongue velocity
+D1 5 slap tongue velocity
+D#1 6 multiphonics
+E1 7 key noises velocity
+Layer 2 A0 13 key noises velocity
+A#0 14 air noises
+B0 15 air noises
+C1 16 glissandi
+With each keyswitch you get some information about the current preset on the message line at 
+the bottom of Kontakt.
+If you want to know more about the standard scripting please download the „standard scripting 
+documentation.pdf“. The document can be found here:
+Xsample Downloads
+=== PAGE 3 ===
+Elastic patches
+The elastic patches are freely configurable. But there are also factory settings for the 
+keyswitches or cc#0 values. They furthermore contain additional playing styles and 
+articulations that are not included in the fixed patches.
+• Patch: Bass Clarinet.nki
+Factory bank preset list
+1 Senza Vibrato MW
+2 Natural Vibrato MW
+3 Staccato Velocity MW Shape
+4 Staccato 2 MW Shape
+5 Flutter Tongue MW
+6 Slap Tongue Velocity
+7 Glissando Undefined MW Shape
+8 Undefined Tones Velocity
+9 Key Noises Velocity
+10 Multiphonics Velocity
+11 Air Noises Velocity
+12 Crescendo
+13 Senza Vibrato Velocity
+14 Natural Vibrato Velocity
+15 Senza Vibrato + Flutter Tongue Velocity X MW
+16 Flutter Tongue Velocity
+17 Senza Vibrato Velocity + MW inverted
+18 Triple Tongue 16T
+19 Staccato Velocity
+20 With Accent Velocity
+21 Glissando Undefined MW
+22 Multiphonics MW
+23 Air Noises MW
+24 Vibrato MW
+25 Vibrato Velocity
+26 Vibrato Velocity + MW inverted
+27 Secco Velocity
+28 Portato Velocity
+29 Flutter Tongue Velocity + MW inverted
+All presets with „long“ playing styles are playable with Xample's automatic true legato, a 
+combination of samples and scripted legato.
+If you want to know more about the various functions of the elastic patches, please hold your 
+mouse over the respective buttons or menus. The information is then displayed when the "Info 
+Pane" of Kontakt is switched on.
+If you want to design your own presets, phrases and room walker setups please download the 
+„extended scripting documentation.pdf“. The document can be found here:
+Xsample Downloads
+License Agreement
+If you purchase an Xsample instrument please keep in mind that you then don't own the 
+samples and patches of the library. You purchase a license only to use the instruments in your 
+own music productions.
+Xsample Professional Sound Libraries
