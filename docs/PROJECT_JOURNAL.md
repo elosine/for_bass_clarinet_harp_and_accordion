@@ -35,7 +35,7 @@
 **Next up:** **SB1 (probe page v0)** — build the browser probe UI in `sandbox/`. Rack status: **R3 + SB0 done 2026-08-02** — harp sounds end-to-end from AI-scripted external probes (port `Harp` → monitoring ON → UVI Ordinario at `A*`). The silent-rack debugging session produced `docs/SAMPLER_QUIRKS.md` + Principles 1–2. A Kontakt 8 track exists in the rack (contents TBC — bass clarinet?). Accidental-save scare on old 2P2P projects resolved: nothing was ever written to disk (AutoSaves only).
 **Mid-goal:** unchanged — playable 3-track rack via loopMIDI. **S2 gate:** harp capability queries answered from the map, audition-verified.
 
-**Open at session end:** —
+**Open at session end:** *(mid-session checkpoint, 2026-08-02, composer on break)* — G1 (gesture capture & replay) built, committed, served at :4600 — **awaiting composer's first test with Keystation 61** (plug in → reload → play/record/replay). Today so far: rack proven end-to-end (R3+SB0), sampler quirks + Principles 1–2, harp deep map incl. performer-perspective control rows + secco/pitch-bend clarifications, timbre vocab v1–v3, composer log started, sandbox G1. Next after test: G2 (technique tags). Probes queued: CC120 secco, bend range, Release CC-learn, Color CC-learn, mapped-range scan.
 
 **Open questions:**
 - **0d** — per-chunk reuse: fresh vs copy-forward (likely fresh for chunk 1, copy for chunk 3).
