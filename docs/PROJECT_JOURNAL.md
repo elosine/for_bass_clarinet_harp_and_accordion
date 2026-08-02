@@ -32,8 +32,8 @@
 - **D6 (Reaper session storage & backups)** decided & built: `reaper/instrument_rack.rpp` in repo; rack walkthrough **R1 (create/save) ✅, R2 (auto-save prefs) ✅**.
 - Workflow rules added to HOW_WE_WORK: go/no-go before long processes · cite IDs with names · name-the-need before disk searches. §5.1 Sound Research playbook written (research escalation ladder, incl. video-frame analysis method).
 
-**Next up:** **R3 (harp track)** — composer was mid-step, instructions already given: TRACK → [Insert virtual instrument on new track...] → UVI Workstation VST3 (answer **No** to multi-out) → Soundbanks → IRCAM Solo Instruments 2 → **WIN+SHIFT+S the harp patch tree and paste to AI** → load keyswitch harp, confirm sound, name track `'Harp SI2'`, CTRL+S. Then R4 accordion · R5 bass clarinet · R6 loopMIDI wiring. After the rack: S2.2 (schema draft, PP2 entries + SI2 manual harp chapter).
-**Mid-goal:** playable rack — three named sounding tracks reachable via loopMIDI, committed. **S2 gate:** harp capability queries answered from the map, audition-verified.
+**Next up:** **SB1 (probe page v0)** — build the browser probe UI in `sandbox/`. Rack status: **R3 + SB0 done 2026-08-02** — harp sounds end-to-end from AI-scripted external probes (port `Harp` → monitoring ON → UVI Ordinario at `A*`). The silent-rack debugging session produced `docs/SAMPLER_QUIRKS.md` + Principles 1–2. A Kontakt 8 track exists in the rack (contents TBC — bass clarinet?). Accidental-save scare on old 2P2P projects resolved: nothing was ever written to disk (AutoSaves only).
+**Mid-goal:** unchanged — playable 3-track rack via loopMIDI. **S2 gate:** harp capability queries answered from the map, audition-verified.
 
 **Open at session end:** —
 
@@ -51,6 +51,9 @@
 ## §3 Principles
 
 *(Lessons learned — mistakes never to repeat. Numbered, append-only.)*
+
+1. **Check Reaper input monitoring before blaming the instrument.** *(2026-08-02)* Armed + input-assigned + yellow MIDI flicker ≠ monitored: with the monitor toggle off, live input never reaches the FX chain and every plugin setting looks correct while producing silence. Speaker icon next to record-arm; `.rpp` `REC` line 3rd field. Full quirks: `docs/SAMPLER_QUIRKS.md`.
+2. **When a working reference exists, diff the files — don't iterate guesses.** *(2026-08-02)* The silent-rack bug survived ~10 speculative fixes; it fell in one minute of comparing the working track's `.rpp` chunk against the broken one. Plain-text project files (D6) make this cheap — use it early, not last.
 
 ---
 

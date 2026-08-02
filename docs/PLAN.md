@@ -43,13 +43,19 @@ S-IDs are stable; order = position. Each step gets its own broken-down plan (sub
   Carry piece #2's 82-instrument map forward; extend schema for time-varying control (CCs, keyswitches, pedaling); map bass clarinet, harp, accordion. One instrument end-to-end first (harp) as the template. → feeds 1a.
   - **S2.1 — Source inventory** — `done 2026-08-01` (SI2 + PP2 installed & manuals in `docs/manuals/`; Kontakt 8 + UVI Workstation present; Xsample bass clarinet license pending)
   - **S2.2 — Schema draft** — `todo` — extend map schema for time-varying control; shown on one harp technique; PP2 entries as template. **Must embody D7/M3:** entries are identity records (musical vocabulary) with two attached renderings — notation hooks + per-bank MIDI realization recipes (incl. hacks)
-  - **S2.3 — Harp deep map** — `todo` — full harp entry from manual + patch data; composer spot-checks
+  - **S2.3 — Harp deep map** — `todo` — full harp entry from manual + patch data (16 presets inventoried → `docs/SI2_harp_presets.md`); composer spot-checks
+    - **S2.3a — Velocity→timbre probe map** (rendering side) — `todo` — SI2 harp plucks change timbre by velocity layer; probe per register and chart which velocity ranges give which timbres, so specific timbres are dialable. Tool: patch's Expression → Constant velocity value.
+    - **S2.3b — Real-harp timbre-by-dynamic reference** (identity side, per D7) — `todo` — what a live harp's timbre does from `ppp`→`fff` across registers; informs notation choices. Kept separate from S2.3a: the sample map is a recipe, the real-instrument map is truth.
   - **S2.4 — Audition verification** — `doing` — Reaper `instrument_rack.rpp` build (step-by-step with composer, per D6 Reaper session storage & backups), then loopMIDI + AI MIDI probes, composer's ears confirm.
-    Rack-build walkthrough steps (R-prefix, to avoid collision with spine S-numbers): R1 create/save project `done` · R2 auto-save prefs `done` · R3 harp track `doing` · R4 accordion track · R5 bass clarinet track · R6 loopMIDI wiring + save/commit
+    Rack-build walkthrough steps (R-prefix, to avoid collision with spine S-numbers): R1 create/save project `done` · R2 auto-save prefs `done` · R3 harp track `done 2026-08-02` (Harp Ordinario, slot A1 set to `A*` omni, port `Harp`, monitoring ON — see SAMPLER_QUIRKS.md) · R4 accordion track `deferred` (until sandbox needs it) · R5 bass clarinet track `deferred` (NB: a Kontakt 8 track already exists in the rack — contents TBC) · R6 loopMIDI wiring → folded into SB0
   - **S2.5 — Query gate** — `todo` — real composer questions answered from the map = S2-harp done; then accordion, then bass clarinet, same steps cheaper
 - **S1 — App shell** — `todo` — modular scaffold (server + module structure); *the* architecture decision. → 1e.
 - **S3 — MIDI out** — `todo` — port the proven loopMIDI path; first sound from the new app. Needs S1.
-- **S4 — Sandbox v1** — `todo` — browse instruments → click articulation → hear it. Needs S2 + S3. → 1c.
+- **S4 — Sandbox v1** — `doing` *(pulled forward 2026-08-02 in v0 form, fused with the minimum of S3's MIDI plumbing; first use case = S2.3a harp dynamics→timbre)* — → 1c.
+  v0 principle: buttons now, AI-in-the-loop later; spec grows from practical examples; renovation or full rewrite later is expected and fine (M1). Standalone for now; folds into the composer app when S1 exists.
+  - **SB0 — MIDI path** — `done 2026-08-02` — loopMIDI port `Harp` → Reaper 'Harp SI2' (monitoring ON — the silent-killer, see SAMPLER_QUIRKS.md + Principles 1–2) → UVI Harp Ordinario at `A*`. Proven end-to-end by AI-scripted probes (winmm P/Invoke sender). Port-per-instrument naming: `Harp`, `Accordion`, `BassCl`; channels = techniques.
+  - **SB1 — Probe page v0** — `todo` — standalone browser page (Chrome, Web MIDI) + tiny local server, in `sandbox/`: port/channel picker · pitch/register control · dynamic buttons with an **editable dynamic→velocity mapping** (the mapping itself is the research object) · sweep mode · note length.
+  - **SB2 — Timbre capture** — `todo` — qualitative descriptor per register×dynamic cell, saved to JSON in the repo → becomes the S2.3a chart; vocabulary later informs S2.3b (notation side, D7).
 - **S5 — Reaper bridge v1** — `todo` — programmatic track/routing setup from instrument selection. Needs S2. → 1b.
 - **S6 — Timeline + first object end-to-end** — `todo` — place it, play it. Needs S3. → 1e/1d.
 - **S7 — Object protocol** — `todo` — formalize from the first object; second object proves it. Needs S6. → 1d.
