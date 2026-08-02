@@ -42,7 +42,7 @@ S-IDs are stable; order = position. Each step gets its own broken-down plan (sub
 - **S2 — Instrument map v3** — `doing` *(moved first per composer, 2026-08-01)*
   Carry piece #2's 82-instrument map forward; extend schema for time-varying control (CCs, keyswitches, pedaling); map bass clarinet, harp, accordion. One instrument end-to-end first (harp) as the template. → feeds 1a.
   - **S2.1 — Source inventory** — `done 2026-08-01` (SI2 + PP2 installed & manuals in `docs/manuals/`; Kontakt 8 + UVI Workstation present; Xsample bass clarinet license pending)
-  - **S2.2 — Schema draft** — `todo` — extend map schema for time-varying control; shown on one harp technique; PP2 entries as template
+  - **S2.2 — Schema draft** — `todo` — extend map schema for time-varying control; shown on one harp technique; PP2 entries as template. **Must embody D7/M3:** entries are identity records (musical vocabulary) with two attached renderings — notation hooks + per-bank MIDI realization recipes (incl. hacks)
   - **S2.3 — Harp deep map** — `todo` — full harp entry from manual + patch data; composer spot-checks
   - **S2.4 — Audition verification** — `doing` — Reaper `instrument_rack.rpp` build (step-by-step with composer, per D6 Reaper session storage & backups), then loopMIDI + AI MIDI probes, composer's ears confirm.
     Rack-build walkthrough steps (R-prefix, to avoid collision with spine S-numbers): R1 create/save project `done` · R2 auto-save prefs `done` · R3 harp track `doing` · R4 accordion track · R5 bass clarinet track · R6 loopMIDI wiring + save/commit
@@ -102,6 +102,7 @@ Minor modifications only; carried forward from piece #2.
 
 - **M1 — Re-examine, don't re-implement.** Every ported workflow gets the question: what's the fewest manual steps between intention and hearing it? (see D4)
 - **M2 — Engine vs. palette seam.** Architecture piece-agnostic; palette (this piece's objects, instruments, techniques) is piece-specific data. Keep the seam clean; don't build the abstraction now. (see D3)
+- **M3 — Notation-first identity.** Every sound/technique/motive's true identity is its performer-facing musical description ("Harp Palm Strike · which strings · how hard"); notation is the primary rendering, MIDI/sample playback is the demo rendering. Identity → MIDI only; never infer notation from MIDI parameters. Hacks to approximate a sound live in the rendering recipe, never in the identity. (see D7 — reverses piece #1/#2 practice)
 
 ## Parking lot
 
