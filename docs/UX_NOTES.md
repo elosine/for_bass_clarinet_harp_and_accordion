@@ -8,6 +8,16 @@
 
 ## Open
 
+- *2026-08-02 · sandbox v0* — **Velocity: allow direct type-in** alongside the spinner (deferred, composer).
+- *2026-08-02 · sandbox v0* — **Capture strip for next rebuild:** band buttons (v1/v2/v3 per current instrument) + free-text comment box + ENTER-to-save → JSON; feeds TIMBRE_VOCAB.md.
+- *2026-08-02 · sandbox v0 · composer, for next rebuild (approved, not urgent):*
+  - Title → **"Virtual Instrument Sandbox"**
+  - Dropdown label → just **"Harp Ordinario"**
+  - **Redact all explanatory hint text**: the routing-resolves-in-background note, the
+    click-a-key/SPACE hint line, the "stopgap — to be redacted" tag. UI carries no
+    self-commentary; that lives in docs.
+  - Look & feel otherwise approved for now.
+
 - *2026-08-02 · sandbox v0* — **Note-length box is a stopgap.** Replace with a
   low-decision control: presets (short / medium / long), or contextual inference from
   the technique being probed. Slated for redaction.
