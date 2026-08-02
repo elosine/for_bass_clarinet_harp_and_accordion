@@ -110,6 +110,54 @@ Keyboard color legend (all SI2): **red** = keyswitches · **blue** = string-sele
 - The manual's notation suggestions are IRCAM's, aligned with French-school practice —
   strong starting point for D7 notation hooks, refined with the performer later.
 
+## 5b · Performer-perspective control map — Ordinario (first of the patch-by-patch series)
+
+> Only what a live performer can control **in real time**, paired with its MIDI twin.
+> Mix/engineer/config parameters (reverb, EQ, Color, Dynamic curve, expression-mode
+> switch) are deliberately excluded — no performer analog.
+
+| # | Performer control (live) | Grain | MIDI twin (this patch) | Status |
+|---|---|---|---|---|
+| 1 | How hard each pluck — dynamics, shaping cresc/dim across notes | per note | **Velocity** (bands v1/v2/v3) | working |
+| 2 | When to damp — étouffé, hand stops the ring | continuous timing | **Note-off moment** (+ Release value as damping speed in the recipe; dedicated *Damped* layer for damped-attack sounds) | working (crude length box) |
+| 3 | Pedal motion while string rings — pitch inflection; gliss-with-pedal; half-pedal buzz (metal strings ≤ G1) | continuous | **Pitch bend?** (support/range unprobed) · sampled truth lives in *Glissando with Pedal* / *Buzzing Pedal* layers | probe |
+| 4 | Where/how the next pluck happens — position (près de la table ↔ ord. ↔ near pegs), flesh vs nail | per note (discrete, real-time switchable) | **Keyswitch before the note** (KS patches) or channel/part switch | working via KS patches |
+| 5 | What keeps ringing — laissez vibrer vs secco, selective damping | per note overlap | Overlapping note-offs / sustain handling | working |
+| — | *Synthetic only (no performer twin):* continuous volume during a ringing pluck | continuous | CC1 in Modwheel expression mode | flag as **synthetic** if used |
+
+| 6 | **Chord roll** — spread speed & direction (rolling is the harp default; *non arpeggiato* is the marked case) | per chord | Onset staggering between notes | working (recipe-level) |
+| 7 | **Glissando sweep** — finger drag across strings: speed, contour, direction. **The sounding scale comes from the pedal SETUP** (all 7 pedals pre-set → any sweep produces that scale/mode) | continuous sweep; scale = setup-level | Fast note streams; scale = which pitches the stream contains. Sampled alternatives: *Glissando Modes* layers | working (recipe-level) |
+| 8 | **Position gradient** — migrating près-de-la-table → ordinario → near-pegs across a passage (live: continuous) | per note | **3-step discrete** via layer switches — a gradient only by stepping | working via KS |
+
+Vibrato note: SI2 implements vibrato as **sampled layers** (vibrato/non-vibrato presets),
+not CC rate/depth — CC-continuous vibrato memory is Xsample-strings practice.
+
+### Secco / mute-string (pluck → abrupt palm stop)
+
+Live: pluck rings, palm/hand kills it — notated secco (as in the violin piece). MIDI:
+plain note-off obeys the patch **Release** (currently 7.00 = long tail), so duration
+alone can't produce secco. Options, in order of preference:
+1. **CC120 (All Sound Off) at the damp moment** — instant cut regardless of release;
+   piece #2's proven ASR-model technique. → probe UVI's CC120 response.
+2. Short-Release recipe (Release ≈ 0) — whole-patch setting; note-off = abrupt stop.
+   Fine for a passage that is uniformly secco; needs CC-assignability for per-note use.
+3. *Damped* layer = different thing: sampled **damped attack** (muffled from the start),
+   not ring-then-stop. Both belong in the vocabulary as distinct identities.
+Nuance: real palm damping adds a soft contact thud — a sample cut has none. Accept, or
+overlay a low-velocity *Damped* hit at the cut moment (recipe refinement, later).
+
+### Pitch bend — clarified
+
+No separate bend patch: **pitch bend is a channel message** the Ordinario patch should
+respond to (bend range unprobed; UVI default typically ±2 st). Live technique on pedal
+harp: one hand plucks, **the FOOT moves the pedal** — flat/natural/sharp = 3 notches, so
+realistic bend span ≈ ±1 semitone from natural (whole tone flat↔sharp), at foot speed,
+stepped or smeared (half-pedal in between = the buzz zone on metal strings). Also: **one
+pedal moves ALL strings of that note-letter** (C-pedal bends every ringing C). Synthetic
+wheel-bend transposes the sample (timbre artifact, no mechanism noise) — sampled truth
+lives in *Glissando with Pedal* / *Buzzing Pedal*. Sandbox: bend control clamped to
+harp-realistic range (±2 st max) with pedal-speed smoothing; tag wider bends synthetic.
+
 ## 6 · Open probes
 
 1. Exact mapped range per preset (silent-edge scan; provisional C1–G7 in sandbox config)
@@ -120,3 +168,6 @@ Keyboard color legend (all SI2): **red** = keyswitches · **blue** = string-sele
 6. **KS patches vs parts-per-technique** — rack routing strategy decision (KS = many
    techniques on one channel via red keys; parts = simultaneous techniques on separate
    channels). Likely answer: both, chosen per compositional need. → affects rendering recipes
+7. **CC120 (All Sound Off) response in UVI** — instant-cut for secco (piece #2 precedent)
+8. **Pitch bend response + range on Ordinario** — does it bend, how far, how does it sound
+9. **Release knob CC-assignability** — per-note secco without CC120, if learnable

@@ -54,8 +54,14 @@ S-IDs are stable; order = position. Each step gets its own broken-down plan (sub
 - **S4 — Sandbox v1** — `doing` *(pulled forward 2026-08-02 in v0 form, fused with the minimum of S3's MIDI plumbing; first use case = S2.3a harp dynamics→timbre)* — → 1c.
   v0 principle: buttons now, AI-in-the-loop later; spec grows from practical examples; renovation or full rewrite later is expected and fine (M1). Standalone for now; folds into the composer app when S1 exists.
   - **SB0 — MIDI path** — `done 2026-08-02` — loopMIDI port `Harp` → Reaper 'Harp SI2' (monitoring ON — the silent-killer, see SAMPLER_QUIRKS.md + Principles 1–2) → UVI Harp Ordinario at `A*`. Proven end-to-end by AI-scripted probes (winmm P/Invoke sender). Port-per-instrument naming: `Harp`, `Accordion`, `BassCl`; channels = techniques.
-  - **SB1 — Probe page v0** — `todo` — standalone browser page (Chrome, Web MIDI) + tiny local server, in `sandbox/`: port/channel picker · pitch/register control · dynamic buttons with an **editable dynamic→velocity mapping** (the mapping itself is the research object) · sweep mode · note length.
-  - **SB2 — Timbre capture** — `todo` — qualitative descriptor per register×dynamic cell, saved to JSON in the repo → becomes the S2.3a chart; vocabulary later informs S2.3b (notation side, D7).
+  - **SB1 — Probe page v0** — `done 2026-08-02` — keyboard (instrument range), note/MIDI/freq readouts (sci + UVI), auto-pluck velocity spinner + type-in, SPACE re-pluck. Serves at `http://localhost:4600` (`node sandbox/serve.js`).
+  - **SB2 — Timbre capture** — `todo` — qualitative descriptor per register×dynamic cell, saved to JSON in the repo → becomes the S2.3a chart; vocabulary later informs S2.3b (notation side, D7). Interim: captures dictated in chat → TIMBRE_VOCAB.md (working).
+  - **The Gesture Loop** (capture → annotate → render → audition; composer vision in COMPOSER_LOG 2026-08-02; the Motive Builder germ — data format = identity + compiled rendering, D7 in miniature):
+    - **G1 — Capture & replay** — `doing` (built 2026-08-02, awaiting composer test) — Keystation input, live thru to rack, raw high-res timestamps (no quantization — future rhythm-analysis depends on this), minimal-blocks gesture lane, exact replay via scheduled Web MIDI, clear.
+    - **G2 — Per-note technique tags** — `todo` — select notes → technique palette (from deep map) → compiled playback (keyswitch/channel/CC120 mechanics backstage). Forces KS-vs-parts decision (deep-map probe #6).
+    - **G3 — Span effects** — `todo` — crescendo (dynamic→dynamic via v-bands → velocity ramp), bend contours (harp-realistic clamp ±2 st, synthetic tag beyond).
+    - **G4 — Save/load named motives** — `todo` — gesture+annotations JSON → motive library begins.
+    - *Later layers (architecture-ready, not scheduled):* timing→notated-rhythm analysis · playability validation (performer-reality constraints per instrument in deep maps; renderer warns).
 - **S5 — Reaper bridge v1** — `todo` — programmatic track/routing setup from instrument selection. Needs S2. → 1b.
 - **S6 — Timeline + first object end-to-end** — `todo` — place it, play it. Needs S3. → 1e/1d.
 - **S7 — Object protocol** — `todo` — formalize from the first object; second object proves it. Needs S6. → 1d.

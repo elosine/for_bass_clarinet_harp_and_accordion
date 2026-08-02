@@ -6,6 +6,32 @@
 
 ---
 
+## 2026-08-02 — The gesture/sequence vision (Motive Builder germ)
+
+"I can play using my MIDI keyboard a sequence of notes — so some sort of sequencer
+device. (Aside, for later: I want timing measurements — improvise rhythms, then use
+measurements to tease out how those look as notated rhythms. Keep in background.)
+Then apply techniques to the various notes in the chain — choose notes and say 'this
+should be plucked closer to the soundboard,' or pitch bend — immediately applied in
+the background to the MIDI, and play back. For continuous things akin to crescendo:
+select several notes and have the crescendo take place over those notes. Another
+later layer: an efficient way to evaluate playability — is it reflecting performer
+reality (how quickly can they pitch bend, change string location, etc.). Input: string
+of pitches from MIDI, or manually selected; sometimes a single chord, note, or gesture.
+Second pass: change the temporal effects per note or per series of notes."
+
+## 2026-08-02 — Sandbox strategy (stated after the KS-menus reconciliation)
+
+"The sandbox will be literally that. Appropriate controls so I can quickly navigate
+various settings, in my own preferences — sound-based. Clicking on one of the sound
+types and then having the appropriate controls — might be an XY pad, might connect
+MIDI devices eventually. I play the sound and the modifications using the UI or my
+MIDI inputs. Once I establish the sound I want to use, then I'll investigate — either
+via the actual patches and mods I used, or just shoe-leather research — how a live
+performer would create that sound, and then develop the notation for that. For the
+sandbox, take the sample library as the starting point: each primary sound category,
+then the mods."
+
 ## 2026-08-02 — First timbre captures; cataloging philosophy
 
 Probing SI2 Harp Ordinario at C1: velocity 112–127 = rattle, more un-harplike, maybe

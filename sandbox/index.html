@@ -2,67 +2,75 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Harp Probe — sandbox v0</title>
+<title>Virtual Instrument Sandbox</title>
 <style>
-  /* Minimal on purpose — look & feel deferred (docs/UX_NOTES.md) */
   body { font-family: system-ui, sans-serif; margin: 24px; background: #1e1e22; color: #ddd; }
-  h1 { font-size: 16px; font-weight: 600; color: #aaa; margin: 0 0 16px; }
-  .row { display: flex; align-items: center; gap: 16px; margin: 14px 0; flex-wrap: wrap; }
+  h1 { font-size: 15px; font-weight: 600; color: #aaa; margin: 0 0 14px; letter-spacing: 1px; }
+  .row { display: flex; align-items: center; gap: 16px; margin: 12px 0; flex-wrap: wrap; }
   select { font-size: 15px; padding: 6px 10px; background: #2a2a30; color: #ddd; border: 1px solid #444; border-radius: 6px; }
   #banner { display: none; background: #7a2a2a; color: #fff; padding: 8px 12px; border-radius: 6px; margin-bottom: 12px; }
+  button { cursor: pointer; }
+
+  /* Transport */
+  .tbtn { font-size: 15px; padding: 8px 18px; background: #35353d; color: #ddd; border: 1px solid #555; border-radius: 8px; }
+  .tbtn:disabled { opacity: 0.35; cursor: default; }
+  #rec.armed { background: #8c2f2f; border-color: #c05050; color: #fff; }
 
   /* Keyboard */
-  #kbd { position: relative; height: 120px; user-select: none; margin: 18px 0 6px; white-space: nowrap; overflow-x: auto; padding-bottom: 6px; }
-  .wk { display: inline-block; width: 26px; height: 110px; background: #f4f2ee; border: 1px solid #555; border-radius: 0 0 4px 4px; position: relative; cursor: pointer; vertical-align: top; }
+  #kbd { position: relative; height: 118px; user-select: none; margin: 14px 0 4px; white-space: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .wk { display: inline-block; width: 24px; height: 108px; background: #f4f2ee; border: 1px solid #555; border-radius: 0 0 4px 4px; position: relative; cursor: pointer; vertical-align: top; }
   .wk .lbl { position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-size: 9px; color: #666; pointer-events: none; }
-  .bk { position: absolute; width: 16px; height: 66px; background: #222; border: 1px solid #000; border-radius: 0 0 3px 3px; cursor: pointer; z-index: 2; top: 0; }
+  .bk { position: absolute; width: 15px; height: 64px; background: #222; border: 1px solid #000; border-radius: 0 0 3px 3px; cursor: pointer; z-index: 2; top: 0; }
   .wk.current { background: #ffd966; }
   .bk.current { background: #b8860b; }
   .wk.flash { background: #8fd18f; }
   .bk.flash { background: #2e7d32; }
 
-  /* Readouts */
-  .box { background: #2a2a30; border: 1px solid #444; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 90px; }
+  /* Readouts & controls */
+  .box { background: #2a2a30; border: 1px solid #444; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 84px; }
   .box .cap { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; }
-  .box .val { font-size: 26px; font-weight: 700; margin-top: 2px; }
+  .box .val { font-size: 24px; font-weight: 700; margin-top: 2px; }
   .box .sub { font-size: 11px; color: #999; margin-top: 2px; }
-
-  /* Velocity spinner */
   #velWrap { display: flex; align-items: center; gap: 10px; }
-  #vel { font-size: 40px; font-weight: 800; width: 90px; text-align: center; }
+  #vel { font-size: 34px; font-weight: 800; width: 88px; text-align: center; background: transparent; color: #ddd; border: none; border-bottom: 1px solid #555; }
+  #vel:focus { outline: none; border-bottom-color: #8fd18f; }
   .spin { display: flex; flex-direction: column; gap: 6px; }
-  .spin button { font-size: 20px; width: 54px; height: 40px; cursor: pointer; background: #35353d; color: #ddd; border: 1px solid #555; border-radius: 8px; }
+  .spin button { font-size: 18px; width: 50px; height: 38px; background: #35353d; color: #ddd; border: 1px solid #555; border-radius: 8px; }
   .spin button:active { background: #50505c; }
-  .steps { display: flex; gap: 4px; }
-  .steps button { font-size: 12px; padding: 4px 10px; cursor: pointer; background: #2a2a30; color: #aaa; border: 1px solid #444; border-radius: 6px; }
+  .steps { display: flex; gap: 4px; justify-content: center; margin-top: 4px; }
+  .steps button { font-size: 11px; padding: 3px 9px; background: #2a2a30; color: #aaa; border: 1px solid #444; border-radius: 6px; }
   .steps button.on { background: #4a6b4a; color: #fff; }
-
-  .hint { color: #888; font-size: 12px; }
   #lenWrap input { width: 70px; font-size: 15px; padding: 5px; background: #2a2a30; color: #ddd; border: 1px solid #444; border-radius: 6px; }
-  .redact { color: #977; font-size: 10px; }
+
+  /* Gesture lane */
+  #laneWrap { margin-top: 18px; }
+  #laneCap { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 6px; }
+  #lane { position: relative; height: 140px; background: #26262c; border: 1px solid #444; border-radius: 8px; overflow: hidden; }
+  .blk { position: absolute; background: #6f9fd8; border: 1px solid #8ab4e8; border-radius: 2px; min-width: 3px; height: 5px; }
+  #laneInfo { font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
 </style>
 </head>
 <body>
-<h1>HARP PROBE — sandbox v0</h1>
+<h1>VIRTUAL INSTRUMENT SANDBOX</h1>
 <div id="banner"></div>
 
 <div class="row">
   <select id="inst"></select>
-  <span class="hint">routing resolves in the background (port · channel — never a UI decision)</span>
+  <button class="tbtn" id="rec">⏺ Record</button>
+  <button class="tbtn" id="play" disabled>▶ Play</button>
+  <button class="tbtn" id="clear" disabled>Clear</button>
 </div>
 
 <div id="kbd"></div>
-<div class="hint" style="margin-bottom:12px">click a key to pluck &amp; store it · SPACE re-plucks · ↑ ↓ also step velocity</div>
 
 <div class="row">
   <div class="box"><div class="cap">Note</div><div class="val" id="noteName">—</div><div class="sub" id="noteUvi">UVI: —</div></div>
   <div class="box"><div class="cap">MIDI</div><div class="val" id="noteMidi">—</div></div>
   <div class="box"><div class="cap">Freq</div><div class="val" id="noteFreq">—</div><div class="sub">Hz</div></div>
-
   <div class="box" id="velWrap">
     <div>
       <div class="cap">Velocity</div>
-      <div id="vel">90</div>
+      <input id="vel" type="number" value="90" min="1" max="127">
       <div class="steps">
         <button data-step="1">±1</button><button data-step="5" class="on">±5</button><button data-step="10">±10</button>
       </div>
@@ -72,52 +80,119 @@
       <button id="velDn">▼</button>
     </div>
   </div>
-
   <div class="box" id="lenWrap">
     <div class="cap">Length ms</div>
     <input id="len" type="number" value="2000" min="50" step="250">
-    <div class="redact">stopgap — to be redacted (UX_NOTES)</div>
   </div>
+</div>
+
+<div id="laneWrap">
+  <div id="laneCap">Gesture</div>
+  <div id="lane"></div>
+  <div id="laneInfo"></div>
 </div>
 
 <script src="instruments.js"></script>
 <script>
-const state = { instKey: 'harp_si2', out: null, note: null, vel: 90, step: 5 };
+const state = { instKey: Object.keys(INSTRUMENTS)[0], out: null, inp: null, note: null, vel: 90, step: 5 };
+const rec = { armed: false, t0: null, active: {}, events: [] };
 const $ = id => document.getElementById(id);
 const NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
 const sci = m => NAMES[m % 12] + (Math.floor(m / 12) - 1);
-const uvi = m => NAMES[m % 12] + (Math.floor(m / 12) - 2);   // UVI labels middle C (60) as C3
+const uvi = m => NAMES[m % 12] + (Math.floor(m / 12) - 2);
 const freq = m => (440 * Math.pow(2, (m - 69) / 12)).toFixed(1);
 const inst = () => INSTRUMENTS[state.instKey];
 
-// ---- instrument dropdown (routing stays backstage) ----
 for (const [k, v] of Object.entries(INSTRUMENTS)) {
   const o = document.createElement('option'); o.value = k; o.textContent = v.label; $('inst').appendChild(o);
 }
-$('inst').onchange = e => { state.instKey = e.target.value; buildKeyboard(); resolvePort(); };
+$('inst').onchange = e => { state.instKey = e.target.value; buildKeyboard(); resolveMidi(); };
 
-// ---- MIDI ----
 function banner(msg) { const b = $('banner'); b.style.display = msg ? 'block' : 'none'; b.textContent = msg || ''; }
-function resolvePort() {
-  state.out = null;
+function resolveMidi() {
+  state.out = null; state.inp = null;
   if (!navigator.requestMIDIAccess) { banner('Web MIDI unavailable — use Chrome.'); return; }
   navigator.requestMIDIAccess().then(acc => {
-    for (const out of acc.outputs.values()) if (out.name === inst().port) state.out = out;
+    for (const o of acc.outputs.values()) if (o.name === inst().port) state.out = o;
+    for (const i of acc.inputs.values()) if (INPUT_MATCH.test(i.name)) state.inp = i;
+    if (state.inp) state.inp.onmidimessage = onHardwareMidi;
     banner(state.out ? '' : `MIDI port "${inst().port}" not found — is loopMIDI running?`);
-    acc.onstatechange = () => resolvePort();
+    acc.onstatechange = () => resolveMidi();
   }, () => banner('MIDI access denied.'));
 }
-function pluck() {
-  if (state.note === null) return;
-  if (!state.out) { banner(`MIDI port "${inst().port}" not found — is loopMIDI running?`); return; }
-  const ch = inst().channel - 1, len = Math.max(50, +$('len').value || 2000);
-  state.out.send([0x90 | ch, state.note, state.vel]);
-  setTimeout(() => state.out && state.out.send([0x80 | ch, state.note, 0]), len);
-  const el = document.querySelector(`[data-m="${state.note}"]`);
-  if (el) { el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 180); }
+
+function sendNote(note, vel, lenMs) {
+  if (!state.out) return;
+  const ch = inst().channel - 1;
+  state.out.send([0x90 | ch, note, vel]);
+  setTimeout(() => state.out && state.out.send([0x80 | ch, note, 0]), lenMs);
+  flash(note);
+}
+function flash(note) {
+  const el = document.querySelector(`[data-m="${note}"]`);
+  if (el) { el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 160); }
+}
+function pluck() { if (state.note !== null) sendNote(state.note, state.vel, Math.max(50, +$('len').value || 2000)); }
+
+// ---- hardware input: live thru + capture when armed ----
+function onHardwareMidi(e) {
+  const [st, d1, d2] = e.data, cmd = st & 0xF0, ch = inst().channel - 1;
+  const isOn = cmd === 0x90 && d2 > 0, isOff = cmd === 0x80 || (cmd === 0x90 && d2 === 0);
+  if (!isOn && !isOff) return;
+  if (state.out) state.out.send([(isOn ? 0x90 : 0x80) | ch, d1, isOn ? d2 : 0]);
+  if (isOn) { flash(d1); state.note = d1; markCurrent(); updateReadouts(); }
+  if (!rec.armed) return;
+  const t = e.timeStamp;
+  if (isOn) { if (rec.t0 === null) rec.t0 = t; rec.active[d1] = { on: t - rec.t0, vel: d2 }; }
+  else if (rec.active[d1]) {
+    rec.events.push({ note: d1, vel: rec.active[d1].vel, on: rec.active[d1].on, off: t - rec.t0 });
+    delete rec.active[d1];
+    renderLane();
+  }
 }
 
-// ---- keyboard ----
+// ---- record / play / clear ----
+$('rec').onclick = () => {
+  rec.armed = !rec.armed;
+  if (rec.armed && rec.events.length === 0) rec.t0 = null;
+  $('rec').classList.toggle('armed', rec.armed);
+  $('rec').textContent = rec.armed ? '⏺ Recording…' : '⏺ Record';
+  updateButtons();
+};
+$('play').onclick = () => {
+  if (!state.out || rec.events.length === 0) return;
+  const ch = inst().channel - 1, base = performance.now() + 120;
+  for (const ev of rec.events) {
+    state.out.send([0x90 | ch, ev.note, ev.vel], base + ev.on);
+    state.out.send([0x80 | ch, ev.note, 0], base + ev.off);
+    setTimeout(() => flash(ev.note), ev.on + 120);
+  }
+};
+$('clear').onclick = () => { rec.events = []; rec.active = {}; rec.t0 = null; renderLane(); updateButtons(); };
+function updateButtons() {
+  $('play').disabled = rec.events.length === 0;
+  $('clear').disabled = rec.events.length === 0 && !rec.armed;
+}
+
+// ---- gesture lane: minimal blocks ----
+function renderLane() {
+  const lane = $('lane'); lane.innerHTML = '';
+  if (rec.events.length === 0) { $('laneInfo').textContent = ''; updateButtons(); return; }
+  const dur = Math.max(...rec.events.map(e => e.off), 1);
+  const los = Math.min(...rec.events.map(e => e.note)), his = Math.max(...rec.events.map(e => e.note));
+  const W = lane.clientWidth - 8, H = lane.clientHeight - 12;
+  for (const ev of rec.events) {
+    const b = document.createElement('div'); b.className = 'blk';
+    b.style.left = 4 + (ev.on / dur) * W + 'px';
+    b.style.width = Math.max(3, ((ev.off - ev.on) / dur) * W) + 'px';
+    b.style.top = 6 + (his === los ? H / 2 : (1 - (ev.note - los) / (his - los)) * H) + 'px';
+    lane.appendChild(b);
+  }
+  $('laneInfo').textContent = `${rec.events.length} notes · ${(dur / 1000).toFixed(2)} s`;
+  updateButtons();
+}
+
+// ---- on-screen keyboard ----
 function buildKeyboard() {
   const kbd = $('kbd'); kbd.innerHTML = '';
   const { rangeLow, rangeHigh } = inst();
@@ -130,7 +205,7 @@ function buildKeyboard() {
     else {
       el.className = 'wk';
       if (m % 12 === 0) el.innerHTML = `<span class="lbl">${sci(m)}</span>`;
-      whiteX += 26;
+      whiteX += 24;
     }
     el.onmousedown = () => { state.note = m; markCurrent(); updateReadouts(); pluck(); };
     kbd.appendChild(el);
@@ -149,20 +224,17 @@ function updateReadouts() {
   $('noteFreq').textContent = m === null ? '—' : freq(m);
 }
 
-// ---- velocity spinner: every click steps AND plucks ----
-function stepVel(dir) {
-  state.vel = Math.min(127, Math.max(1, state.vel + dir * state.step));
-  $('vel').textContent = state.vel;
-  pluck();
-}
+// ---- velocity ----
+function setVel(v) { state.vel = Math.min(127, Math.max(1, v)); $('vel').value = state.vel; }
+function stepVel(dir) { setVel(state.vel + dir * state.step); pluck(); }
 $('velUp').onclick = () => stepVel(1);
 $('velDn').onclick = () => stepVel(-1);
+$('vel').onchange = () => setVel(+$('vel').value || 90);
 document.querySelectorAll('.steps button').forEach(b => b.onclick = () => {
   state.step = +b.dataset.step;
   document.querySelectorAll('.steps button').forEach(x => x.classList.toggle('on', x === b));
 });
 
-// ---- keys: SPACE re-pluck, arrows step velocity ----
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'INPUT') return;
   if (e.code === 'Space') { e.preventDefault(); pluck(); }
@@ -170,7 +242,7 @@ document.addEventListener('keydown', e => {
   else if (e.code === 'ArrowDown') { e.preventDefault(); stepVel(-1); }
 });
 
-buildKeyboard(); resolvePort(); updateReadouts();
+buildKeyboard(); resolveMidi(); updateReadouts();
 </script>
 </body>
 </html>
