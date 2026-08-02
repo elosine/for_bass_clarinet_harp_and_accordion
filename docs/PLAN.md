@@ -1,0 +1,91 @@
+# PLAN — for bass clarinet, harp, and accordion
+
+> **The living plan.** Rules:
+> - **IDs are stable and never reused.** Reordering = moving lines; dropping = status change. Never renumber — journal and decision entries reference these IDs.
+> - Order = position in file. Status: `todo` · `doing` · `done` · `dropped` · `deferred`.
+> - Every item keeps a one-line ***why*** so motivation survives context loss.
+> - Verbs: *"show me the plan for 1"* · *"mark 1b done"* · *"move 1c after 1d"* · *"drop 2a"* · *"break 1e down further"* · *"defer 3b"*.
+
+---
+
+## The system in one line
+
+A notation program whose primitives are the composer's sounds: draw objects in a score the way you'd draw notes in bars — but every mark knows its instrument, its technique, its MIDI, and its Reaper routing.
+
+## The three big chunks
+
+| Chunk | Verdict from pieces #1–2 | This time |
+|---|---|---|
+| **1 Composer** | Lots worth keeping, logic needs revisiting | More or less a rewrite |
+| **2 Conversion** (composer data → performance score) | Big headway made on piece #2 | Substantial revision |
+| **3 Performance interface** | Mostly done | Minor modifications |
+
+---
+
+## 0. Meta / project setup — `doing`
+
+- **0a — PM kit** (plan, journal, protocol, CLAUDE.md) — `done 2026-08-01`
+  *Why:* never re-derive the plan; cheap session starts; decisions survive context loss.
+- **0b — Composer's pain list from piece #2** (from memory, no code) — `todo`
+  *Why:* it is the requirements doc for the rewrite; only the composer has it.
+- **0c — Orientation pass over the two prior repos** (one pass; output = one-page map) — `todo`
+  *Why:* a cheap map makes all later reading targeted instead of exploratory.
+- **0d — Per-chunk reuse decision:** fresh start vs copy-forward from piece #2 — `todo`
+  *Why:* wrong default drags the whole rewrite; likely answer differs per chunk (fresh for 1, copy for 3).
+
+## 1. Composer (rewrite) — `todo`
+
+### The five subsystems
+
+- **1a — Instrument Knowledge Base** — `todo`
+  Per sample instrument: capabilities (techniques, articulations), time-modifiable parameters, MIDI logistics (channels, CC maps, keyswitches, signal ordering).
+  *Why:* replaces the manual research + manual Reaper wiring of piece #2; lets AI answer "what can this instrument do?" and wire it correctly.
+- **1b — Reaper Bridge** — `todo`
+  Programmatic control of Reaper: loading instruments, track/channel setup, placing MIDI, routing.
+  *Why:* the Reaper work was all manual last time and was the major drag.
+- **1c — Sandbox / Motive Builder** — `todo`
+  Audition & shape sounds inside the composing environment (no round-trip into Reaper's UIs); results stored as named, reusable motives.
+  *Why:* successor to piece #2's cell builder / previewers, which were clunky; the sandbox is the front door for new sounds (see D2).
+- **1d — Graphic Object System** — `todo`
+  Object vocabulary + design protocol (shape, color, rules) + per-object machinery.
+  *Why:* consistent, fast creation of new object types instead of one-off builds.
+- **1e — Composition UI** — `todo`
+  The custom drawing program: score surface (traditional skeleton — systems, bars, players — bent to this process) · piece-specific palette · fast input (place, draw duration, shape change-over-time) · playback & live edit through the Reaper chain.
+  *Why:* its quality decides whether the loop feels like composing or operating machinery.
+
+### The loop (the actual product — subsystems exist to make each pass cheaper)
+
+Two entrances: **A sound-first** (sandbox → object) · **B score-first** (straight to placing).
+
+1. **Interrogate** — AI examines instrument → capabilities into knowledge base *(feeds both)*
+2. **Play** *(A only)* — build the motive in the sandbox; parameters captured, not just heard
+3. **Design** — graphic object per protocol; from entrance A, derived from the sandbox result
+4. **Tool** — UI to mouse it in
+5. **Wire** — object → MIDI → Reaper setup; placing the object IS the connection
+6. **Compose** — draw, hear, iterate; returning to 2 stays cheap
+
+Technique #10 should cost a fraction of technique #1.
+
+## 2. Conversion (composer data → performance score) — `todo`
+
+To be broken down after chunk 1 takes shape. Piece #2 made big headway here; revise, don't rewrite.
+*Why last:* conversion pain is usually a symptom of upstream data not carrying what downstream needs — fix chunk 1's output first.
+
+## 3. Performance interface — `todo`
+
+Minor modifications only; carried forward from piece #2.
+*Why:* proven in performance; its data format effectively constrains what chunks 1–2 must produce.
+
+---
+
+## Standing mandates (apply to everything)
+
+- **M1 — Re-examine, don't re-implement.** Every ported workflow gets the question: what's the fewest manual steps between intention and hearing it? (see D4)
+- **M2 — Engine vs. palette seam.** Architecture piece-agnostic; palette (this piece's objects, instruments, techniques) is piece-specific data. Keep the seam clean; don't build the abstraction now. (see D3)
+
+## Parking lot
+
+- Premiere / deadline date — sets how much shoring-up happens before composing starts.
+- Verify chunk 3 assumption: same performance model as piece #2 (synced screens/tablets)?
+- Shared library across pieces — deliberately deferred; let it emerge from this third data point.
+- PM-kit-as-template for piece #4 — extract after this rhythm is proven, not before.
