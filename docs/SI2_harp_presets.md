@@ -213,6 +213,30 @@ Rack to-do noted during testing: **IR Reverb OFF across all 16 parts** (ships en
   strings ∩ pedal-connected ≈ E1–G1 (3–4 strings)**; bottom C/D strings usually lack
   pedal discs — *harpist-verify*. Sandbox restricted to B0–G1 (per-technique range
   now supported in `instruments.js`).
+- **CC7 contour:** smooth — "as you would imagine a sample with a volume slider." On a
+  sustained buzz, shaped swells are musically real (live twin exists but with less
+  post-attack control — degree-enhanced rather than synthetic).
+- **Pitch bend:** bends fine. (Live caveat: bending = moving the buzz-causing pedal —
+  the live gesture would alter the buzz itself; sampled bend just transposes. Degree of
+  divergence acceptable by ear.)
+- **CC120 / CC64 / CC1-null:** presumed `engine` (proven on Ordinario, not re-run).
+
+### Glissando Modes KS (slot A8 / ch 8) — probed 2026-08-04
+
+- **Keyswitches work over plain MIDI** — UVI C0/C#0/D0 (MIDI 24/25/26), silent (true
+  switches, no blips). *First working KS demo in the rack — switching-architecture
+  evidence.*
+- **Layers by ear:** KS C0 = **classic harp glissando** (one key → full recorded diatonic
+  sweep up the range) · KS C#0 = **string bend** (≈ pedal gliss) · KS D0 = **fret slide**
+  (≈ stick slide). ⚠ Manual's list order implies C#0=stick / D0=pedal — ear suggests
+  swapped; confirm via UVI's message-line (shows layer name on KS receive) when handy.
+- **Default layer on load** = the fret slide (stick).
+- Mode 1's sweep is a *recorded gesture*: struck key triggers a full diatonic run — the
+  sampled pedal-setting is fixed (scale TBD by ear later).
+- **CC7-shaped sweep: inconclusive** — composer heard gliss + a pulse on the reverb tail
+  (= AI's CC7 restore-snap pumping the wet tail, not an engine artifact). **Recipe rule:
+  never snap CC7 while a tail rings; restore after silence or ramp gently.** Re-test
+  after IR-reverb-off pass (reverb is contaminating contour perception).
 
 ## 6 · Open probes
 
