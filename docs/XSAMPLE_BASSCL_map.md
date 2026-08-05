@@ -103,4 +103,11 @@ into which slots if multiple needed; stereo/mono switch; Room Walker OFF.
 
 ## 7 · Findings
 
-*(filled during the survey)*
+**XC0a (2026-08-05):** rack proven — CC#0 selection + notes sound, sustains, real bass
+clarinet. CC1 pre-set needed on MW presets (at 0 = near silence).
+
+**XC1 — SEAM TEST, preset #1 Senza Vibrato MW (2026-08-05): SEAMLESS ✓**
+Composer: "very realistic, like an actual player doing a crescendo — the expected timbre
+changes as more or less breath came in." **STANDING RECIPE: sustained BC dynamics =
+CC1 curves** (animated curves will map directly). Caveat: seam re-checked per MW preset
+as adopted — functionality may vary. (Xsample crossfade quality > UVI's phasey seam.)

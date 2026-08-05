@@ -1,5 +1,20 @@
 # Composer Log
 
+## 2026-08-05 — What the gesture tools must eventually do (bass clarinet survey start)
+
+"There might need to be revision as I'm writing the piece — how to adjust the parameters
+to reflect the music I'm interested in. If I have a phrase, I want to eventually be able
+to relatively seamlessly apply different types of accents through the phrase, or use my
+animated curves for speed and direction modulations like crescendo — or deepening the
+flutter tongue, deepening the crunchiness of a multiphonic. I think this is achievable."
+
+Survey adjustment: less time on routine confirmations (timbre-changes etc.); seams worth
+working out because one-and-done; "I'm probably more interested in overall effect."
+
+*(→ Gesture-tool implication: per-sound CONTINUOUS INTENSITY AXES (flutter depth,
+multiphonic crunch, accent strength), drawable as curves over phrases. Feeds the
+standing architecture watch.)*
+
 ## 2026-08-04 — Suspected MO for gestural tools; standing architecture watch
 
 "Not definitive, but suspected MO: I'll probably build gestural tools like the envelopes
