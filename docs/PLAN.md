@@ -106,6 +106,7 @@ Technique #10 should cost a fraction of technique #1.
 
 To be broken down after chunk 1 takes shape. Piece #2 made big headway here; revise, don't rewrite.
 *Why last:* conversion pain is usually a symptom of upstream data not carrying what downstream needs — fix chunk 1's output first.
+**Seed doc:** `docs/NOTATION_STRATEGY.md` (composer, 2026-08-03) — the rhythmic-notation spectrum (complexist ↔ scrolling-reactive), hybrids, per-phrase decision framework. Read before any notation-system design.
 
 ## 3. Performance interface — `todo`
 

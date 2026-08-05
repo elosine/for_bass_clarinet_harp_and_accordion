@@ -6,6 +6,16 @@
 
 ---
 
+## 2026-08-03 — Rhythmic-notation spectrum (→ docs/NOTATION_STRATEGY.md)
+
+Extended dictation on notation strategy: the Ferneyhough↔scrolling-cursor spectrum,
+counting-based vs reactive, pros/cons each end, hybrids tried (proportional traditional,
+mixed-mode cursor-stops, performer-optional scroll toggle), design goal of a broad
+solution range rather than one ideal, and the per-phrase decision framework with
+first-capture.json as test case #1. **Full organized text lives in
+`docs/NOTATION_STRATEGY.md`** — the seed doc for chunk 2–3 notation decisions. AI weighs
+in when invited.
+
 ## 2026-08-03 — Groups, continuous strategy, and reusable parameterized units
 
 "Not only change individual notes, but change GROUPS of notes — simple example: grab a
