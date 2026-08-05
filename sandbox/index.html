@@ -106,20 +106,35 @@ const inst = () => INSTRUMENTS[state.instKey];
 for (const [k, v] of Object.entries(INSTRUMENTS)) {
   const o = document.createElement('option'); o.value = k; o.textContent = v.label; $('inst').appendChild(o);
 }
-$('inst').onchange = e => { state.instKey = e.target.value; buildKeyboard(); resolveMidi(); };
+$('inst').onchange = e => { state.instKey = e.target.value; buildKeyboard(); resolveBindings(); };
 
 function banner(msg) { const b = $('banner'); b.style.display = msg ? 'block' : 'none'; b.textContent = msg || ''; }
-function resolveMidi() {
-  state.out = null; state.inp = null;
+
+// One persistent MIDIAccess. Never re-request on statechange: binding an input OPENS it,
+// opening fires statechange — re-requesting there creates an infinite feedback loop
+// (frozen tab, 2026-08-03). Rebind idempotently, debounced, from the single access object.
+let midiAccess = null, scTimer = null;
+function resolveBindings() {
+  if (!midiAccess) return;
+  let out = null, inp = null;
+  for (const o of midiAccess.outputs.values()) if (o.name === inst().port) out = o;
+  for (const i of midiAccess.inputs.values()) {
+    if (INPUT_MATCH.test(i.name) && !INPUT_EXCLUDE.test(i.name)) { inp = i; break; }
+  }
+  state.out = out;
+  if (state.inp !== inp) {
+    if (state.inp) state.inp.onmidimessage = null;
+    state.inp = inp;
+    if (inp) inp.onmidimessage = onHardwareMidi;
+  }
+  banner(out ? '' : `MIDI port "${inst().port}" not found — is loopMIDI running?`);
+}
+function initMidi() {
   if (!navigator.requestMIDIAccess) { banner('Web MIDI unavailable — use Chrome.'); return; }
   navigator.requestMIDIAccess().then(acc => {
-    for (const o of acc.outputs.values()) if (o.name === inst().port) state.out = o;
-    for (const i of acc.inputs.values()) {
-      if (INPUT_MATCH.test(i.name) && !INPUT_EXCLUDE.test(i.name)) { state.inp = i; break; }
-    }
-    if (state.inp) state.inp.onmidimessage = onHardwareMidi;
-    banner(state.out ? '' : `MIDI port "${inst().port}" not found — is loopMIDI running?`);
-    acc.onstatechange = () => resolveMidi();
+    midiAccess = acc;
+    acc.onstatechange = () => { clearTimeout(scTimer); scTimer = setTimeout(resolveBindings, 400); };
+    resolveBindings();
   }, () => banner('MIDI access denied.'));
 }
 
@@ -244,7 +259,7 @@ document.addEventListener('keydown', e => {
   else if (e.code === 'ArrowDown') { e.preventDefault(); stepVel(-1); }
 });
 
-buildKeyboard(); resolveMidi(); updateReadouts();
+buildKeyboard(); initMidi(); updateReadouts();
 </script>
 </body>
 </html>
