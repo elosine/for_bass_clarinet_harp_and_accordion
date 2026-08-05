@@ -31,12 +31,12 @@ KS masters (×2 each, Vel/Wheel): `_Accordion Classical KS` · `_Accordion Exten
 | A1 | Accordion Ordinario | baseline |
 | A2 | Accordion Staccato | articulation sibling |
 | A3 | Accordion Fortepiano | attack-shape sibling |
-| A4 | Accordion Ordinario Registers | DBL1–5 via KS — the registration palette |
+| A4 | Accordion Registers KS *(= manual's "Ordinario Registers")* | DBL1–5 via KS — the registration palette |
 | A5 | Accordion Register Combinaison 1 | |
 | A6 | Accordion Register Combinaison 2 | |
 | A7 | Accordion Backwards | reversed samples (synthetic-flavored — classify on hearing) |
 | A8 | Accordion FX | bellowshake/breath/difference-tone/key-click/tap via KS |
-| A9 | Accordion Crescendo & Decrescendo | recorded dynamic transitions via KS |
+| A9 | `_Accordion Transitions KS` | recorded dynamic transitions via KS (browser has no individual "Crescendo & Decrescendo" preset — manual/browser mismatch noted) |
 | A10 | `_Accordion Classical KS Wheel` | **the bellows-mode flagship** — CC1-driven dynamics |
 
 Setup per part: fixed channel (never A*), OUTPUT Main Out, **IR Reverb OFF**.
@@ -64,4 +64,32 @@ loopMIDI + Reaper Preferences → MIDI Devices → Reset all → enable input.)
 
 ## 5 · Findings
 
-*(filled during the survey)*
+**AC0 — Ordinario (2026-08-04):** sustains the full hold, steady (bellows-fed ✓). Velocity:
+soft/medium = standard accordion timbre; **hard (120) = distinct band — different reed
+combination, actually QUIETER** ("strange timbre"). Band edge between 85–120, unpinned.
+
+**AC2 — bellows test (2026-08-04):** Wheel patch CC1 = volume swell + audible-but-subtle
+timbre change; **phasey artifacts mid-swell** = dynamic-layer crossfade seam (two takes
+sounding at once). CC7 on Ordinario = pure volume slider (like harp). **CC1 simulates
+bellows pressure** (air → loudness + reed brightness together).
+**Recipe choice established:** CC1 shaping = any contour, slight seam artifact (hides in
+texture, exposed on solo held notes) · A9 recorded transitions = seamless sound, fixed
+shape/duration. Choose per musical situation; AC4 compares directly.
+
+**AC3 — registers (2026-08-04, composer's words):** DBL1 ≈ ordinario · DBL2 more nasal ·
+DBL3 similar/darker · DBL4 much darker · DBL5 ≈ ordinario again (possible subtle doubling
+of 1 — flagged). Palette: neutral / nasal / dark / darkest / neutral-2.
+
+**AC4 — transitions (2026-08-04):** recorded Crescendo + Cresc-to-Decresc = "quite
+natural," seamless ✓. Decrescendo layer (KS D#-1) apparently silent — KS position suspect,
+verify via UVI message line someday. Wheel-CC1 version audibly phasey by contrast.
+**Recipe confirmed: exposed solo transitions → recorded layers; custom shapes / in-texture
+→ CC1.**
+
+**AC5 — FX (2026-08-04):** all five natural, as expected. Key Click + Tap on Body have a
+close-miked contact-mic intimacy (mixing note). **Difference tone**: acoustic phenomenon
+(f₂−f₁ phantom under high pressure; live: interval chooses phantom pitch, pressure chooses
+prominence; samples = fixed recorded dyads). **Bellowshake**: recorded at one rate;
+speed/shape not adjustable (no bespoke CCs in SI2). Custom-rate shake = future G5 unit
+(CC7 LFO on Ordinario, degree-synthetic) or accept recorded. Stretch-param influence:
+open probe, low odds.
