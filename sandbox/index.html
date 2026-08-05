@@ -45,7 +45,8 @@
   /* Gesture lane */
   #laneWrap { margin-top: 18px; }
   #laneCap { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 6px; }
-  #lane { position: relative; height: 140px; background: #26262c; border: 1px solid #444; border-radius: 8px; overflow: hidden; }
+  #lane { height: 140px; background: #26262c; border: 1px solid #444; border-radius: 8px; overflow-x: auto; overflow-y: hidden; }
+  #laneContent { position: relative; height: 100%; }
   .blk { position: absolute; background: #6f9fd8; border: 1px solid #8ab4e8; border-radius: 2px; min-width: 3px; height: 5px; }
   #laneInfo { font-size: 11px; color: #888; margin-top: 4px; min-height: 14px; }
 </style>
@@ -59,6 +60,8 @@
   <button class="tbtn" id="rec">⏺ Record</button>
   <button class="tbtn" id="play" disabled>▶ Play</button>
   <button class="tbtn" id="clear" disabled>Clear</button>
+  <button class="tbtn" id="save" disabled>💾 Save</button>
+  <select id="motives"><option value="">— phrases —</option></select>
 </div>
 
 <div id="kbd"></div>
@@ -88,7 +91,7 @@
 
 <div id="laneWrap">
   <div id="laneCap">Gesture</div>
-  <div id="lane"></div>
+  <div id="lane"><div id="laneContent"></div></div>
   <div id="laneInfo"></div>
 </div>
 
@@ -170,6 +173,7 @@ function onHardwareMidi(e) {
 
 // ---- record / play / clear ----
 $('rec').onclick = () => {
+  $('rec').blur();  // SPACE on a focused button = click → silently stopped recordings
   rec.armed = !rec.armed;
   if (rec.armed && rec.events.length === 0) rec.t0 = null;
   $('rec').classList.toggle('armed', rec.armed);
@@ -177,6 +181,7 @@ $('rec').onclick = () => {
   updateButtons();
 };
 $('play').onclick = () => {
+  $('play').blur();
   if (!state.out || rec.events.length === 0) return;
   const ch = inst().channel - 1, base = performance.now() + 120;
   for (const ev of rec.events) {
@@ -185,26 +190,66 @@ $('play').onclick = () => {
     setTimeout(() => flash(ev.note), ev.on + 120);
   }
 };
-$('clear').onclick = () => { rec.events = []; rec.active = {}; rec.t0 = null; renderLane(); updateButtons(); };
+$('clear').onclick = () => { $('clear').blur(); rec.events = []; rec.active = {}; rec.t0 = null; renderLane(); updateButtons(); };
 function updateButtons() {
   $('play').disabled = rec.events.length === 0;
   $('clear').disabled = rec.events.length === 0 && !rec.armed;
+  $('save').disabled = rec.events.length === 0;
 }
 
+// ---- phrases (motives): save to / load from the repo via the server ----
+$('save').onclick = async () => {
+  $('save').blur();
+  if (rec.events.length === 0) return;
+  const name = prompt('Name this phrase:');
+  if (!name) return;
+  const body = { name, created: new Date().toISOString(), instrument: state.instKey,
+                 events: rec.events, annotations: [] };
+  const r = await fetch('/motives', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  if (r.ok) { const { file } = await r.json(); loadMotiveList(file); }
+};
+async function loadMotiveList(selectFile) {
+  try {
+    const list = await (await fetch('/motives')).json();
+    const sel = $('motives');
+    sel.innerHTML = '<option value="">— phrases —</option>';
+    for (const m of list) {
+      const o = document.createElement('option');
+      o.value = m.file; o.textContent = m.name;
+      sel.appendChild(o);
+    }
+    if (selectFile) sel.value = selectFile;
+  } catch (e) {}
+}
+$('motives').onchange = async e => {
+  if (!e.target.value) return;
+  const m = await (await fetch('/motives/' + e.target.value)).json();
+  rec.events = m.events || []; rec.active = {}; rec.t0 = null;
+  if (m.instrument && INSTRUMENTS[m.instrument] && m.instrument !== state.instKey) {
+    state.instKey = m.instrument; $('inst').value = m.instrument;
+    buildKeyboard(); resolveBindings();
+  }
+  renderLane();
+};
+
 // ---- gesture lane: minimal blocks ----
+const PXPS = 60; // lane time scale: pixels per second; lane scrolls, never compresses
 function renderLane() {
-  const lane = $('lane'); lane.innerHTML = '';
-  if (rec.events.length === 0) { $('laneInfo').textContent = ''; updateButtons(); return; }
+  const lane = $('lane'), content = $('laneContent'); content.innerHTML = '';
+  if (rec.events.length === 0) { content.style.width = '100%'; $('laneInfo').textContent = ''; updateButtons(); return; }
   const dur = Math.max(...rec.events.map(e => e.off), 1);
   const los = Math.min(...rec.events.map(e => e.note)), his = Math.max(...rec.events.map(e => e.note));
-  const W = lane.clientWidth - 8, H = lane.clientHeight - 12;
+  const W = Math.max((dur / 1000) * PXPS + 24, lane.clientWidth);
+  const H = lane.clientHeight - 12;
+  content.style.width = W + 'px';
   for (const ev of rec.events) {
     const b = document.createElement('div'); b.className = 'blk';
-    b.style.left = 4 + (ev.on / dur) * W + 'px';
-    b.style.width = Math.max(3, ((ev.off - ev.on) / dur) * W) + 'px';
+    b.style.left = 4 + (ev.on / 1000) * PXPS + 'px';
+    b.style.width = Math.max(3, ((ev.off - ev.on) / 1000) * PXPS) + 'px';
     b.style.top = 6 + (his === los ? H / 2 : (1 - (ev.note - los) / (his - los)) * H) + 'px';
-    lane.appendChild(b);
+    content.appendChild(b);
   }
+  lane.scrollLeft = W; // keep the newest notes in view while recording
   $('laneInfo').textContent = `${rec.events.length} notes · ${(dur / 1000).toFixed(2)} s`;
   updateButtons();
 }
@@ -259,7 +304,7 @@ document.addEventListener('keydown', e => {
   else if (e.code === 'ArrowDown') { e.preventDefault(); stepVel(-1); }
 });
 
-buildKeyboard(); initMidi(); updateReadouts();
+buildKeyboard(); initMidi(); updateReadouts(); loadMotiveList();
 </script>
 </body>
 </html>

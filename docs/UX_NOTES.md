@@ -8,6 +8,10 @@
 
 ## Open
 
+- *2026-08-03 · sandbox G1 · composer* — **Velocity color scheme for gesture blocks** ("at
+  some point"): color each lane block by velocity — typical scheme, or v-band colors
+  (v1/v2/v3) once bands are per-instrument config.
+
 - *2026-08-02 · sandbox* — **Capture strip (SB2):** band buttons (v1/v2/v3 per current
   instrument) + free-text comment box + ENTER-to-save → JSON; feeds TIMBRE_VOCAB.md.
 - *2026-08-02 · sandbox* — **Note-length box is a stopgap.** Replace with a low-decision
