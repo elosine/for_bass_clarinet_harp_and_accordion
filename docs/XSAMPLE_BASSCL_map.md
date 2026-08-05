@@ -41,6 +41,36 @@ air noises (1) · key noises (1) · breath noises (1) · playing noises (1) · u
   tutorial video): **use velocity-based presets for legato improvisation to avoid
   crossfade phasing**; MW presets phase-risk during legato.
 
+## 3b · Controller Overview — the definitive CC map (Extended Scripting doc p.22–23)
+
+**Preset Mode — global, always live:**
+| CC | Function |
+|---|---|
+| **CC#0** 0–87 | switch Presets 1–88 |
+| **CC#0** 88–117 | switch Keyswitch-Bank presets 1–30 |
+| **CC#0** 118/119/120 | select Keyswitch Bank 1/2/3 |
+| **CC#0** 121 | Toggle Mode · **122** Slide & Trill Mode |
+| **CC#0** 126/127 | Preset Mode on / Phrase Mode on |
+| **CC#1, CC#2, CC#4, AT** | **"various" — per-preset/slot assignments** (the answer to "what changes per preset") |
+| **CC#82** | Round-robin behavior (ranges select: on-repetition / off / random / always / indiv. / Instrument 1 / Instrument 2 / Ensemble) |
+| **CC#91–95** | Ensemble-mode params (voices, pan width, alive, detune, delay) |
+| **CC#28** | Timer (e.g. breathing; 0 = off) |
+| **CC#68** | **Legato off (0) / on (127)** · **CC#24 = legato intensity: slur → glissando** |
+
+**Phrase Mode (CC#0=127) — a whole second machine:** CC#31 volume · #32 transpose ·
+#33 speed · #34 retrigger · #35 reverse · #100 sound selection · **aleatoric engine**:
+CC#87 preset+aleatoric on/off, #88 sound %, #89/#90 durations, #91 note %, #92 velocity %,
+#93/#94 move-legato + intensity, #95 absorption, #96/#97 attack/decay.
+
+**Keyboard function keys (elastic):** A0–B0 velocity-sensitive — low vel = KS bank
+select 1–3; high vel: A0 = **tune-base-note mode (pure tunings!)**, A#0 = toggle mode,
+B0 = trill & slide mode. C1–A1 = 10 keyswitches × 3 banks. A#7 = preset/phrase toggle.
+
+**How to expose per-preset CC assignments** (the "various" set): (1) elastic GUI — click
+the blue sound-slot buttons with **Kontakt's Info Pane on**, hover shows each control's
+function per slot; (2) Kontakt message line names presets on switch; (3) our probe
+battery confirms by ear. Between the three, nothing can hide.
+
 ## 4 · Community / developer intel (rung 2)
 
 - Hans Josef Winkler (developer) is **active on VI-Control** — direct questions possible.
