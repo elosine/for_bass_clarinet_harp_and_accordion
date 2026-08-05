@@ -114,7 +114,9 @@ function resolveMidi() {
   if (!navigator.requestMIDIAccess) { banner('Web MIDI unavailable — use Chrome.'); return; }
   navigator.requestMIDIAccess().then(acc => {
     for (const o of acc.outputs.values()) if (o.name === inst().port) state.out = o;
-    for (const i of acc.inputs.values()) if (INPUT_MATCH.test(i.name)) state.inp = i;
+    for (const i of acc.inputs.values()) {
+      if (INPUT_MATCH.test(i.name) && !INPUT_EXCLUDE.test(i.name)) { state.inp = i; break; }
+    }
     if (state.inp) state.inp.onmidimessage = onHardwareMidi;
     banner(state.out ? '' : `MIDI port "${inst().port}" not found — is loopMIDI running?`);
     acc.onstatechange = () => resolveMidi();

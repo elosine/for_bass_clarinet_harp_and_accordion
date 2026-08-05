@@ -13,5 +13,7 @@ const INSTRUMENTS = {
 };
 
 // Hardware capture input (G1). Matched against Web MIDI input device names.
-// Keystation 61 now; Keystation 88 soon — the pattern covers both.
+// Keystation 88 MK3 exposes TWO ports: "Keystation 88 MK3" (the keys) and
+// "MIDIIN2 (Keystation 88 MK3)" (DAW-control — no notes). Exclude the latter.
 const INPUT_MATCH = /keystation/i;
+const INPUT_EXCLUDE = /^MIDIIN\d+/i;
