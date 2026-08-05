@@ -1,0 +1,1190 @@
+=== PAGE 1 ===
+Xsample AIL 
+Extended Scripting
+Documentation
+© Xsample professional sound libraries
+
+=== PAGE 2 ===
+Contents
+Preset Designer Tab
+• Keyboard functions
+• Working with presets (introduction)
+• Global functions
+• Global parameter
+• Individual sound slot parameter
+Phrase Designer Tab
+• Playing phrases
+• Create and edit phrases
+• Aleatoric functions
+Room Walker Tab
+• Controls Overview
+• Room Walker Controls
+• Room Walker Operation
+• Room Walker Presets
+• Room Walker Multi Instruments
+• Output Mode (stereo / mono configuration)
+• Color Effect
+• Stretch Effect
+• Tune Editor
+• Spread
+View Tab
+Legato
+Controller Overview
+Appendix
+• List of the 61 room impulses
+• List of the 64 room impuls combinations
+Version History
+=== PAGE 3 ===
+Preset Designer Tab
+Keyboard functions
+Working with Presets
+The preset list can hold up to 88 presets. The presets can be switched in various ways: On the 
+GUI, with key switches (3 banks) or with cc#0. Since midi controller are zero based the 
+presets 1-88 corresponds to 0-87 (cc#0). The individual key switches (30) can be reached also 
+with cc#0 (88-117). 
+The GUI is divided into two areas. The upper area shows the global preset menus and buttons. 
+Most of these functions are remote controllable via midi. The lower area shows six sound slots. 
+By clicking on the blue buttons the individual parameters are shown and can be edited.
+Preset / Phrase 
+Mode toggle 
+button. Also A#7 
+(blue note) or 
+cc#0 =126/127.
+Preset / Phrase 
+Mode toggle 
+button. Also A#7 
+(blue note) or 
+cc#0 =126/127.
+A0-B0: velocity 
+sensitive 
+function keys.
+Low velocity: 
+Key switch bank 
+1-3.
+High velocity: A0 
+= tune base 
+note mode
+A#0 = toggle 
+switch mode
+B0 = trill and 
+slide mode
+A0-B0: velocity 
+sensitive 
+function keys.
+Low velocity: 
+Key switch bank 
+1-3.
+High velocity: A0 
+= tune base 
+note mode
+A#0 = toggle 
+switch mode
+B0 = trill and 
+slide mode
+C1-A1: 10 Key 
+switches per each 
+bank (3 * 10).
+C1-A1: 10 Key 
+switches per each 
+bank (3 * 10).
+Tune base note mode: The keys A#0 to 
+A1 changes the base note of the actual 
+tuning (that's e.g. useful if you want to 
+work with pure tunings).
+Tune base note mode: The keys A#0 to 
+A1 changes the base note of the actual 
+tuning (that's e.g. useful if you want to 
+work with pure tunings).
+Toggle switch mode: The keys E1 to A1 
+disable or enable sound slot 1 to 6 (if 
+Toggle Mode button is on).
+Toggle switch mode: The keys E1 to A1 
+disable or enable sound slot 1 to 6 (if 
+Toggle Mode button is on).
+Trill and slide mode: D#1 = half tone trill, E1 whole 
+tone trill (AT changes the speed). 
+F1 = slot round robin counter reset.
+F#1 = slide down / G1 = slide up (release switch)
+G#1 = slide down / A1 = slide up (legato)
+Trill and slide mode: D#1 = half tone trill, E1 whole 
+tone trill (AT changes the speed). 
+F1 = slot round robin counter reset.
+F#1 = slide down / G1 = slide up (release switch)
+G#1 = slide down / A1 = slide up (legato)
+=== PAGE 4 ===
+• Assign a preset to a key switch (example: F0 assigned to preset 17)
+1. Enable „Store KS“ 2. Choose Key switch 
+location
+3. Choose preset from 
+preset list
+4. Disable „Store KS“
+• Copy a preset to another location (example: copy preset 1 to 25)
+1. Choose preset 1 
+(source)
+2. Enable „Edit Preset“ 3. Choose preset 25 
+(destination)
+4. Press „Save Preset“
+• Name or rename a preset
+1. Choose „Name Preset“ 
+from „Preset Menu“
+2. Type the new name and press enter (The preset number will 
+be added automatically)
+• Edit individual parameter (example: change release time of sound slot 5 / preset 1)
+1. Press the blue button 
+under sound slot 5.
+2. Change the release time 3. Press „Save Preset“
+To make your editings permanent, please save the .nki.
+
+=== PAGE 5 ===
+Global Functions
+Edit Preset
+Save Preset
+If the button „Edit Preset“ is enabled you can edit all preset 
+parameters. The button is also activated when a sound slot is changed 
+or by clicking one of the blue buttons. When all changes are done you 
+can save the preset (button „Save Preset“) or discard your changes 
+(button „Edit Preset“ off).
+Store KS
+KS Setup
+With these two GUI elements you can change the assigment of the key 
+switches. First enable „Store KS“, choose the key switch location with 
+the „KS Setup“ menu, then choose the preset from the preset list 
+menu and last, disable „Store KS“. 
+Preset Menu
+• Name Preset  name or rename the actual preset →
+ hint: the preset name list is used globally for each instrument→
+• Load / Save Preset  load / save single presets from / to disk →
+• Load / Save KS Setup  load / save key switch setups from /→  
+to disk *
+• Load / Save Preset Bank  load / save a complete bank of 88→  
+presets from / to disk (only parameter data) *
+• Load / Save Preset Names  load / save all 88 preset names→  
+from / to disk *
+• Preset Init  initialize the actual preset (sound slots) →
+ hint: you can also copy an existing preset to use it as template or→  
+load a single preset from disk
+• Copy / Paste Preset  copy a preset and paste it to another→  
+location
+• Copy / Paste Slot  first select a single slot, choose copy slot→  
+and then paste the slot into another location. It is also possible 
+to paste the slot into another preset. The option „Paste Slot 
+(only parameter)“ will leave the choosen sound of the target 
+slot.  hint: the same sound can't be used in another slot→
+* Data folder
+Preset List Preset list with 88 presets (next to the „KS Setup“ menu) 
+ hint: remote with CC#0→
+
+=== PAGE 6 ===
+Global Parameter
+(saved individually 
+with each preset)
+Global range Adjust the global low and high range of a preset. 
+ hint: Make sure that these settings match the individual low and high ranges→  
+of the activated sound slots.
+Legato
+Legato Intensity
+With the legato function you can achieve a slur / (light) glissando 
+between two notes when you slightly overlap the sounds while playing. 
+In this mode the instrument is monophone (Legato enabled). The 
+Legato intensity function is slightly different with each instrument. 
+ hint: remote legato with CC#68, legato intensity with CC#24→
+Round Robin Menu This menu contains a selection of different variants of "Round Robin" 
+modes, a instrument division and the ensemble mode. The two 
+random modes (rnd) are a good way to break through recognizable 
+recurrence pattern. 
+ hint: The different modes can be switched with CC#82→
+ hint: This function can be combined with the „Slot rr“ Round Robin function. →
+• Round Robin off  Turns off the round robin feature. →
+(CC#82 = 21-41)
+• Repitition  Round Robin is active only when sounds are→  
+repeated. (CC#82 = 0-20)
+• Repitition rnd  Round Robin is active only when sounds are→  
+repeated. But the following „sound exchange“ is randomly 
+selected. (CC#82 = 42-62)
+• Always  Round Robin is always active. → (CC#82 = 63-83)
+• Always rnd  Round Robin is always active and plays randomly→  
+sound exchanges. (CC#82 = 84-104)
+• Always indiv.  Round Robin is always active and plays for each→  
+tone separately individual Round Robin cycles. 
+(CC#82 = 105-115)
+• Instrument 1 & Instrument 2  All the sounds of the→  
+instrument are divided into 2 parts. Instrument 1 (CC#82 = 116-
+119) and Instrument 2 (CC#82 = 120-122) never play the same 
+sounds, so that phasing effects are avoided.
+• Ensemble  Turns on the ensemble feature. → (CC#82 = 123-127)
+Ensemble Setup • Ensemble mode voice slider  adjust the amount of voices and→  
+turns on the ensemble feature  hint: remote with CC#91→
+• Ensemble mode Panwide  sets the panorama width of the→  
+ensemble.  hint: remote with CC#92→
+• Ensemble mode Alive  generates to all parameters random→  
+deviations.  hint: remote with CC#93→
+• Ensemble mode Detune  detuning in cents for the individual→  
+instruments.  hint: remote with CC#94→
+• Ensemble mode Delay  allows an individually time shifting→  
+sound start.  hint: remote with CC#95→
+
+=== PAGE 7 ===
+Routing Menu Several options to switch parameters with velocity and random values 
+or route controllers
+• Vel. Legato 1-6  Switch legato mode and / or legato intensity→  
+with velocity (different options)
+• Repetition 1-3  Switch the Round Robin modes „repetition“→  
+and „always rnd“ with velocity or random
+• MW to AT  Routes the modwheel to aftertouch →
+ hint: works only if a slot uses an LFO preset→
+• AT to PB  Routes aftertouch to pitch bend→
+ hint: works only if a slot uses pitch bend →
+• Vel. AT 1-2  Routes velocity to aftertouch→
+ hint: works only if a slot uses an LFO preset→
+• Ens.  Various options to switch the ensemble mode→  
+parameters „Delay“ and / or „Detune“ with velocity or random 
+values.
+ hint: works only if ensemble mode is enabled (Round Robin menu)→
+Slot Round Robin 
+Menu                Slot 1        Slot 2        Slot 3       Slot 4        Slot 5       Slot 6   
+• Slot rr off  all slots are active (if a sound is used)→
+• Slot rr2 – rr6  Round Robin (sequentially)→
+• Random Slot rr2 – rr6   Round Robin (random)→
+ hint: by using the options rr2 – rr5 the free slots are always active.→  
+e.g.: when „Slot rr3“ option is activated, slots 1, 2 and 3 are used for 
+the sequentially Round Robin, while slots 4, 5 and 6 are always active 
+(if a sound is used)
+Function Keys 
+Setup Menu
+(next to „Toggle Mode“)                                            function keys
+Setup(s) menu for the function keys (trill & slide mode)
+The function keys F#1, G1 and G#1, A1 uses certain sounds. These 
+sounds are marked with the addition „key“ / „RS key“ or „Slides down“ 
+/ „Slides up“ and can be found at the near end of the sound list. Some 
+instruments have more than one setup (e.g. Timpani).
+ example of function key sounds←
+
+=== PAGE 8 ===
+Trigger Menu 
+and Timer
+Trigger random notes
+• Trigger off  function disabled→
+• Ending (Timer)  When finishing a phrase a sound is selected→  
+(random) and played. With the „Timer“ value edit you 
+determine the time that must elapse (0 – 0.63') so that a 
+sound is played. If the „Timer“ is set to „0“, the function is off. 
+ hint: „Timer“ can be controlled by CC#28→
+ hint: The option works only with the sound of slot 6.→
+• Sustain Pedal  A sound is selected (random) and played if the→  
+sustain pedal is down (and up).
+ hint: The option works only with the sound of slot 6.→
+• Foot Switch (CC#4)  A sound is selected (random) and played→  
+when the foot controller CC#4 is moved. The „Timer“ value 
+determines the speed.
+ hint: „Timer“ can be controlled by CC#28→
+ hint: The option works only with the sound of slot 6.→
+Individual 
+Pitch Bend
+This function will bend (value edit amount 0 – 250 cents) only the last 
+note played with sustain pedal down.
+ hint: Please note that the sound slots can also have additional pitch bend→  
+settings. 
+example with enabled 
+toggle switch mode  →
+                      activated toggle switch mode with visual state of the 
+                      enabled and disabled sound slots.
+Toggle Mode If this function is enabled in a preset you can toggle all 6 sound slots 
+on and off with the 6 magenta key switches from E1 to A1. The 
+respective state is displayed above the sound slots 
+(<1> = on, <0> = off).
+ hint: The magenta key switches are activated by A#0 (high velocity) or by→  
+CC#0 = 121
+
+=== PAGE 9 ===
+Individual Sound 
+Slot Parameter
+• Range, 
+Transpose & 
+Delay Options
+The individual sound slot parameter are shown when one of the blue buttons under 
+the sound slots is pressed or a sound in one slot menu is changed. The Kontakt 
+keyboard shows now only the range of the actual slot. Each slot has a individual color 
+for better orientation. 
+Individual Range When a sound is changed in a slot menu the individual low and high 
+key range will be reset to the original low and high limits of the sound. 
+So you are able to know which real limits a sound have.
+With this value edit you can transpose incoming notes 
+(+/- 24 semitones)
+value 7 is choosed with the 
+Delay value edit  →
+Delay                                                     label above slots
+• Delay  delay of the selected sound. The values 1 - 8 are→  
+musical durations, which will be shown above.
+-1  delay function disabled (when selected in slot 1)→
+0  no delay →
+ hint: if no delay is needed the recommendation is -1 →
+1  1/32→
+2  1/16T→
+3  1/16→
+4  1/8 T→
+5  1/8→
+6  1/4T→
+7  3/16→
+8  1/4→
+9 ms – 750 ms
+• Delay V  Depending on velocity. Range: -750 ms to +750 ms→  
+maximum (depending on the first delay value)
+• Delay R  Random / Range: -750 ms to +750 ms maximum→  
+(depending on the first delay value)
+ hint: the individual delay values of the slots are added from left (slot→  
+1) to right (slot 6) 
+
+=== PAGE 10 ===
+Individual Sound 
+Slot Parameter
+• Filters and LFOs
+LFOs Frequency
+LFOs Preset Menu
+Frequency knob  Adjust the speed of the LFOs → (amplitude & pitch)
+Range: 0,01 Hz to 213,1 Hz
+Preset Menu
+• LFO off  pitch and amplitude LFO are bypassed→
+• LFO P+A options  The respective controller(s) controls the→  
+intensity and speed of each LFO involved (pitch and / or 
+amplitude). The pitch and amplitude LFO are slightly out of 
+sync. 
+ hint: When two controllers (AT + CC#4) are involved, the intensities→  
+are added.
+ hint: use the routing menu, if you want to control an LFO with the→  
+modwheel
+• LFO FXP AT+4 option  Preset with a large range of intensity→  
+(CC#4  pitch)→
+• LFO FXA AT+4 option  Preset with a large range of speed→  
+change (AT) and intensity (CC#4  amplitude)→
+Filter 1 Preset Menu The used filter is a soft lowpass, which is „open“ when the respective 
+controller is set to „0“. When the controller is moved the filter will 
+„close“. 
+• Filter off  Filter 1 is bypassed→
+• F1 *  Different controller and controller combinations are available as→  
+options.
+Filter 2 Preset Menu The used filter of this menu is depending on the filter 2 type menu. 
+This filter can be controlled with velocity and modwheel.
+• Filter off  Filter 2 is bypassed→
+• F2 Vel 100% /  Filter opens (moves) fully with higher velocities.→
+• F2 Vel 50% /  Filter opens (moves) slightly with higher velocities.→
+• F2 CC#1 /  Filter opens (moves) fully with modwheel moving to 127.→
+• F2 CC#1 /\  Filter opens (moves) fully with modwheel moving to 63→  
+and closes with modwheel moving to 127.
+• F2 CC#1 \  Filter closes (moves) fully with modwheel moving to 127.→
+Filter 2 Type Menu
+Abbreviations:
+P  Pitch→
+A  Amplitude→
+AT  Aftertouch / Channel Pressure→
+CC4  CC#4 / Foot Controller→
+PB  Pitch Bend→
+
+=== PAGE 11 ===
+Individual Sound 
+Slot Parameter
+• Pitch Options
+Tune Knob Range: -12 to +12 semitones (+/- one octave)
+R Tune Mod Menu Controller setup for random detune with various options.
+ hint: The random values detunes each sound slot individually.→
+Abbreviations:
+L  low (detuning amount)→
+H  high (detuning amount)→
+Tune-R Slider Random detune amount. 
+ hint: The random values detunes each sound slot individually.→
+PB ¼ st Value Edit Pitchbend range in ¼ semitones (1 octave = 24). 
+Range: -24 to +24 (+/- one octave)
+
+=== PAGE 12 ===
+Individual Sound 
+Slot Parameter
+• Envelope 
+Options
+Envelope
+                    Several modulators are available to shape the envelope with 
+                    the modwheel or by velocity.
+Attack Attack Knob  Range: 0 ms to 15.0k ms→
+• CC#1 Attack Modulator bipolar (slider)
+• Velocity Attack Modulator bipolar (slider)
+• Random Attack Modulator bipolar (slider)  next to Vel. modulator→
+Attack Curve 
+Adjuster
+Little knob below the attack knob. 
+• Left  concave 1 - 3 →
+• Center  linear→
+• Right  convex 1 -3 → (The values are displayed on the label above)
+       concave           linear                  convex
+Hold Hold Knob  Range: 0 ms to 15.0k ms→
+• Random Hold Modulator bipolar (slider)
+Decay Decay Knob  Range: 0 ms to 25.0k ms→
+• CC#1 Decay Modulator bipolar (slider)
+• Velocity Decay Modulator bipolar (slider)
+Sustain Sustain Knob  Range: -inf. dB to 0 dB→
+• CC#1 Sustain Modulator bipolar (slider)
+Release Release Knob  Range: 0 ms to 25.0k ms→
+• CC#1 Release Modulator bipolar (slider)
+
+=== PAGE 13 ===
+Individual Sound 
+Slot Parameter
+• Volume Options
+Volume Volume Knob  Range: -inf. dB to +12 dB→
+Velocity Velocity modulator bipolar (slider)
+left (-100%)   high velocities = low volume→
+center (0)  no volume influence with velocity→
+right (+100%)  high velocities = high volume→
+Pan Pan slider  left (L50) – center (<C>) - right (R50)→
+Velocity Menu Velocity Stack  all velocities will activate the sound →
+Velocity (2) 1-2  two velocity layers (split  88) → →
+Velocity (3) 1-3  three velocity layers (splits  66, 101)→ →
+Velocity (4) 1-4  four velocity layers (splits  56, 82, 104)→ →
+Velocity (5) 1-5  five velocity layers (splits  50, 70, 90, 106)→ →
+Velocity (6) 1-6  six velocity layers (splits  44, 59, 74, 91, 107)→ →
+CC#1 Fade Menu By using the options in this menu you can switch or fade up to three 
+sound layers. In combination with the CC#2 Fade Menu you can also 
+achieve two-dimensional fades.
+• X-fade CC1 off  no fade or switch with modwheel→
+• Xf2-CC1  to achieve a crossfade between two layers→
+• Xf3-CC1  to achieve a fade between three layers →
+(e.g.: piano = \, mf = /\ and forte = /)
+• Xf-CC1 50%  fades in or out only half way→
+• Switch2 CC1  two-way modwheel switch (split  45)→ →
+• Switch3 CC1  triple modwheel switch (splits  41, 100)→ →
+CC#2 Fade Menu • X-fade CC2 off  no fade with CC#2→
+• Xf2-CC2  to achieve a crossfade between two layers→
+• Xf-CC2 \ 50%  fades out only half way→
+
+=== PAGE 14 ===
+Phrase Designer Tab
+Playing phrases
+Play parameters:
+1) The value for Volume increases or decreases the volume of the whole 
+phrase (-64  +64). →
+2) The value for Transpose transposes the whole phrase (-12  +12→  
+semitones).
+3) The value for Speed % increases or decreases the tempo of the phrase 
+(50% half tempo  200% double tempo). The change is independent→  
+from the real tempo, which is set by the host (e. g. Cubase, Logic, Finale 
+or Sibelius or the master setting from Kontakt in standalone mode etc.).
+4) If Retrigger is on, the phrase will be always played from the first step 
+(or from the last step, if Reverse is on). Is Retrigger off, the phrase will 
+continue with the next step.
+5) Reverse plays the phrase in reverse. The change in direction is also 
+possible during playback of a phrase.
+All values can be changed by MIDI controller (see Controller Overview).
+The phrase mode is monophonic. If phrases are played, this should be done in 
+"non legato". To play back several phrases at the same time, more instances of 
+the instrument are required.
+Play-
+parameters: 
+1) Volume  
+2) Transpose
+3) Speed %
+Play-
+parameters: 
+1) Volume  
+2) Transpose
+3) Speed %
+Play-
+parameters:
+4) Retrigger  
+5) Reverse
+Play-
+parameters:
+4) Retrigger  
+5) Reverse
+Key: 
+Shows the 
+actual 
+choosed 
+(played)  
+phrase 
+(yellow 
+keyswitches)
+Key: 
+Shows the 
+actual 
+choosed 
+(played)  
+phrase 
+(yellow 
+keyswitches)
+13 yellow keyswitches (A0   A1) for playing the →
+phrases.  
+13 yellow keyswitches (A0   A1) for playing the →
+phrases.  
+=== PAGE 15 ===
+Create & edit phrases  
+First please look at the 13 included phrases and try some features with it.
+A) By clicking on the Edit button, the current phrase (Key) 
+is loaded into a buffer. Now the phrase can be edited. The 
+changes will not take effect until the Save button is 
+pressed. If the changes are to be discarded simply turn off 
+the Edit mode. During the Edit mode is on, the duration can 
+(duration 1) be set with the green keyswitches, the Sound 
+with the modulation wheel and the note and Velocity can be 
+played with the keyboard. In the Record mode the step 
+value is additionally increased until Amount is reached. 
+The phrase is then stored automatically. 
+B) Key - indicates the currently edited phrase. An edited 
+phrase can be restored to any Key (Save).
+C) Amount - Here, the maximum number of steps of a 
+phrase is set (up to 100 per phrase).
+D) Step - If the value is changed, the corresponding step 
+parameters are displayed automatically.
+A) 
+Record, Edit 
+& Save
+A) 
+Record, Edit 
+& Save
+B) 
+Key
+B) 
+Key
+C) 
+Amount
+C) 
+Amount
+D) 
+Step
+D) 
+Step E) 
+Parameter 1
+Sound, 
+Duration, 
+Note & 
+Velocity
+E) 
+Parameter 1
+Sound, 
+Duration, 
+Note & 
+Velocity
+F) 
+Parameter 2
+From Legato 
+to Speed
+F) 
+Parameter 2
+From Legato 
+to Speed
+G) 
+Skip & 
+Standard
+G) 
+Skip & 
+Standard
+H) 
+Phrase 
+Menu
+H) 
+Phrase 
+Menu
+I) 
+With the yellow 
+keyswitches you can 
+play the edited 
+version.
+I) 
+With the yellow 
+keyswitches you can 
+play the edited 
+version.
+J) 
+With the green keyswitches you can set the 
+duration 1 of a step.
+J) 
+With the green keyswitches you can set the 
+duration 1 of a step.
+=== PAGE 16 ===
+E) Parameter 1 - The Sound menu contains the 
+multisamples. If a rest as step is desired, the menu can be 
+set to "< rest >". Using the menus Duration 1 & 2 the 
+duration of a step can be set flexibly. Note and Velocity can 
+be played from your keyboard. The tonal ranges of the 
+multisamples are displayed on the Kontakt Keyboard in 
+black.
+F) Parameter 2 - The small buttons (red / blue) are skip 
+buttons (for Legato Intensity and absorption -1 is the skip 
+value). When for a step no parameter change is necessary, 
+the value is not passed on to the Kontakt Engine (the 
+button is red). However, it is advisable to set the desired 
+parameters for a step with a new sound, as other phrases, 
+the values may have changed. The speed parameter can 
+only be set in the sounds, which are are marked with "TM" 
+(Time Machine Pro). The absorption parameter allows 
+remote control of the Room Walker (cc#11). Large value 
+jumps should here be avoided.
+G) Skip and Standard - The button skip parameter sets all 
+parameter (2) of the current step to skip, the button 
+standard sets the parameter (2) to default values. These 
+functions are also applicable to a step range on the phrase 
+menu. Thus phrases can be easily initialized.
+H) The Phrase Menu contains some useful functions for 
+editing the phrases. With the function "Import phrase" a 
+previously saved phrase is imported on the currently active 
+key. "Export phrase" saves the current phrase (key). On 
+many functions a range can be selected before. The range 
+is set using the adjuster "Min" and "Max", the destination of 
+the copy with the value of "destination". For a copy the 
+values of "Volume" and "Transpose" will be included.
+Example: You want to reduce the volume of a phrase. 
+First, set the (step) range, then the adjuster for "Volume" 
+on e.g. -20 and then click the menu item "Modify phrase 
+volume (range)". Or you want to transpose the entire 
+phrase a minor third down:
+Set the desired range, the transpose adjuster to -3 and 
+finally click the menu item "Transpose phrase (range)".
+Please note that this will transpose notes, while the "Tune" 
+function detunes the samples. With the "Color" function, 
+which also exist in similar form in the Transform script, you 
+change the timbre of the samples.
+Phrase MenuPhrase Menu
+Duration 
+(menu 1)
+Duration 
+(menu 1)
+
+=== PAGE 17 ===
+Aleatoric functions
+If the aleatory features are enabled (menu item Controls on under Step), 10 
+additional menus and 2 Move buttons will appear. Furthermore, the last six 
+yellow keyswitches are now colored red.
+In the additional menus, a percentage value can now be selected. In this 
+percentage area a value per step is rolled.
+Example: 
+You want only sixteenth and eighth notes are played: Set the menu under 
+duration 1 to 1/8 - 1/16.
+Or, you want that only very short sounds are played:
+Set the menu above Decay to 20-40%.
+Or, you want the sounds in the panorama appear slightly between left and 
+right: Set the menu above Pan to 40 – 60%.
+For each of the 6 red keyswitches (Preset 1 - 6) a set of aleatory menu 
+settings can be saved. The aleatory functions use the cache. If you want to 
+make the settings permanently a Key must selected. After that, press the save 
+button. The last diced steps will be also stored in the phrase.
+For the Legato function and Room Walker absorption, there is one move 
+button. If the move button for Legato is on, Legato will be switched off or on 
+from time to time . If the move button for absorption is on, the sound then 
+travels back and forth in the room. The maximum values can be set via the 
+phrase menu. First, set the adjuster for "Min" to 0 (front) and then the 
+adjuster for "Max" e.g. 80. Select the menu item "Set min and max absorbtion 
+(move)". As of now, the sound moves from the front to the rear or vice versa.
+All aleatory menus can be changed live by MIDI controllers (see Controller 
+Overview). 
+Aleatoric MenusAleatoric Menus
+The six red keyswitches 
+(Presets) starts a 
+aleatoric performance.
+The six red keyswitches 
+(Presets) starts a 
+aleatoric performance.
+=== PAGE 18 ===
+Room Walker Tab
+Controls Overview
+ 
+Room Walker Controls
+(1 A – 1 E)
+In the upper section you find the "Room Walker" controls. As the name 
+suggests, it is for effects within a two-dimensional space or for moves in a 
+virtual room. CC # 11 takes over the room depth and CC # 12 the panorama.
+Basically the Room Walker consist of four insert effects, which can be switched 
+separately on or off: (1 B) Stereo Modeler (pan and stereo width), (1 C) 
+Convolution 1 and 2, the (1 D) EQ and the (1 E) pitch module. 
+In the "IR Combinations" menu you can choose between 64 room settings 
+based on 61 IR samples (room impulses). In each case, two different spaces 
+are loaded. In addition to this virtual space positioning completely different 
+effects with the Room Walker of course still possible.
+1 A:
+Room Walker switch
+Presets Menu
+Presets List
+1 A:
+Room Walker switch
+Presets Menu
+Presets List
+1 B:
+Stereo Modeler 
+(pan and stereo 
+width)
+1 B:
+Stereo Modeler 
+(pan and stereo 
+width)
+1 C:
+Convolution 1 & 2 
+with room impuls menu 
+(IR Combinations)
+1 C:
+Convolution 1 & 2 
+with room impuls menu 
+(IR Combinations)
+1 E:
+Pitch Control 
+switch
+1 E:
+Pitch Control 
+switch
+1 D:
+2 Band EQ
+1 D:
+2 Band EQ
+2 A:
+stereo / mono buttons
+2 B: Tune Editor and 2 C: Spread
+2 A:
+stereo / mono buttons
+2 B: Tune Editor and 2 C: Spread
+3:
+Color - effect
+3:
+Color - effect
+4:
+Stretch - effect
+4:
+Stretch - effect
+Controller bypass 
+buttons  
+(total 11)
+Controller bypass 
+buttons  
+(total 11)
+=== PAGE 19 ===
+Room Walker Operation
+CC#11 acts as a "Macro Controller", which controls up to 10 controls on the 
+Room Walker (the white buttons switch the respective controller influencing on 
+or off). 
+You can set, for example, that the high frequencies decrease as you "go" 
+deeper into the room, at the same time you reduce the stereo width of the 
+instrument and increase the "wet amount" of Convolution 1. The whole is 
+achieved in that a percentage bias value is available for each element.
+Room Walker Presets
+You can also create, save and load your own presets. If you load or save complete 
+banks, first the names file is requested, then the data file. It is recommended to set the files to 
+the same name and the names file with the extension "_names" at the end.
+If your mouse is over the switches and buttons, you will get additional support 
+for the individual functions in the info pane (i) of Kontakt (Info button must be 
+active).
+The following is a list of the individual elements of a preset:
+• (1) Stereo Modeller Bypass, Pan and Spread Controller Bypass (white 
+buttons) with respective minimum and maximum values
+• (2) Convolution 1 and 2 Bypass, Wet 1 and Wet 2 Controller Bypass 
+(white buttons) with respective minimum and maximum values
+• (3) EQ Bypass, Frequency 1-2, Bandwidth 1-2 and Gain 1-2 
+Controller Bypass (white buttons) with respective minimum and 
+maximum values
+• (4) Pitch Control Bypass and Pitch Slider value (Bipolar +/- 1 octave)
+• (5) IR Combination (1-64)
+Example: Gain 2 "cc% min" is set to 50 and "cc% 
+max" to 10. This means that at the zero position of 
+the controller 11 there is no influence (50 = 0 dB). 
+The further the controller 11 is performed, the more 
+attenuated the frequencies.
+Example: Gain 2 "cc% min" is set to 50 and "cc% 
+max" to 10. This means that at the zero position of 
+the controller 11 there is no influence (50 = 0 dB). 
+The further the controller 11 is performed, the more 
+attenuated the frequencies.
+
+=== PAGE 20 ===
+Room Walker Multi Instruments
+If you are working with many instruments in a project, your computer 
+processor is of course hugely demanded if each instrument required two 
+Convolution effects. For this case, use the included multi instruments. They 
+allow the use of the Room Walker with the external convolution effects of 
+Kontakt. You can then merge in one multi - many (multi-) Instruments 
+("merge", press "No"). So you use only two Convolution Effects and yet every 
+instrument can be controlled independently.
+Output Mode 
+(2 A)
+Color Effect 
+(3) (-12  +12)→
+Then set the desired MIDI channel of each 
+instrument.
+If you now move the controler 11, the controlls 
+for Aux 1 and Aux 2 will move with the
+automation-setting, and of course the internal 
+Room Walker elements.
+Then set the desired MIDI channel of each 
+instrument.
+If you now move the controler 11, the controlls 
+for Aux 1 and Aux 2 will move with the
+automation-setting, and of course the internal 
+Room Walker elements.
+You can switch the instrument from 
+stereo to mono. There are the variant 
+Mono 1 (left) or Mono 2 (right). You can 
+use it to try out a simple way how your 
+mix sound with mono instruments. If you 
+use a lot of instruments you may reach 
+more transparency of the mix.
+You can switch the instrument from 
+stereo to mono. There are the variant 
+Mono 1 (left) or Mono 2 (right). You can 
+use it to try out a simple way how your 
+mix sound with mono instruments. If you 
+use a lot of instruments you may reach 
+more transparency of the mix.
+This allows you to play the instrument with a "Re-Pitch" - effect. 
+Negative values produce a dull, soft sound and positive values give 
+a light to biting sound. A value of +12 makes a guitar , for example, a 
+kind of banjo. A value of -12 makes a violin a kind of cello. The 
+effect range can be limited by the adjustable "Range". In position "0" 
+you hear the original instrument (standard, loaded by the 
+instrument).
+Color can be operated remotely via CC # 56
+This allows you to play the instrument with a "Re-Pitch" - effect. 
+Negative values produce a dull, soft sound and positive values give 
+a light to biting sound. A value of +12 makes a guitar , for example, a 
+kind of banjo. A value of -12 makes a violin a kind of cello. The 
+effect range can be limited by the adjustable "Range". In position "0" 
+you hear the original instrument (standard, loaded by the 
+instrument).
+Color can be operated remotely via CC # 56
+=== PAGE 21 ===
+Stretch Effect 
+(4) (-200  +200%)→
+Tune Editor
+(2 B)
+Spread
+(2 C)
+View Tab
+a compact overview for several controllers, the current preset name and dynamics.
+This effect serves only as a small but interesting gimmick:
+All incoming notes will be compressed or stretched by the 
+base notes around. Play, for example, a broken C minor 
+triad several times in a row while at the same time turning 
+the controller of stretch from 100 to 200%.
+The effect range can be limited by the adjustable "Range". 
+In position "100%" you can hear the original sound 
+(standard, loaded by the instrument).
+Stretch is with CC#57 and Base with CC#55 remote-
+controllable
+This effect serves only as a small but interesting gimmick:
+All incoming notes will be compressed or stretched by the 
+base notes around. Play, for example, a broken C minor 
+triad several times in a row while at the same time turning 
+the controller of stretch from 100 to 200%.
+The effect range can be limited by the adjustable "Range". 
+In position "100%" you can hear the original sound 
+(standard, loaded by the instrument).
+Stretch is with CC#57 and Base with CC#55 remote-
+controllable
+With the tune editor you can edit the two custom tunigs, 
+which are available through the tune menu of the preset 
+designer tab. You can also load and save custom tunings 
+over the Presets Menu.
+To edit the custom tunings please select first the tone, 
+then change the tuning with the „Tune“ value edit. After 
+editing all tones please choose „save changes“ from the 
+Tune Editor menu.
+With the tune editor you can edit the two custom tunigs, 
+which are available through the tune menu of the preset 
+designer tab. You can also load and save custom tunings 
+over the Presets Menu.
+To edit the custom tunings please select first the tone, 
+then change the tuning with the „Tune“ value edit. After 
+editing all tones please choose „save changes“ from the 
+Tune Editor menu.
+Stretch tuning (-120  120). →
+Spreads the higher and lower octaves. Recommendation is 
+value 2.
+Stretch tuning (-120  120). →
+Spreads the higher and lower octaves. Recommendation is 
+value 2.
+
+=== PAGE 22 ===
+Legato
+Controller Overview
+Preset Mode
+CC#0 functions
+0   87 (switch Presets 1   88)→ →
+88   117 (switch Keyswitch Banks Presets 1   30)→ →
+118 (Keyswitch Bank 1)
+119 (Keyswitch Bank 2)
+120 (Keyswitch Bank 3)
+121 (Toggle Mode)
+122 (Slide & Trill Mode)
+126 (Preset Mode on / Phrase Mode off)
+127 (Preset Mode off / Phrase Mode on)
+CC#1, CC#2, CC#4, AT  various→
+Round Robin CC# 82
+          0 – 20           on repetition
+         21 – 41          off  
+         42 – 62          on repetition (random)
+         63 – 83          always
+         84 – 104        always (random)
+       105 – 115        always (indiv.)
+       116 – 119        Instrument 1
+       120 – 122        Instrument 2
+       123 – 127        Ensemble
+Amount of voices (Ensemble Mode) CC# 91
+Pan width (Ensemble Mode) CC# 92
+Alive (Ensemble Mode) CC# 93
+Detune (Ensemble Mode) CC# 94
+Delay (Ensemble Mode) CC# 95
+Timer (for e.g. breathing / 0 = off) CC# 28
+With this function you can achieve a glissando 
+between two notes when you slightly overlap the 
+sounds while playing. In this mode the instrument 
+can play only one voice.
+You can activate or deactivate the function using 
+the legato button. 
+Alternatively, you can control the legato mode 
+with CC#68. CC#24 controls the intensity.
+CC#68 = 0  Legato off→
+CC#68 = 127  Legato Mode→
+CC#24: 0  127 = easy effect (slur)  glissando → →
+With this function you can achieve a glissando 
+between two notes when you slightly overlap the 
+sounds while playing. In this mode the instrument 
+can play only one voice.
+You can activate or deactivate the function using 
+the legato button. 
+Alternatively, you can control the legato mode 
+with CC#68. CC#24 controls the intensity.
+CC#68 = 0  Legato off→
+CC#68 = 127  Legato Mode→
+CC#24: 0  127 = easy effect (slur)  glissando → →
+
+=== PAGE 23 ===
+Phrase Mode
+Play parameters
+CC#31  volume (center = 64)→
+CC#32  transpose ( center = 63)→
+CC#33  speed ( center = 43)→
+CC#34  Retrigger (on / off)→
+CC#35  Reverse (on / off)→
+CC#100  Sound selection (menu 2)→
+Edit or Record switch on:
+CC#1  Sound selection→
+CC#2  Duration 2 selection→
+Aleatoric functions on
+CC#87  Preset selection & Aleatoric on / off→
+CC#88  Sound % menu→
+if Sound % Menu off:
+CC#1  Sound selection→
+CC#89  Duration 1 menu→
+if duration 1 menu off:
+CC#2  duration 1 selection→
+CC#90  Duration 2 menu→
+CC#91  Note % menu→
+CC#92  Velocity % menu→
+CC#93  Move Legato on / off→
+CC#94  Legato Intensity % menu→
+CC#95  Move Absorbtion on / off→
+CC#96  Attack % menu→
+CC#97  Decay % menu→
+CC#98  Pan % menu→
+CC#99  Tune % menu→
+Generally
+CC#7  Instrument volume→
+CC#10  Instrument pan→
+CC#64  Hold Pedal→
+CC#11  Room Walker macro controller→
+CC#12  Room Walker pan controller→
+CC#67  Room Walker pitch intensity (-12  +12 semitones)→ →
+CC#69  Room Walker pitch bypass→
+CC#27  Room Walker Presets → (1  25 normal, 26  50 w/o Convolution, 51  75 only Stereo Modeller, 76  100 only Convolution, 101  125 only EQ)→ → → → →
+CC#68  Legato mode on (127) or off (0)→
+CC#24  Intensity Legato (glissando)→
+CC#25  Intensity Glide→
+CC#56  Color→
+CC#57  Stretch→
+CC#55  Base Note→
+CC#29  Base note for tuning→
+CC#30  Tuning→
+=== PAGE 24 ===
+Appendix
+List of the 61 room impulses
+IR Sample Length
+Beautyverb 8,255''
+Big_Church 4,960''
+C_Chamber_Early_1 0,848''
+C_Chamber_Early_2 1,393''
+C_Club_Medium 2,081''
+C_Club_Small 1,608''
+C_Concert_Hall_Large 5,144''
+C_Concert_Hall_Medium_1 2,345''
+C_Concert_Hall_Medium_2 3,061''
+C_Concert_Hall_Small 1,457''
+C_Large_Church 4,606''
+C_Medium_Church 3,048''
+C_Room_Medium 1,351''
+C_Room_Small 0,850''
+C_Wood_Chamber 3,364''
+Comb 2,707''
+Combed_Cloud 3,912''
+Crystals 7,970''
+Cyclo 3,925''
+Dual_Crystal_1 6,119''
+Dual_Crystal_2 5,453''
+Flanging 2,011''
+Galaxyverb 9,000''
+Hall_1 3,417''
+Hall_2 2,906''
+Hall_Early 0,975''
+Hydro_gliss 5,108''
+Long_Crisps 6,588''
+Long_Distance 3,215''
+P3_Auditorium_Large 5,400''
+P3_Auditorium_Medium 4,158''
+P3_Auditorium_Small 2,926''
+P3_Concert_Large 4,396''
+P3_Concert_Medium 3,597''
+P3_Concert_Small 2,446''
+P3_Damped_Hall 2,366''
+P3_Early_1 0,620''
+P3_Early_2 0,899''
+P3_Early_3 0,618''
+P3_Echoy 5,038''
+P3_Like_Reverse 5,270''
+P3_Long_Modulated 6,607''
+P3_Nice_Hall 3,901''
+P3_Plate_Large 3,839''
+P3_Plate_Medium 1,643''
+P3_Plate_Small 1,250''
+P3_Theatre 3,478''
+P3_Warm_Hall_Large 5,858''
+P3_Warm_Hall_Medium 3,049''
+P3_Warm_Hall_Small 2,210''
+P3_Watery_2 4,350''
+P3_Watery_Hall 8,378''
+P3_Woody 4,440''
+Plasma 4,984''
+Roll 2,845''
+Room_1 1,131''
+Room_2 1,310''
+Smear 5,337''
+Space_Tunnel 7,293''
+Tunnel 5,485''
+Watery 4,235''
+Grey: < 2'' / yellow: > 5''
+=== PAGE 25 ===
+List of the 64 room impulse combinations
+Name Convolution 1 Length Convolution 2 Length
+1 Medium Church C_Medium_Church 3,048'' C_Chamber_Early_1 0,848''
+2 Large Church 1 C_Large_Church 4,606'' C_Chamber_Early_1 0,848''
+3 Large Church 2 C_Large_Church 4,606'' C_Wood_Chamber 3,364''
+4 Concert Hall C_Concert_Hall_Large 5,144'' C_Club_Small 1,608''
+5 Medium Concert Hall 1 C_Concert_Hall_Medium_2 3,061'' C_Room_Medium 1,351''
+6 Medium Concert Hall 2 C_Concert_Hall_Medium_1 2,345'' C_Room_Small 0,850''
+7 Small Concert Hall C_Concert_Hall_Small 1,457'' C_Chamber_Early_1 0,848''
+8 Wood Chamber 1 C_Wood_Chamber 3,364'' C_Room_Small 0,850''
+9 Wood Chamber 2 C_Wood_Chamber 3,364'' C_Concert_Hall_Large 5,144''
+10 Medium Club C_Club_Medium 2,081'' C_Chamber_Early_2 1,393''
+11 Medium Room C_Room_Medium 1,351'' C_Chamber_Early_2 1,393''
+12 Roomy Hall 1 Room_1 1,131'' Hall_1 3,417''
+13 Roomy Hall 2 Room_2 1,310'' Hall_2 2,906''
+14 Into Church Big_Church 4,960'' Hall_Early 0,975''
+15 Galaxy Church Big_Church 4,960'' Galaxyverb 9,000''
+16 Galaxy Beauty Beautyverb 8,255'' Galaxyverb 9,000''
+17 Big Plasma Verb Galaxyverb 9,000'' Plasma 4,984''
+18 Smear Verb Smear 5,337'' Roll 2,845''
+19 Crystal Flange Dual_Crystal_2 5,453'' Flanging 2,011''
+20 Hydro Distance Hydro_gliss 5,108'' Long_Distance 3,215''
+21 Tunnel Distance Tunnel 5,485'' Long_Distance 3,215''
+22 Smear Tunnel Space_Tunnel 7,293'' Smear 5,337''
+23 Crisps Comb Comb 2,707'' Long_Crisps 6,588''
+24 Crystal Cyclo Cyclo 3,925'' Dual_Crystal_1 6,119''
+25 Beauty Watery Watery 4,235'' Beautyverb 8,255''
+26 Like Reverse P3_Like_Reverse 5,270'' P3_Early_1 0,620''
+27 Echoy P3_Echoy 5,038'' P3_Early_2 0,899''
+28 Long Modulated P3_Long_Modulated 6,607'' P3_Early_3 0,618''
+29 Nice Hall P3_Nice_Hall 3,901'' P3_Early_2 0,899''
+30 Metallic Hall 1 P3_Warm_Hall_Small 2,210'' P3_Plate_Large 3,839''
+31 Metallic Hall 2 P3_Plate_Medium 3,049'' P3_Plate_Small 1,250''
+32 Theatre P3_Warm_Hall_Small 2,210'' P3_Theatre 3,478''
+33 Watery 1 P3_Watery_2 4,350'' P3_Plate_Medium 1,643''
+34 Watery 2 P3_Watery_Hall 8,378'' P3_Plate_Medium 1,643''
+35 Warm Hall Medium P3_Warm_Hall_Medium 3,049'' P3_Early_1 0,620''
+36 Warm Hall Large P3_Warm_Hall_Large 5,858'' P3_Early_1 0,620''
+37 Damped Hall P3_Damped_Hall 2,366'' P3_Early_2 0,899''
+38 Auditorium Large P3_Auditorium_Large 5,400'' P3_Concert_Small 2,446''
+39 Auditorium Medium P3_Auditorium_Medium 4,158'' P3_Concert_Small 2,446''
+40 Auditorium Small P3_Auditorium_Small 2,926'' P3_Concert_Small 2,446''
+41 Concert Small P3_Concert_Small 2,446'' P3_Early_2 0,899''
+42 Concert Medium P3_Concert_Medium 3,597'' P3_Early_2 0,899''
+43 Concert Large P3_Concert_Large 4,396'' P3_Damped_Hall 2,366''
+44 Woody P3_Woody 4,440'' P3_Early_3 0,618''
+45 Long dark modulated Hall P3_Damped_Hall 2,366'' P3_Long_Modulated 6,607''
+46 Echoy long modulated P3_Long_Modulated 6,607'' P3_Echoy 5,038''
+47 Metallic Reversy P3_Plate_Large 3,839'' P3_Like_Reverse 5,270''
+48 Early Water 1 P3_Early_1 0,620'' P3_Watery_2 4,350''
+49 Early Water 2 P3_Early_1 0,620'' P3_Watery_Hall 8,378''
+50 Small Early P3_Early_3 0,618'' P3_Early_1 0,620''
+51 Small Chamber C_Chamber_Early_1 0,848'' C_Room_Small 0,850''
+52 Medium Early P3_Early_2 0,899'' Hall_Early 0,975''
+53 Room Plate Room_1 1,131'' P3_Plate_Small 1,250''
+54 Medium Room 2 Room_2 1,310'' C_Room_Medium 1,351''
+55 Small Chamber 2 C_Chamber_Early_2 1,393'' C_Concert_Hall_Small 1,457''
+56 Club Plate C_Club_Small 1,608'' P3_Plate_Medium 1,643''
+57 Flanging Club Flanging 2,011'' C_Club_Medium 2,081''
+58 Warm Hall Medium P3_Warm_Hall_Small 2,210'' C_Concert_Hall_Medium_1 2,345''
+59 Damped Concert Hall P3_Damped_Hall 2,366'' P3_Concert_Small 2,446''
+60 Comb Roll Comb 2,707'' Roll 2,845''
+61 Small Auditorium Hall Hall_2 2,906'' P3_Auditorium_Small 2,926''
+62 Warm Church C_Medium_Church 3,048'' P3_Warm_Hall_Medium 3,049''
+63 Medium Distance Hall C_Concert_Hall_Medium_2 3,061'' Long_Distance 3,215''
+64 Wood Hall C_Wood_Chamber 3,364'' Hall_1 3,417''
+Grey: < 2'' / yellow: > 5''
+=== PAGE 26 ===
+Version History
+ 
+Latest release may 2025
+• New „N“ button on the top right side. If active the legato status of each preset is ignored, for example if you 
+want to control legato with a notation software.
+• CC#99 is translated to aftertouch (AT). 
+• This update is a prerequisite for the interaction with Steinberg Dorico
+• Bug fix release groups and sound slot 6 functionality.
+Release january 2025
+• Some GUI changes (instrument image / edit mode)
+• Performance improvement
+• Real round robin optimization
+Release may 2023
+• Some more sample content for: Bass Flute, Clarinet Eb, Clarinet A, Clarinet Bb, Basset Horn, Bass Clarinet, 
+Trumpet, Trombone, Vibraphone, Violin, Viola, Violoncello
+• Bug fix Room Walker output, stereo, mono 1 and mono 2 works now as expected on reloading the 
+instruments
+• English Horn range extended to c'''
+• Oboe d'amore range extended to d'''
+• Preset Designer / Routing Menu: 6 Color effect modes and 3 (automatic) velocity variations
+Release january 2021
+• Standardized Keyswitch Setups for woodwinds, brass and strings
+• Some more presets for woodwinds, brass and strings
+• All presets with „long“ playing styles are playable with Xample's 
+(semi- and/or) automatic true legato, a combination of samples and scripted legato. (woodwinds, brass and 
+strings)
+Release may 2020
+• Phrase Designer minor fixes
+• Preset Designer „Paste Pitch Bend to all presets“ added to Preset Menu
+• Preset Designer „Paste Volume to presets with same sound“ added to Preset Menu
+• Preset Designer „About“ added to Preset Menu
+• Preset Designer minor fixes
+Release january 2018
+• Room Walker presets can now be switched by cc#27
+• Custom Tunings can now loaded and saved
+• Preset Menu: „Paste Envelope (of actual slot) to all presets“ added
+• Routing Menu: MW to Breath, Breath to MW, Foot to MW and Foot to Breath added
+• Some presets added
+Release october 2017
+• new view tab for a compact overview of the instrument
+• minor fixes with initializing the preset on loading the instrument
+Release march 2017
+• new copy and past functions added to the Presets Menu
+• new routing menu with various routing possibilities 
+• attack curve parameter added 
+• new tuning editor with two custom tunings 
+• new stretch tune value edit 
+• presets updated to reflect some of the new features
+Release november 2016
+• minor fixes
+Release june 2016
+• new cc#0 functions
+• toggle mode now with visual control
+• additional file commands
+• new release switch sound groups
+• new text label for phrase names
+• possibility to name phrases individually
+• new text label for Room Walker presets
+Initial release february 2016

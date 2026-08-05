@@ -1,0 +1,76 @@
+# Xsample Bass Clarinet — Deep Map (S2.3, third instrument)
+
+> Seeded 2026-08-04 from: 3-page product manual, **Notation Key Word Overview** +
+> **AIL Extended Scripting** PDFs (archived + extracted in `docs/manuals/`), the
+> developer's legato tutorial video (composer-supplied transcript), and a VI-Control
+> sweep. Host: **Kontakt 8** (not UVI — different world entirely, see SAMPLER_QUIRKS).
+> **Composer priority (2026-08-04): ALL sounds get developed — multiphonics and
+> flutter tongue get FULL survey treatment, not lightning.**
+
+## 1 · Articulations (13; layers × round-robin from product table)
+
+senza vibrato (3×3) · natural vibrato (3×3) · slow cresc/decresc (1×3) · staccato (3*2×3) ·
+flutter tongue (2×3) · slap tongue (1) · **multiphonics (1)** · glissandi (1) ·
+air noises (1) · key noises (1) · breath noises (1) · playing noises (1) · undefined tones (1)
+
+## 2 · Patches
+
+| Patch | Nature | Presets |
+|---|---|---|
+| `Bass Clarinet.nki` (**elastic**) | freely configurable; **primary for the rack** | 29 factory (CC#0 1–29): incl. triple tongue 16T, portato, secco, accent, vibrato variants, MW-inverted combos, **Senza Vibrato + Flutter Tongue Velocity X MW** (mid-note flutter crossfade?) |
+| `Bassclarinet play.nki` (fixed) | shared KS layout across AIL winds | 11 (CC#0 0–10) |
+| `Bassclarinet score.nki` (fixed) | 2 velocity layers (≤80 / >80, or top-key switches A#7/B7) | CC#0 0–16 |
+
+## 3 · Control system (deepest of our three libraries)
+
+- **CC#0 = articulation selector**: presets 1–88 → values 0–87; **individual keyswitches
+  reachable as CC#0 88–117**; special functions at 126/127. Keyswitches also physical:
+  bottom A0–G1; layer switches top A#7/B7 (score patch).
+- **CC#1 (MW) = continuous dynamics** on "MW" presets ("seamless ppp→fff by crossfade" —
+  seam quality vs UVI = star question). "Velocity" presets = attack-fixed. Combos:
+  *Velocity X MW*, *MW inverted*, *MW Shape* (wheel shapes short notes).
+- **CC#4 (foot controller)** — drives filters/LFO options (elastic).
+- **Filters**: F1/F2 with controller combos — e.g. F2 driven by CC#1 in shapes (/, /\, \).
+  VI-Control tip: **the low-pass filter is a great dynamic-shaping tool — natural
+  diminuendi on long notes, expression on legato/attacks.**
+- **Routing options**: MW→AT, AT→PB, Velocity→AT (elastic per-slot).
+- **Pitch bend range editable in ¼-semitone steps up to ±1 octave** (value 24 = octave) —
+  **quarter-tone capability built in.**
+- **Modulators**: LFOs (pitch+amp, controller-drivable), random detune, envelope shapers.
+- **True legato** on all long styles (samples + script). Developer's own tip (legato
+  tutorial video): **use velocity-based presets for legato improvisation to avoid
+  crossfade phasing**; MW presets phase-risk during legato.
+
+## 4 · Community / developer intel (rung 2)
+
+- Hans Josef Winkler (developer) is **active on VI-Control** — direct questions possible.
+- LPF-as-diminuendo trick (above). Round-robin "Instrument 1/2" anti-phase trick exists
+  in the strings — pattern may apply if we ever double.
+- Xsample AIL praised as core + extended library; extended techniques "not described"
+  systematically — our survey fills that gap for our own use.
+
+## 5 · Rack plan sketch (R5 — to finalize at build)
+
+Track "BassCl SI2"→ no — **"Bass Clarinet XS"**, loopMIDI port `BassCl`, **Kontakt 8**
+instance. Likely ONE part: `Bass Clarinet.nki` (elastic) — articulation switching via
+CC#0/keyswitches INSIDE the patch (unlike UVI's channel-per-technique). This exercises
+the third switching mechanism; rendering recipes must speak CC#0 here.
+Open at build: Kontakt octave-display convention (pin it); which factory presets loaded
+into which slots if multiple needed; stereo/mono switch; Room Walker OFF.
+
+## 6 · Survey protocol sketch (XC-series)
+
+- **XC0** meet: senza vibrato — sustain, layers, legato-overlap behavior
+- **XC1** switching: CC#0 preset changes vs keyswitches — latency, statefulness
+- **XC2** THE SEAM TEST: MW swell on *Senza Vibrato MW* — is "seamless" real (vs UVI phasey)?
+- **XC3** **MULTIPHONICS — full treatment** (composer priority): inventory what's there
+  (pitches? fingerings? how mapped?), character per note, dynamics behavior
+- **XC4** **FLUTTER — full treatment** (composer priority): 2 layers, MW weave presets,
+  the *Velocity X MW* combo (flutter crossfade mid-note?), flutter↔senza transitions
+- **XC5** legato: overlap notes on long styles; velocity-preset vs MW-preset phasing check
+- **XC6** glissandi + undefined tones + noises (lightning)
+- **XC7** quarter-tone check: PB range setting + a ¼-tone bend by ear
+
+## 7 · Findings
+
+*(filled during the survey)*

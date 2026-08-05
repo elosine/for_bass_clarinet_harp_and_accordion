@@ -1,0 +1,700 @@
+=== PAGE 1 ===
+Xsample Notation Key Word Overview
+Content
+Woodwinds 
+Brass  
+Percussion 
+Timpani 
+Mallets 
+Stringed Instruments 
+Keyed Instruments 
+Accordion 
+Concert Organ 
+Strings 
+Vocalquartet 
+Ensemble 
+Hint 
+Supported Xsample AI Libraries and Instruments 
+    
+Changes and additions for notation key words introduced with the new Xsample Sound Set for Sibelius 
+and the new Xsample Finale Human Playback preferences. 
+Items in red are only available with the XAIL Elastic Patches and / or the Contemporary 
+Libraries using the new Xsample Notation Tool Multiscript for Kontakt.
+Release: January 2018 – Xsample Professional Sound Libraries
+Last Update January 2021
+ 
+=== PAGE 2 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Strings
+arco vibrato arco / ord. arco, nat., ord. [reset] MW / 0
+arco senza vibrato senza vibr. non vib, senza vib. +non vibrato MW / 1
+arco c.s. vibrato con sord. / mute mute, con sord +mute MW / 2
+arco c.s. senza vib. c.s. senza vibr. c.s. senza vibr. +non vibrato.mute MW / 3
+flautando fragile flaut. fragile sul tasto +sul tasto MW / 49
+flautando fragile X sul pont. MW (script or text expression) ~C0,75 - Vel / 75
+circular bowing circular ~C0,70 - MW / 70
+staccato (script or text expression) ~C0,72 - Vel / 72
+spiccato (articulation) (articulation) +spiccato Vel / 6
+spiccato soft X bright MW (script or text expression) ~C0,73 - Vel / 73
+spiccato con sord. spicc. c. s. spicc. c. s. +mute.spiccato Vel / 50
+spiccato sul pont. spicc. s. p. spicc. s. p. +spiccato.sul ponticello Vel / 51
+light accent (script or text expression) ~C0,74 - Vel / 74
+accent (fast legato) with accent with accent +with accent Vel / 68
+accent senza vibrato (fast legato) (script or text expression) ~C0,76 - Vel / 76
+marcato sfz (script or text expression) ~C0,69 - Vel / 69
+martele, marcato staccato (articulation) (articulation) +staccato.accent Vel / 7
+gettato ricochet gettato +gettato Vel / 52
+pizzicato pizz. pizz. +pizzicato Vel / 8
+pizzicato vibrato pizz. vib. pizz. vib. +pizzicato.vibrato Vel / 53
+pizzicato con sord. pizz. c. s. pizz. c. s. +mute.pizzicato Vel / 54
+pizzicato con sord. vibrato pizz. c. s. vib. pizz. c. s. vib. +mute.pizzicato.vibrato Vel / 55
+pizzicato alla doublebass pizz. alla db. pizz. alla db. +pizzicato.db Vel / 56
+pizzicato sul ponticello pizz. sul pont. pizz. sul pont. +pizzicato.sul ponticello Vel / 57
+Bartok pizz. (articulation) (articulation), snap pizz +pizzicato.snap Vel / 9
+col legno col legno col leg +col legno Vel / 10
+col legno gettato legno gettato legno gettato +col legno.gettato Vel / 58
+finger finger finger, fing. +finger Vel / 11
+tremolo (articulation) (articulation) +tremolo.unmeasured MW / 4
+artificial harmonics (articulation) (articulation), harmonic +harmonic MW / 5
+artificial harmonics spiccato (script or text expression) ~C0,79 - Vel / 79
+artificial harmonics con sord. c. s. o c. s. o +mute.harmonic MW / 59
+harmonics trill trill o trill o +harmonic.trill MW / 60
+tremolo sul pont. sul pont. + (articulation) sul pont. + (articulation) +tremolo.unmeasured.sul ponticello MW / 14
+tremolo sul pont. X sul pont. MW (script or text expression) ~C0,78 - Vel / 78
+sul pont. sul pont. sul pont. +sul ponticello MW / 13
+sul pont. (short) s.p. secco s.p. secco +sulponticello.secco Vel / 12
+tremolo harmonics trem. o trem. o +tremolo.harmonics MW / 15
+harmonics gliss. gliss. o gliss. o +harmonic.gliss MW / 16
+c.s. harm. gliss. c.s. gliss. o c.s. gliss. o +mute.harmonic.gliss MW / 17
+harm. gliss. trem. gliss. trem. o gliss. trem. o +harmonic.gliss.tremolo MW / 18
+c.s. harm. gliss. trem. c.s. gliss. trem. o c.s. gliss. trem. o +mute.gliss.tremolo MW / 19
+artificial harm. gliss. art. gliss. o art. gliss. o +artificial_harmonic.gliss MW / 20
+glissandi gliss. (op.) gliss. (op.) +gliss.open_strings MW / 21
+c.s. glissandi c.s. gliss. (op.) c.s. gliss. (op.) +mute.gliss.open_strings MW / 22
+glissandi (short) gliss (fast) gliss (fast) +gliss.fast MW / 23
+pizz. gliss. pizz. gliss. (op.) pizz. gliss. (op.) +pizzicato.gliss.open_strings Vel / 34
+harmonics c. s. sul C sul C c. s. o sul C c. s. o +mute.harmonic.sul_C MW / 61
+harmonics c. s. sul G sul G c. s. o sul G c. s. o +mute.harmonic.sul_G MW / 62
+harmonics c. s. sul D sul D c. s. o sul D c. s. o +mute.harmonic.sul_D MW / 63
+harmonics c. s. sul A sul A c. s. o sul A c. s. o +mute.harmonic.sul_A MW / 64
+harmonics sul B sul B o sul B o +harmonic.sul_B MW / 24
+harmonics sul E sul E o sul E o +harmonic.sul_E MW / 25
+harmonics sul A sul A o sul A o +harmonic.sul_A MW / 26
+harmonics sul D sul D o sul D o +harmonic.sul_D MW / 27
+harmonics sul G sul G o sul G o +harmonic.sul_G MW / 28
+harmonics sul C sul C o sul C o +harmonic.sul_C MW / 65
+harm. pizz. sul B pizz. sul B pizz. sul B o +harmonic.pizzicato.sul_B Vel / 29
+=== PAGE 3 ===
+harm. pizz. sul E pizz. sul E pizz. sul E o +harmonic.pizzicato.sul_E Vel / 30
+harm. pizz. sul A pizz. sul A pizz. sul A o +harmonic.pizzicato.sul_A Vel / 31
+harm. pizz. sul D pizz. sul D pizz. sul D o +harmonic.pizzicato.sul_D Vel / 32
+harm. pizz. sul G pizz. sul G pizz. sul G o +harmonic.pizzicato.sul_G Vel / 33
+harm. pizz. sul C pizz. sul C pizz. sul C o +harmonic.pizzicato.sul_C Vel / 66
+body strokes body strokes body strokes +body.strokes Vel / 35
+dead notes dead notes dead notes +dead.notes Vel / 36
+plucks on strings in peg box pizz. in peg box pizz. in peg box +pizzicato.pegbox Vel / 37
+plucks on strings behind bridge pizz. behind bridge, pizz. hinter dem Steg pizz. behind bridge +pizzicato.behindbridge Vel / 38
+bowed between stringholder and bridge between stringholder and bridge between stringholder and bridge +stringholder.bridge MW / 39
+rosin noises rosin noises rosin noises +rosin.noises Vel / 40
+overpressure / scratch string scratch string, overpressure scratch string +scratch.string MW / 41
+overpressure staccato (script or text expression) ~C0,71 - Vel / 71
+overpressure X marcato sfz MW (script or text expression) ~C0,77 - Vel / 77
+scroll kiss scroll kiss scroll kiss +scroll.kiss MW / 42
+bow scratch bow scratch bow scratch +bow.scratch MW / 43
+bridge bowed bridge bowed bridge bowed +bridge.bowed MW / 44
+tailpiece bowed tailpiece bowed tailpiece bowed +tailpiece.bowed MW / 45
+bow percussion bow percussion bow percussion +bow.percussion Vel / 46
+spike bowed spike bowed spike bowed +spike.bowed MW / 47
+various plucks spike pluck, bridge pluck bridge pluck, spike pluck +various.plucks Vel / 48
+undefined tones undef. tones undef. tones +undefined.tones Vel / 67
+slide down please click please click - -
+slide up please click please click - -
+legato on / off (polyphonic) CC68/100/10
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Woodwinds
+standard ord. nat., ord. [reset] MW / 0
+senza vibrato senza vib. non vib, senza vib. +non vibrato MW / 1
+natural vibrato nat. vib. nat. vib. +natural vibrato MW / 26
+molto vibrato molto vib. molto vib. +molto vibrato MW / 18
+portato (short) sh. portato sh. portato +short portato Vel / 19
+accent with accent with accent +with accent Vel / 27
+crescendo (slow) slow cresc. slow cresc. +slow crescendo Vel / 28
+staccato (articulation) (articulation) +staccato Vel / 2
+flutter tongue (articulation) frullato, flz +flutter-tongue MW / 3
+slap tongue slap tongue slap tongue +slap-tongue Vel / 4
+harmonics 2nd o, 3rd o, 4th o, 5th o 2nd o, 3rd o, 4th o, 5th o +multi.harmonics Vel / 22
+voice breathing voice breathing voice breathing +voice-breathing MW / 20
+secco secco secco +secco Vel / 5
+multiphonics multiphonic multiphonic +multiphonic MW / 6
+key noises key noises key noises +key-noises Vel / 7
+whistle tones whistle tone whistle tone +whistle-tone MW / 8
+jet whistle jet whistle jet whistle +jet-whistle Vel / 9
+helicopter helicopter helicopter +helicopter Vel / 11
+crow on reed crow on reed crow on reed +crow-on-reed Vel / 10
+air noise air noise air noise +air-noise MW / 14
+with s-noise with s-noise with s-noise +s-noise MW / 12
+airy airy airy +blow-noise MW / 13
+rolls /growl roll / growl roll /growl +roll MW / 15
+free gliss. free gliss. free gliss. +free-gliss MW / 16
+mouthpiece tones mouthp. tones mouthp. tones +mouthpiece MW / 31
+undefined tones undef. tone undef. tone +undefined.tones Vel / 67
+slide down please click please click - -
+slide up please click please click - -
+legato on / off (polyphonic) CC68/100/10
+
+=== PAGE 4 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Brass
+standard ord. nat., ord., open [reset] MW / 0
+natural vibrato nat. vib. nat. vib. +natural vibrato MW / 26
+accent with accent with accent +with accent Vel / 27
+crescendo (slow) slow cresc. slow cresc. +slow crescendo Vel / 28
+staccato (articulation) (articulation) +staccato Vel / 13
+flutter tongue (articulation) frullato, flz +flutter-tongue MW / 2
+standard mute mute, con sord. mute, con sord +mute MW / 3
+standard mute stacc. (script) (articulation) +mute.staccato Vel / 16
+cup mute cup cup mute +mute.cup MW / 4
+cup mute short (script) (articulation) +mute.cup.staccato Vel / 17
+harmon mute harmon harmon mute +mute.harmon MW / 5
+harmon mute stacc. (script) (articulation) +mute.harmon.staccato Vel / 18
+bucket mute bucket bucket mute +mute.bucket MW / 5
+plunger plunger plunger mute +mute.plunger Vel / 29
+voice breathing voice breath. voice breathing +voice-breathing MW / 6
+pedal tones pedal tone pedal tone +pedal-tones MW / 12
+shake (whole tone) shake shake +shake Vel / 30
+lip trill lip tr lip tr +lip-trill MW / 11
+without mouthpiece w/o mouthp. w/o mouthp. +wo.mouthpiece MW / 25
+mouthpiece tones mouthp. tones mouthp. tones +mouthpiece MW / 31
+glissando gliss. gliss. +gliss MW / 8
+harmonics gliss. gliss. o gliss. o +harmonic.gliss MW / 8
+glissando free gliss. (free) gliss. (free) +drop-down MW / 9
+gliss. down, drop gliss. down, drop drop down +drop-down MW / 9
+mouthpiece stroke mouthp. stroke mouthp. stroke +mouthpiece-strokes Vel / 10
+air, key noise air, key noise key noises +key-noises Vel / 7
+air noise, water effect air noise, water effect air noise +air-noise Vel / 20
+water (water) (water) +water.tones Vel / 32
+stopped stopped stopped +mute.gestopft MW / 4
+stopped sfz (stopped) sfz (stopped) sfz +mute.gestopft.sfz Vel / 19
+cuivrer cuivrer, schmettern cuivrer, schmettern +cuivrer MW / 5
+gliss. con sord. gliss. c. s. gliss. c. s. +gliss.mute MW / 9
+undefined tones undef. tone undef. tone +undefined.tones Vel / 67
+slide down please click please click - -
+slide up please click please click - -
+legato on / off (polyphonic) CC68/100/10
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Timpani
+standard ord. nat., ord. [reset]
++standard_mallets
+Vel / 0
+rolls (articulation) (articulation) +roll MW / 1
+damped (staccato) (articulation) (articulation) +staccato Vel / 2
+damped damped +damped.release Foot 127
+damp damp damping +damping Vel / 50
+hard mallets (script) hard mallets, hard +hard_mallets, +hard Vel / 3
+hard mallets rolls (script) roll hard mallets +roll.hard MW / 4
+a mano a mano with hand +with hand Vel / 5
+with brush brush brushes +brush Vel / 6
+wiped wipe wiped, gewischt +wiped Vel / 7
+shell strokes shell kettle sounds +effects Vel / 8
+tremolo with cymbal trem. with cymbal roll cymbal +roll.cymbal Vel / 9
+legato on / off (polyphonic) CC68/100/10
+
+=== PAGE 5 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Percussion
+standard ord. nat., ord. [reset] Vel / 0
+damped notes (articulation) (articulation) +staccato, +damp Vel / MW 127
+rolls (articulation) (articulation) +tremolo.unmeasured MW / 2
+water water water sounds +water Vel / 2
+bowed bowed, gestrichen, rub, wip. bowed, rub, wiped +bowed, +rubed, +wiped Vel / 1
+steel brushes steel brushes, Besen steel brush +brush.steel Vel / 3
+without snare without snare, ohne schnarrsaiten no snare +snare.no Vel / 4
+rim click rim click, with hand rim click +rim.click, +with hand Vel / 5
+rim click without snare r. c. without snare, wiped rim click no snare +rim.snare.no Vel / 6
+soft mallets soft mallets, rods soft mallets, rods +soft_mallets, +rods Vel / 7
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Big Drum
+standard mallets (see percussion) nat., ord. [reset] Vel / 0
+rub tones (see percussion) rub +rubed Vel / 1
+roll (articulation) (articulation) +roll MW / 2
+with brushes (see percussion) brushes +brush Vel / 3
+wiped / body strokes (see percussion) wiped, gewischt, strokes fx +wiped, +strokes fx Vel / 6
+with rods (see percussion) rods +rods Vel / 7
+with hand (see percussion) with hand +with hand Vel / 5
+body strokes body strokes +body.strokes Vel / 20
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Piatti
+standard (see percussion) nat., ord. [reset] Vel / 0
+wiped (see percussion) wiped, gewischt +wiped Vel / 1
+roll (see percussion) (articulation) +tremolo.unmeasured Vel / 2
+damped (articulation) (articulation) (MW127)
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Thunder Sheet
+standard (see percussion) nat., ord. [reset], +standard_mallets Vel / 0
+hard mallets hard mallets +hard_mallets Vel / 4
+roll (articulation) +tremolo.unmeasured Vel / 2
+with hand (see percussion) with hand +with hand Vel / 5
+finger fing., finger +finger Vel / 6
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Jews Harps
+A +tone A Vel / 0
+B +tone B Vel / 2
+C +tone C Vel / 3
+D +tone D Vel / 5
+F +tone F Vel / 8
+F variation +tone F var Vel / 8 MW127
+G +tone G Vel / 10
+G# high +tone G# high Vel / 11
+G# low +tone G# low Vel / 11 MW127
+
+=== PAGE 6 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Mallets
+standard ord. nat., ord. [reset] Vel / 0
+tremolo (articulation) (articulation) +tremolo (CC82/100)
+damped (articulation) (articulation) +staccato (MW127)
+bowed bowed, gestrichen bowed +bowed Vel / 1
+plastic mallets plastic mallets, soft, rubber soft mallets
+plastic mallets
++soft_mallets
++plastic_mallets
+Vel / 2
+xylophone mallets xylo mallets, hard hard mallets
+xylo mallets
++hard_mallets
++xylophon_mallets
+Vel / 3
+triangle mallets triangle mallets triangle mallets +triangle_mallets Vel / 4
+harmonics (o) harmonic, harm. +harmonic Vel / 5
+wiped wiped, gewischt wiped, gewischt +wiped Vel / 6
+finger fing. finger, fing. +finger Vel / 7
+with sticks sticks sticks +sticks Vel / 8
+glissandi gliss. mallet gliss. +mallet gliss Vel / 30
+Vibraphone: motor slow motor slow motor slow +motor slow
+Vibraphone: motor medium motor medium motor medium +motor medium
+Vibraphone: motor fast motor fast motor fast +motor fast
+Vibraphone: motor off motor off motor off +motor off
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#32
+Steel Drum Chromatic
+standard mallets (see mallets) nat., ord. [reset] Vel / 0
+soft mallets (see mallets) soft mallets +soft_mallets Vel / 2
+hard mallets (see mallets) hard mallets +hard_mallets Vel / 3
+undefined tones undef. tone +undefined.tones Vel / 67
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Concert Harp
+standard ord. nat., ord. [reset] Vel / 0
+tremolo (articulation) (articulation) +bisbigliando (CC82/100)
+damped (articulation) (articulation) +staccato Vel / 1
+damp damp damping +damping Vel / 20
+bisbigliando bisbigl. bisbigl. +tremolo.unmeasured Vel / 21
+harmonics (articulation) (articulation), harmonic, harm. +harmonic Vel / 2
+(multi) harmonics 2nd o, 3rd o, 4th o, 5th o 2nd o, 3rd o, 4th o, 5th o +multi.harmonics Vel / 22
+pedal trill, slide, stroke, shout pedal trill, slide, stroke, shout pedal trill, slide, stroke, shout +slide, +shout 
++stroke, +pedal-trill
+Vel / 3
+undefined tones undef. tone undef. tone +undefined.tones Vel / 67
+
+=== PAGE 7 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Concert Guitar * works with Harp prepferences
+standard ord. nat., ord., finger, fing. [reset], +finger Vel / 0
+staccato (articulation) (articulation) +staccato Vel / 1
+damp damp damping +damping Vel / 20
+sul tasto sul tasto +sul tasto Vel / 4
+sul ponticello sul pont. +sul ponticello Vel / 6
+nail nail +nail * Vel / 8
+finger vibrato nat. vib. +natural vibrato Vel / 68
+Bartok pizzicato, slap (articulation), snap pizz +pizzicato.snap Vel / 12
+prepared prepared +prepared * Vel / 13
+artificial harmonics (articulation) (articulation), harmonic, harm. +harmonic Vel / 2
+(multi) harmonics 2nd o, 3rd o, 4th o, 5th o 2nd o, 3rd o, 4th o, 5th o +multi.harmonics Vel / 22
+harmonics sul E sul E o +harmonic.sul_E Vel / 33
+harmonics sul A sul A o +harmonic.sul_A Vel / 34
+harmonics sul D sul D o +harmonic.sul_D Vel / 35
+harmonics sul G sul G o +harmonic.sul_G Vel / 36
+harmonics sul B sul B o +harmonic.sul_B Vel / 37
+harmonics sul Eo sul Eo o +harmonic.sul_Eo Vel / 38
+slide noise slide +slide Vel / 21
+dead notes dead notes +dead.notes Vel / 19
+body stroke stroke stroke +stroke Vel / 3
+plucks behind bridge pizz. behind bridge +pizzicato.behindbridge Vel / 18
+undefined tones undef. tone undef. tone +undefined.tones Vel / 67
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+8 String Guitar
+finger finger, fing. +finger Vel / 0
+pick pick, plectrum +pick Vel / 0 MW 127
+pick (half) pick half +pick.half Vel / 0 MW 64
+dead notes dead notes +dead.notes Vel / 6
+slide slide +slide Vel / 7
+stroke stroke +stroke Vel / 9
+slap slap +slap Vel / 20
+position 1 position one Foot 0
+position 2 position two Foot 10
+position 3 position three Foot 40
+position 4 position four Foot 70
+position 5 position five Foot 100
+position 6 position six Foot 127
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Dulcimer
+standard nat., ord. [reset] Vel / 0
+wood wood mallets +wood_mallets Vel / 5
+mute mute, con sord +mute Vel / 6
+tremolo (articulation) +tremolo.unmeasured MW / 1
+harmonic harmonic, harm. +harmonic Vel / 2
+pizzicato pizz. +pizzicato Vel / 3
+double pizz. double pizz. +pizzicato.double Vel / 4
+gliss., strokes strokes fx +strokes fx Vel / 7
+undefined tones undef. tone +undefined.tones Vel / 67
+
+=== PAGE 8 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Spinet
+standard 8' nat., ord., 8' [reset] Vel / 0
+lute stop lute stop lute stop +lute-stop Vel / 1
+strokes, slides strokes, slides stroke +stroke, +slide Vel / 2
+spotted spotted spotted +spotted Vel / 10
+vertical slides vertical sl. vertical sl. +vertical slide Vel / 11
+undefined tones undef. tone undef. tone +undefined.tones Vel / 67
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Toy Piano
+standard nat., ord. [reset] Vel / 0
+with hand with hand +with hand Vel / 1
+plucked plucked +plucked Vel / 2
+strokes, glissandi strokes fx +strokes fx Vel / 3
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Prepared Piano
+prepared 1 prepared 1 +prepared.1 Vel / 0
+prepared 2 prepared 2 +prepared.2 Vel / 1
+prepared 3 prepared 3 +prepared.3 Vel / 2
+prepared 4 prepared 4 +prepared.4 Vel / 3
+prepared 5 prepared 5 +prepared.5 Vel / 4
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Accordion
+8' a cassotto M a cassotto 8’ M a cassotto 8’ +manual.ac eight MW / 0
+8' a cassotto +  4' M a cassotto 8’ + 4’ M a cassotto 8’ + 4’ +manual.ac eight.four MW / 1
+16' + 8' a cassotto + 4' M 16’ + a cassotto 8’ + 4’ M 16’ + a cassotto 8’ + 4’ +manual.sixteen.ac eight.four MW / 2
+16' + 8' + 8' + 4' Master Master Master +manual.sixteen.ac eight.ic eight.four MW / 3
+8' + 8' + 4' M Tremolo 8' + 4’ M Tremolo 8' + 4’ +manual.ac eight.ic eight.four MW / 4
+8' + 8' M Tremolo 8' M Tremolo 8' +manual.ac eight.ic eight MW / 5
+8' in cassotto M in cassotto 8’ M in cassotto 8’ +manual.ic eight MW / 6
+8' in cassotto +  4' M in cassotto 8’ + 4’ M in cassotto 8’ + 4’ +manual.ic eight.four MW / 7
+4' M 4’ M 4’ +manual.four MW / 8
+16' + 4' M 16’ + 4’ M 16’ + 4’ +manual.sixteen.four MW / 9
+16' M 16’ M 16’ +manual.sixteen MW / 10
+16' + 8' in cassotto M 16’ + in cassotto 8’ M 16’ + in cassotto 8’ +manual.sixteen.ic eight MW / 11
+16' + 8' + 8' M 16’ + Tremolo 8’ M 16’ + Tremolo 8’ +manual.sixteen.ac eight.ic eight MW / 12
+16' + 8' in cassotto + 4' M 16’ + in cassotto 8’ + 4’ M 16’ + in cassotto 8’ + 4’ +manual.sixteen.ic eight.four MW / 13
+16' + 8' a cassotto M 16’ + a cassotto 8’ M 16’ + a cassotto 8’ +manual.sixteen.ac eight MW / 14
+bellows shake bellows shake bellows shake +bellows shake MW / 15
+left manual 8' l.M. 8’ l.M. 8’ +left manual.lm eight MW / 16
+left manual 16' + 8' l. M. 16’ + 8’ l. M. 16’ + 8’ +left manual.lm sixteen.lm eight MW / 17
+left manual 16' l. M. 16’ l. M. 16’ +left manual.lm sixteen MW / 18
+8' a cassotto vibrato M a cassotto 8’ vib. M a cassotto 8’ vib. +manual.ac eight.vibrato MW / 19
+8' in cassotto vibrato M in cassotto 8’ vib. M in cassotto 8’ vib. +manual.ic eight.vibrato MW / 20
+16' vibrato M 16’ vib. M 16’ vib. +manual.sixteen.vibrato MW / 21
+left manual 16' vibrato l. M. 16’ vib. l. M. 16’ vib. +left manual.lm sixteen.vibrato MW / 22
+stop noises draw stop noises draw stop noises +draw stop.noises Vel / 23
+strokes strokes fx strokes fx +strokes fx Vel / 24
+air air noise air noise +air-noise Vel / 25
+nail glissando nails glissando nails glissando +glissando.nails Vel / 26
+staccato (articulation) +staccato Vel Sustain 127
+
+=== PAGE 9 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Concert Organ
+Manual 1-1 MI Copel 8'+Nasat MI Copel 8'+Nasat +MI.one Vel / 8
+Manual 1-3 MI Krummhorn 8' MI Krummhorn 8' +MI.three Vel / 9
+Manual 1-4 MI Voce umana 8' MI Voce umana 8' +MI.four Vel / 10
+Manual 1-1+2+5 MI 8'+4'+2'+1'+Tierce MI 8'+4'+2'+1'+Tierce +MI.combination Vel / 12
+Manual 1-Tutti MI Tutti MI Tutti +MI.tutti Vel / 13
+Manual 2-1 MII Rohrfloete 8' MII Rohrfloete 8' +MII.one Vel / 14
+Manual 2-3 MII Plenum MII Plenum +MII.three Vel / 16
+Manual 2-5 MII Basson 16' MII Basson 16' +MII.five Vel / 17
+Manual 2-6 MII Trompete 8' MII Trompete 8' +MII.six Vel / 18
+Manual 2-1+2+3+4 MII Plenum+Mixtur MII Plenum+Mixtur +MII.combination Vel / 19
+Manual 2-Tutti MII Tutti MII Tutti +MII.tutti Vel / 20
+Manual 3-1 MIII Floete 8' MIII Floete 8' +MIII.one Vel / 21
+Manual 3-3 MIII Gambe 8'+4'+2' MIII Gambe 8'+4'+2' +MIII.three Vel / 23
+Manual 3-6 MIII Dulzian 16' MIII Dulzian 16' +MIII.six Vel / 25
+Manual 3-1+3+4 MIII 8'+4'+2'+Nasat MIII 8'+4'+2'+Nasat +MIII.combination Vel / 26
+Manual 3 MW crec. MIII cresc. MIII cresc. +MIII.swell MW / 5
+Manual 3-Tutti MIII Tutti MIII Tutti +MIII.tutti Vel / 27
+Manual 4-1 MIV Gedackt 8'+Spillfloete 4' MIV Gedackt 8'+Spillfloete 4' +MIV.one Vel / 28
+Manual 4-3 MIV Regal 16' MIV Regal 16' +MIV.three Vel / 29
+Manual 4 MW crec. MIV cresc. MIV cresc. +MIV.swell MW / 40
+Manual 4-Tutti MIV Tutti MIV Tutti +MIV.tutti Vel / 31
+Master Tutti Master Tutti Master Tutti +Master.tutti Vel / 6
+Pedal 1 Subbass 16' Subbass 16' +Pedal.one Vel / 32
+Pedal 2 Cor chamoise 8'+Oktave 4' Cor chamoise 8'+Oktave 4' +Pedal.two Vel / 34
+Pedal 4 Posaune 16' Posaune 16' +Pedal.four Vel / 35
+Pedal 1+2+3 Prinzipal 16'+8'+4'+Quinte Prinzipal 16'+8'+4'+Quinte +Pedal.combination Vel / 36
+Pedal Tutti Pedal Tutti Pedal Tutti +Pedal.tutti Vel / 37
+Motor off cluster Motor off cluster Motor off cluster +motor off.cluster Vel / 7
+Motor on cluster Motor on cluster Motor on cluster +motor on.cluster Vel / 7
+Motor noise Motor noise Motor noise +motor-noise Vel / 7
+Stop noise Stop noise Stop noise +stop-noise Vel / 7
+Tremulant (on) Tremulant on Tremulant on +tremulant on Foot / 25-35
+Tremulant (off) Tremulant off Tremulant off +tremulant off Foot / 0
+
+=== PAGE 10 ===
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Dynamic type
+CC#0
+Vocalquartet
+Vowel a (standard) ah +ah Vel / 0
+Vowel e e_e ee +ee Vel / 1
+Vowel o o_o oo +oo Vel / 2
+Vowel a a_h aah +aah MW / 32
+Vowel e e_h eeh +eeh MW / 33
+Vowel o o_h ooh +ooh MW / 34
+ha (short) h_a ha +ha Vel / 13
+ha staccato (script) ha (+ articulation) +ha.staccato Vel / 52
+he (short) h_e he +he Vel / 14
+he staccato (script) he (+ articulation) +he.staccato Vel / 53
+ho (short) h_o ho +ho Vel / 15
+ho staccato (script) ho (+ articulation) +ho.staccato Vel / 54
+hum m_m mm +mm Vel / 16
+buzz ww w_w ww +ww Vel / 17
+buzz ss s_s ss +ss Vel / 18
+du (short) d_oo doo +doo Vel / 3
+du staccato (script) doo (+ articulation) +doo.staccato Vel / 20
+ga (short) g_a ga +ga Vel / 4
+ga staccato (script) ga (+ articulation) +ga.staccato Vel / 21
+ki (short) k_i ki +ki Vel / 5
+ki staccato (script) ki (+ articulation) +ki.staccato Vel / 22
+pae (short) p_a_e pae +pae Vel / 6
+pae staccato (script) pae (+ articulation) +pae.staccato Vel / 23
+tra (short) t_r_a tra +tra Vel / 7
+tra staccato (script) tra (+ articulation) +tra.staccato Vel / 24
+la (short) l_a la +la Vel / 8
+ma (short) m_a ma +ma Vel / 9
+ne (short) n_e ne +ne Vel / 10
+schae (short) s_c_h schae +schae Vel / 11
+su (short) s_u su +su Vel / 12
+sounds 1 (script) Vel / 30
+sounds 2 (script) Vel / 31
+slide down please click please click - -
+slide up please click please click - -
+
+Playing Style Finale 
+Key Word
+Sibelius 
+Key Word
+Sibelius 
+Sound ID
+Type
+CC#
+Ensemble Emulation
+a due, a 2 a due a 2, a due +tutti.2 voices CC#91 / 2
+a 3 a 3 +tutti.3 voices CC#91 / 3
+a 4 a 4 +tutti.4 voices CC#91 / 4
+a 5 a 5 +tutti.5 voices CC#91 / 5
+Tutti Tutti tutti CC#82 / 127
+Solo solo, 1., 2. solo CC#82 / 0
+Instrument 1 voice 1 CC#82 / 117
+Instrument 2 voice 2 CC#82 / 120
+
+=== PAGE 11 ===
+Hint
+Nearly every sound and feature of the Xsample instruments can be realized through text expressions with 
+a defined playback definition. If you want to use additional user defined sounds with the extended edition 
+instruments, please use the CC#0 values from 88 to 117. These values correspond to the 30 keyswitches 
+(3 banks with each 10 keyswitches), which can be configured freely.
+KS Bank 1 / C   A (= CC#0 values 88   97 )→ → KS Bank 2 / C   A (= CC#0 values 98   107 )→ → KS Bank 3 / C   A (= CC#0 values 108 → →  
+117 )
+Example:
+You want to use the sound on keyswitch E / bank 1.
+Finale: Define a text expression with the playback definition controller 0 and value 92.
+Sibelius: Create a text expression with the following content: ~C0,92
+
+------------------------------------------------------------------------------------
+Slides up and down
+Finale
+To use this feature you need to create five expressions:
+1. An (invisible) expression with the playback defintion  CC#0 = 122 (slide mode on)→
+2. An (invisible) expression with the data dump  3 144 32 0 (slide down function key on) →
+3. An (invisible) expression with the data dump  3 128 32 0 (slide down function key off) →
+4. An (invisible) expression with the data dump  3 144 33 0 (slide up function key on) →
+5. An (invisible) expression with the data dump  3 128 33 0 (slide up function key off) →
+For fine adjustment of the slide sound the position of the slide expression is important.
+You can do this by right clicking the handle and select „Edit Expression Assignment...“. 
+Then use the value for the „Aligment Point“ to adjust the start position of the slide.
+
+
+=== PAGE 12 ===
+Sibelius
+Please use the following text commands to control slides in your score:
+1. ~C0,122 (slide mode on)
+2. ~N32,64 (slide down function key on)
+3. ~O32,0 (slide down function key off)
+4. ~N33,64 (slide up function key on)
+5. ~O33,0 (slide up function key off)
+To make fine adjustments move the text commands (N33 / N32) slightly right or left.
+
+Supported Xsample AI Libraries and Instruments
+• Complete and additional modular instruments
+• Contemporary Solo Strings
+• Contemporary Saxophones
+• Vocalquartet
+All eleastic patches needs the Notation Tool Multi Script with the exeption of:
+• Vocalquartet
+• Concert Organ
+
