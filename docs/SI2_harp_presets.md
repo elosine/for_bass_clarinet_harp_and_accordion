@@ -182,6 +182,23 @@ wheel-bend transposes the sample (timbre artifact, no mechanism noise) — sampl
 lives in *Glissando with Pedal* / *Buzzing Pedal*. Sandbox: bend control clamped to
 harp-realistic range (±2 st max) with pedal-speed smoothing; tag wider bends synthetic.
 
+## 5c · CC probe results — Ordinario (probed by ear, 2026-08-03)
+
+> Engine-level responses (UVI Workstation), so likely valid for all SI2 patches;
+> per-patch confirmation is cheap when it matters. Composer's verdicts verbatim-ish.
+
+| Message | Result | Use in rendering recipes |
+|---|---|---|
+| **CC7** (volume) | **Smooth volume change, no timbre change** | THE volume lane: contouring sampled events (gliss/bisb patches), honest swells on accordion/bass clarinet later; synthetic if swelling a lone ringing pluck (D7 tag) |
+| **CC11** (expression) | Very subtle if anything | Not useful on this engine — CC7 only |
+| **Pitch bend** | **Works, ~±2 st, smooth**, stays harp-like | Pedal-gliss twin (real pedal span ±1 st fits inside); clamp per M-realism |
+| **CC123** (all notes off) | Cut with release tail | Soft stop (respects Release) |
+| **CC120** (all sound off) | **Instant cut, no click** | **SECCO** — the palm-mute rendering (piece #2 trick confirmed) |
+| **CC64** (sustain) | **Prolongs ring past note-off**; without it, faster decay (Release-shaped tail either way) | Laissez-vibrer without per-note note-off management |
+| **CC1** (mod wheel) | Nothing (Expression mode = Velocity) | Inert until Expression → Modwheel engaged — SB4 must flip the mode first |
+
+Rack to-do noted during testing: **IR Reverb OFF across all 16 parts** (ships enabled per preset).
+
 ## 6 · Open probes
 
 1. Exact mapped range per preset (silent-edge scan; provisional C1–G7 in sandbox config)
@@ -192,6 +209,7 @@ harp-realistic range (±2 st max) with pedal-speed smoothing; tag wider bends sy
 6. **KS patches vs parts-per-technique** — rack routing strategy decision (KS = many
    techniques on one channel via red keys; parts = simultaneous techniques on separate
    channels). Likely answer: both, chosen per compositional need. → affects rendering recipes
-7. **CC120 (All Sound Off) response in UVI** — instant-cut for secco (piece #2 precedent)
-8. **Pitch bend response + range on Ordinario** — does it bend, how far, how does it sound
-9. **Release knob CC-assignability** — per-note secco without CC120, if learnable
+7. ~~CC120 response~~ — **RESOLVED 2026-08-03**: instant cut, no click (see §5c)
+8. ~~Pitch bend response + range~~ — **RESOLVED 2026-08-03**: ±2 st, smooth (see §5c)
+9. **Release knob CC-assignability** — per-note secco without CC120, if learnable (lower priority now CC120 works)
+10. **Param-list enumeration** — screenshot/enumerate Reaper's [Param] list for the UVI instance = completeness ceiling for controllable parameters (playbook §5.1 step 2)
