@@ -1,35 +1,39 @@
 // Proto rendering-recipe config (seeds instrument_map v3 — PLAN S2.2, D7).
-// Routing is a BACKEND concern: the UI only ever shows instrument labels.
+// Model: INSTRUMENT (one rack track / UVI instance / loopMIDI port) → TECHNIQUES
+// (parts in that instance; slot number = receive channel, per SAMPLER_QUIRKS.md).
+// Routing is a BACKEND concern: the UI shows labels only.
+//
+// RACK SETUP (one-time, saved in instrument_rack.rpp): load each preset into the
+// UVI slot matching its channel below, IN THIS ORDER. Slot label must be its fixed
+// channel (A1, A2, …), NOT A*/omni — omni slots swallow every channel.
 const INSTRUMENTS = {
-  // Multi-part rack: slot number = receive channel (SAMPLER_QUIRKS.md). A1 must be a
-  // FIXED channel (not A*/omni) once siblings occupy A2/A3, or A1 swallows their notes.
-  harp_si2_ordinario: {
-    label: "Harp Ordinario",
-    port: "Harp",     // loopMIDI port, exact name (case-sensitive — SAMPLER_QUIRKS.md)
-    channel: 1,       // UVI part slot A1
-    // Concert harp compass B0–G#7 (MIDI 23–104). SI2's sampled zone may be narrower —
-    // silent edge keys = mapped-zone truth (open probe #1 in the deep map).
-    rangeLow: 23,
+  harp_si2: {
+    label: "Harp (IRCAM SI2)",
+    port: "Harp",           // loopMIDI port, exact name (case-sensitive)
+    rangeLow: 23,           // concert harp compass B0–G#7; sampled zone may be narrower
     rangeHigh: 104,
-  },
-  harp_si2_ordinario_soft: {
-    label: "Harp Ordinario Soft",
-    port: "Harp",
-    channel: 2,       // UVI part slot A2
-    rangeLow: 23,
-    rangeHigh: 104,
-  },
-  harp_si2_ordinario_hard: {
-    label: "Harp Ordinario Hard",
-    port: "Harp",
-    channel: 3,       // UVI part slot A3
-    rangeLow: 23,
-    rangeHigh: 104,
+    techniques: [
+      { key: "ord",        label: "Ordinario",             channel: 1  },
+      { key: "ord_soft",   label: "Ordinario Soft",        channel: 2  },
+      { key: "ord_hard",   label: "Ordinario Hard",        channel: 3  },
+      { key: "damped",     label: "Damped",                channel: 4  },
+      { key: "bisb",       label: "Bisbigliando",          channel: 5  },
+      { key: "bisb_stick", label: "Bisbigliando w/ Stick", channel: 6  },
+      { key: "buzz_pedal", label: "Buzzing Pedal",         channel: 7  },
+      { key: "gliss_ks",   label: "Glissando Modes KS",    channel: 8  },
+      { key: "harm_fing",  label: "Harmonic Fingering",    channel: 9  },
+      { key: "harm_wood",  label: "Harmonic in Wood",      channel: 10 },
+      { key: "near_board", label: "Near the Board",        channel: 11 },
+      { key: "near_pegs",  label: "Near the Pegs",         channel: 12 },
+      { key: "pizz_bartok",label: "Pizzicato Bartok",      channel: 13 },
+      { key: "scratch",    label: "Scratch w/ Nail",       channel: 14 },
+      { key: "tap_stick",  label: "Tap w/ Stick",          channel: 15 },
+      { key: "xylophonic", label: "Xylophonic",            channel: 16 },
+    ],
   },
 };
 
-// Hardware capture input (G1). Matched against Web MIDI input device names.
-// Keystation 88 MK3 exposes TWO ports: "Keystation 88 MK3" (the keys) and
-// "MIDIIN2 (Keystation 88 MK3)" (DAW-control — no notes). Exclude the latter.
+// Hardware capture input. Keystation 88 MK3 exposes "Keystation 88 MK3" (keys) and
+// "MIDIIN2 (Keystation 88 MK3)" (DAW control — never bind). See SAMPLER_QUIRKS.md.
 const INPUT_MATCH = /keystation/i;
 const INPUT_EXCLUDE = /^MIDIIN\d+/i;

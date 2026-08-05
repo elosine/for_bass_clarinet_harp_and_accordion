@@ -38,6 +38,22 @@ http.createServer((req, res) => {
     return;
   }
 
+  if (req.method === 'POST' && urlPath === '/captures') {
+    let body = '';
+    req.on('data', c => { body += c; if (body.length > 1e6) req.destroy(); });
+    req.on('end', () => {
+      try {
+        const cap = JSON.parse(body);
+        const file = path.join(ROOT, 'captures.json');
+        const list = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : [];
+        list.push(cap);
+        fs.writeFileSync(file, JSON.stringify(list, null, 2));
+        json(res, 200, { count: list.length });
+      } catch (e) { json(res, 400, { error: 'bad json' }); }
+    });
+    return;
+  }
+
   if (req.method === 'GET' && urlPath === '/motives') {
     const list = fs.readdirSync(MOTIVES).filter(f => f.endsWith('.json')).map(f => {
       try {

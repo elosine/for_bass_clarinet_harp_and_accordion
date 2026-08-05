@@ -11,10 +11,15 @@
   #banner { display: none; background: #7a2a2a; color: #fff; padding: 8px 12px; border-radius: 6px; margin-bottom: 12px; }
   button { cursor: pointer; }
 
-  /* Transport */
   .tbtn { font-size: 15px; padding: 8px 18px; background: #35353d; color: #ddd; border: 1px solid #555; border-radius: 8px; }
   .tbtn:disabled { opacity: 0.35; cursor: default; }
   #rec.armed { background: #8c2f2f; border-color: #c05050; color: #fff; }
+  #loop.on { background: #3d5a3d; border-color: #6a9a6a; color: #fff; }
+
+  /* Technique palette */
+  #techs { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+  #techs button { font-size: 13px; padding: 6px 12px; background: #2a2a30; color: #bbb; border: 1px solid #444; border-radius: 14px; }
+  #techs button.on { background: #4a5a7a; border-color: #7a90c0; color: #fff; }
 
   /* Keyboard */
   #kbd { position: relative; height: 118px; user-select: none; margin: 14px 0 4px; white-space: nowrap; overflow-x: auto; padding-bottom: 6px; }
@@ -26,7 +31,6 @@
   .wk.flash { background: #8fd18f; }
   .bk.flash { background: #2e7d32; }
 
-  /* Readouts & controls */
   .box { background: #2a2a30; border: 1px solid #444; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 84px; }
   .box .cap { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; }
   .box .val { font-size: 24px; font-weight: 700; margin-top: 2px; }
@@ -42,8 +46,15 @@
   .steps button.on { background: #4a6b4a; color: #fff; }
   #lenWrap input { width: 70px; font-size: 15px; padding: 5px; background: #2a2a30; color: #ddd; border: 1px solid #444; border-radius: 6px; }
 
-  /* Gesture lane */
-  #laneWrap { margin-top: 18px; }
+  /* Capture strip */
+  #cap { display: flex; align-items: center; gap: 10px; margin: 12px 0; flex-wrap: wrap; }
+  #capBands { display: flex; gap: 4px; }
+  #capBands button { font-size: 12px; padding: 5px 12px; background: #2a2a30; color: #aaa; border: 1px solid #444; border-radius: 6px; }
+  #capBands button.on { background: #6b5a2a; border-color: #b09040; color: #fff; }
+  #capText { flex: 1; min-width: 260px; font-size: 14px; padding: 8px 10px; background: #2a2a30; color: #ddd; border: 1px solid #444; border-radius: 6px; }
+  #capOk { font-size: 12px; color: #8fd18f; min-width: 60px; }
+
+  #laneWrap { margin-top: 16px; }
   #laneCap { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 6px; }
   #lane { height: 140px; background: #26262c; border: 1px solid #444; border-radius: 8px; overflow-x: auto; overflow-y: hidden; }
   #laneContent { position: relative; height: 100%; }
@@ -59,10 +70,13 @@
   <select id="inst"></select>
   <button class="tbtn" id="rec">⏺ Record</button>
   <button class="tbtn" id="play" disabled>▶ Play</button>
+  <button class="tbtn" id="loop">⟳ Loop</button>
   <button class="tbtn" id="clear" disabled>Clear</button>
   <button class="tbtn" id="save" disabled>💾 Save</button>
   <select id="motives"><option value="">— phrases —</option></select>
 </div>
+
+<div id="techs"></div>
 
 <div id="kbd"></div>
 
@@ -89,6 +103,14 @@
   </div>
 </div>
 
+<div id="cap">
+  <div id="capBands">
+    <button data-band="v1">v1</button><button data-band="v2">v2</button><button data-band="v3">v3</button>
+  </div>
+  <input id="capText" placeholder="timbre note… (ENTER saves with note · velocity · technique attached)">
+  <span id="capOk"></span>
+</div>
+
 <div id="laneWrap">
   <div id="laneCap">Gesture</div>
   <div id="lane"><div id="laneContent"></div></div>
@@ -97,7 +119,8 @@
 
 <script src="instruments.js"></script>
 <script>
-const state = { instKey: Object.keys(INSTRUMENTS)[0], out: null, inp: null, note: null, vel: 90, step: 5 };
+const state = { instKey: Object.keys(INSTRUMENTS)[0], techIdx: 0, out: null, inp: null,
+                note: null, vel: 90, step: 5, looping: false, loopTimer: null, capBand: null };
 const rec = { armed: false, t0: null, active: {}, events: [] };
 const $ = id => document.getElementById(id);
 const NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
@@ -105,17 +128,29 @@ const sci = m => NAMES[m % 12] + (Math.floor(m / 12) - 1);
 const uvi = m => NAMES[m % 12] + (Math.floor(m / 12) - 2);
 const freq = m => (440 * Math.pow(2, (m - 69) / 12)).toFixed(1);
 const inst = () => INSTRUMENTS[state.instKey];
+const tech = () => inst().techniques[state.techIdx];
+const chan = () => tech().channel - 1;
 
 for (const [k, v] of Object.entries(INSTRUMENTS)) {
   const o = document.createElement('option'); o.value = k; o.textContent = v.label; $('inst').appendChild(o);
 }
-$('inst').onchange = e => { state.instKey = e.target.value; buildKeyboard(); resolveBindings(); };
+$('inst').onchange = e => { state.instKey = e.target.value; state.techIdx = 0; buildTechs(); buildKeyboard(); resolveBindings(); };
+
+// ---- technique palette: flipping = channel switching, instant ----
+function buildTechs() {
+  const t = $('techs'); t.innerHTML = '';
+  inst().techniques.forEach((tq, i) => {
+    const b = document.createElement('button');
+    b.textContent = tq.label;
+    b.classList.toggle('on', i === state.techIdx);
+    b.onclick = () => { state.techIdx = i; buildTechs(); pluck(); };
+    t.appendChild(b);
+  });
+}
 
 function banner(msg) { const b = $('banner'); b.style.display = msg ? 'block' : 'none'; b.textContent = msg || ''; }
 
-// One persistent MIDIAccess. Never re-request on statechange: binding an input OPENS it,
-// opening fires statechange — re-requesting there creates an infinite feedback loop
-// (frozen tab, 2026-08-03). Rebind idempotently, debounced, from the single access object.
+// One persistent MIDIAccess; never re-request on statechange (feedback-loop bug, 2026-08-03).
 let midiAccess = null, scTimer = null;
 function resolveBindings() {
   if (!midiAccess) return;
@@ -143,7 +178,7 @@ function initMidi() {
 
 function sendNote(note, vel, lenMs) {
   if (!state.out) return;
-  const ch = inst().channel - 1;
+  const ch = chan();
   state.out.send([0x90 | ch, note, vel]);
   setTimeout(() => state.out && state.out.send([0x80 | ch, note, 0]), lenMs);
   flash(note);
@@ -156,7 +191,7 @@ function pluck() { if (state.note !== null) sendNote(state.note, state.vel, Math
 
 // ---- hardware input: live thru + capture when armed ----
 function onHardwareMidi(e) {
-  const [st, d1, d2] = e.data, cmd = st & 0xF0, ch = inst().channel - 1;
+  const [st, d1, d2] = e.data, cmd = st & 0xF0, ch = chan();
   const isOn = cmd === 0x90 && d2 > 0, isOff = cmd === 0x80 || (cmd === 0x90 && d2 === 0);
   if (!isOn && !isOff) return;
   if (state.out) state.out.send([(isOn ? 0x90 : 0x80) | ch, d1, isOn ? d2 : 0]);
@@ -171,40 +206,62 @@ function onHardwareMidi(e) {
   }
 }
 
-// ---- record / play / clear ----
+// ---- record / play / loop / clear ----
 $('rec').onclick = () => {
-  $('rec').blur();  // SPACE on a focused button = click → silently stopped recordings
+  $('rec').blur();
+  stopLoop();
   rec.armed = !rec.armed;
   if (rec.armed && rec.events.length === 0) rec.t0 = null;
   $('rec').classList.toggle('armed', rec.armed);
   $('rec').textContent = rec.armed ? '⏺ Recording…' : '⏺ Record';
   updateButtons();
 };
-$('play').onclick = () => {
-  $('play').blur();
-  if (!state.out || rec.events.length === 0) return;
-  const ch = inst().channel - 1, base = performance.now() + 120;
+function playPass() {
+  if (!state.out || rec.events.length === 0) return 0;
+  const ch = chan(), base = performance.now() + 120;
+  let dur = 0;
   for (const ev of rec.events) {
     state.out.send([0x90 | ch, ev.note, ev.vel], base + ev.on);
     state.out.send([0x80 | ch, ev.note, 0], base + ev.off);
     setTimeout(() => flash(ev.note), ev.on + 120);
+    dur = Math.max(dur, ev.off);
   }
+  return dur;
+}
+$('play').onclick = () => { $('play').blur(); playPass(); };
+$('loop').onclick = () => {
+  $('loop').blur();
+  if (state.looping) { stopLoop(); return; }
+  if (rec.events.length === 0) return;
+  state.looping = true;
+  $('loop').classList.add('on');
+  const cycle = () => {
+    if (!state.looping) return;
+    const dur = playPass();
+    state.loopTimer = setTimeout(cycle, dur + 500);
+  };
+  cycle();
 };
-$('clear').onclick = () => { $('clear').blur(); rec.events = []; rec.active = {}; rec.t0 = null; renderLane(); updateButtons(); };
+function stopLoop() {
+  state.looping = false;
+  clearTimeout(state.loopTimer);
+  $('loop').classList.remove('on');
+}
+$('clear').onclick = () => { $('clear').blur(); stopLoop(); rec.events = []; rec.active = {}; rec.t0 = null; renderLane(); updateButtons(); };
 function updateButtons() {
   $('play').disabled = rec.events.length === 0;
   $('clear').disabled = rec.events.length === 0 && !rec.armed;
   $('save').disabled = rec.events.length === 0;
 }
 
-// ---- phrases (motives): save to / load from the repo via the server ----
+// ---- phrases ----
 $('save').onclick = async () => {
   $('save').blur();
   if (rec.events.length === 0) return;
   const name = prompt('Name this phrase:');
   if (!name) return;
   const body = { name, created: new Date().toISOString(), instrument: state.instKey,
-                 events: rec.events, annotations: [] };
+                 technique: tech().key, events: rec.events, annotations: [] };
   const r = await fetch('/motives', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
   if (r.ok) { const { file } = await r.json(); loadMotiveList(file); }
 };
@@ -224,16 +281,41 @@ async function loadMotiveList(selectFile) {
 $('motives').onchange = async e => {
   if (!e.target.value) return;
   const m = await (await fetch('/motives/' + e.target.value)).json();
+  stopLoop();
   rec.events = m.events || []; rec.active = {}; rec.t0 = null;
   if (m.instrument && INSTRUMENTS[m.instrument] && m.instrument !== state.instKey) {
-    state.instKey = m.instrument; $('inst').value = m.instrument;
-    buildKeyboard(); resolveBindings();
+    state.instKey = m.instrument; $('inst').value = m.instrument; state.techIdx = 0;
+    buildTechs(); buildKeyboard(); resolveBindings();
+  }
+  if (m.technique) {
+    const i = inst().techniques.findIndex(t => t.key === m.technique);
+    if (i >= 0) { state.techIdx = i; buildTechs(); }
   }
   renderLane();
 };
 
-// ---- gesture lane: minimal blocks ----
-const PXPS = 60; // lane time scale: pixels per second; lane scrolls, never compresses
+// ---- capture strip: exploring IS documenting ----
+document.querySelectorAll('#capBands button').forEach(b => b.onclick = () => {
+  state.capBand = state.capBand === b.dataset.band ? null : b.dataset.band;
+  document.querySelectorAll('#capBands button').forEach(x => x.classList.toggle('on', x.dataset.band === state.capBand));
+});
+$('capText').addEventListener('keydown', async e => {
+  if (e.key !== 'Enter') return;
+  const comment = $('capText').value.trim();
+  if (!comment && !state.capBand) return;
+  const body = { created: new Date().toISOString(), instrument: state.instKey, technique: tech().key,
+                 note: state.note, noteName: state.note === null ? null : sci(state.note),
+                 vel: state.vel, band: state.capBand, comment };
+  const r = await fetch('/captures', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  if (r.ok) {
+    $('capText').value = '';
+    $('capOk').textContent = 'saved ✓';
+    setTimeout(() => $('capOk').textContent = '', 1500);
+  }
+});
+
+// ---- gesture lane ----
+const PXPS = 60;
 function renderLane() {
   const lane = $('lane'), content = $('laneContent'); content.innerHTML = '';
   if (rec.events.length === 0) { content.style.width = '100%'; $('laneInfo').textContent = ''; updateButtons(); return; }
@@ -249,7 +331,7 @@ function renderLane() {
     b.style.top = 6 + (his === los ? H / 2 : (1 - (ev.note - los) / (his - los)) * H) + 'px';
     content.appendChild(b);
   }
-  lane.scrollLeft = W; // keep the newest notes in view while recording
+  lane.scrollLeft = W;
   $('laneInfo').textContent = `${rec.events.length} notes · ${(dur / 1000).toFixed(2)} s`;
   updateButtons();
 }
@@ -304,7 +386,7 @@ document.addEventListener('keydown', e => {
   else if (e.code === 'ArrowDown') { e.preventDefault(); stepVel(-1); }
 });
 
-buildKeyboard(); initMidi(); updateReadouts(); loadMotiveList();
+buildTechs(); buildKeyboard(); initMidi(); updateReadouts(); loadMotiveList();
 </script>
 </body>
 </html>
