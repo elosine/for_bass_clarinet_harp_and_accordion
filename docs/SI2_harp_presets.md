@@ -238,6 +238,29 @@ Rack to-do noted during testing: **IR Reverb OFF across all 16 parts** (ships en
   never snap CC7 while a tail rings; restore after silence or ramp gently.** Re-test
   after IR-reverb-off pass (reverb is contaminating contour perception).
 
+### Lightning survey — the remaining 10 patches (2026-08-04, composer's ears)
+
+| Patch (slot) | Character (composer's words) | Velocity | Zone notes |
+|---|---|---|---|
+| Damped (A4) | Born muffled **+ damped ending** — secco-like with slight ring | louder only | — |
+| Bisbigliando (A5) | Fast shimmer, sustains while held | louder only | upper reg (~C5): **"zither/koto"** |
+| Bisb. w/ Stick (A6) | **Identical to fingered bisb** (⚠ verify A6 slot preset) | louder only | — |
+| Near the Board (A11) | Expected près-de-la-table timbre | louder only | consistent |
+| Near the Pegs (A12) | Expected timbre change | louder only | consistent |
+| Pizz. Bartók (A13) | Expected snap (harp version: knuckle hits soundboard after pluck) | louder only | — |
+| Scratch w/ Nail (A14) | As expected; **individual strings audible** per key | mostly volume | — |
+| Tap w/ Stick (A15) | (heard only in-zone note) | expected louder-only | **True zone UVI D1–F2 (MIDI 38–53), no Expand** — sandbox locked |
+| Xylophonic (A16) | Dry; **subtle: quieter = more muted, less sustain → use low vel for muted color** (composer footnote) | subtle timbre link | wide |
+| Harmonic Fingering (A9) | Realistic; vel = natural pluck strength on the harmonic | natural | — |
+| Harmonic in Wood (A10) | **"Like double bass harmonics"** — xylharmonic (mechanics: harmonic with string damped toward the wood — harpist-verify exact execution) | louder only | White zone ≈ UVI C3–C6 (60–96); tan = Expand transposition |
+
+**Survey-level findings:**
+- **Velocity-timbre banding is an Ordinario-family trait, not engine-wide** — sustained
+  textures and effect plucks mostly go louder-only; Xylophonic has a subtle link.
+- UVI key colors decode the honesty of every zone (see SAMPLER_QUIRKS).
+- **All 16 harp techniques now heard, characterized, and reachable by channel.** S2.3
+  listening survey: complete at lightning depth; deep dives on demand.
+
 ## 6 · Open probes
 
 1. Exact mapped range per preset (silent-edge scan; provisional C1–G7 in sandbox config)

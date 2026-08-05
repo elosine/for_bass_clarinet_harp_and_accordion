@@ -28,3 +28,11 @@ refined per-note during composing.*
 **Per-note refinements:** *(added as notes get used)*
 
 **Tessitura qualifications:** *(added if/when needed)*
+
+## Bisbigliando / Bisbigliando with Stick — IRCAM SI2
+
+*Composer captures, 2026-08-04 (lightning rounds):*
+- The two variants sound **identical** to the ear (flag: verify A6 slot holds the stick
+  variant — or the samples genuinely converge).
+- **Upper register (~C5): "zither-like, koto timbre"** — composer's note-to-self.
+- Character: fast shimmer, sustains while held, velocity = louder only (whisper survives).

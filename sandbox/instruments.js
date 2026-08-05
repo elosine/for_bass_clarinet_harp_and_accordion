@@ -26,12 +26,14 @@ const INSTRUMENTS = {
       { key: "buzz_pedal", label: "Buzzing Pedal",         channel: 7, rangeLow: 23, rangeHigh: 31 },
       { key: "gliss_ks",   label: "Glissando Modes KS",    channel: 8  },
       { key: "harm_fing",  label: "Harmonic Fingering",    channel: 9  },
-      { key: "harm_wood",  label: "Harmonic in Wood",      channel: 10 },
+      // White zone observed 2026-08-04: UVI C3-C6 = MIDI 60-96; tan = Expand transposition
+      { key: "harm_wood",  label: "Harmonic in Wood",      channel: 10, rangeLow: 60, rangeHigh: 96 },
       { key: "near_board", label: "Near the Board",        channel: 11 },
       { key: "near_pegs",  label: "Near the Pegs",         channel: 12 },
       { key: "pizz_bartok",label: "Pizzicato Bartok",      channel: 13 },
       { key: "scratch",    label: "Scratch w/ Nail",       channel: 14 },
-      { key: "tap_stick",  label: "Tap w/ Stick",          channel: 15 },
+      // True mapped zone observed 2026-08-04: UVI D1-F2 = MIDI 38-53 (sci D2-F3); no expand
+      { key: "tap_stick",  label: "Tap w/ Stick",          channel: 15, rangeLow: 38, rangeHigh: 53 },
       { key: "xylophonic", label: "Xylophonic",            channel: 16 },
     ],
   },

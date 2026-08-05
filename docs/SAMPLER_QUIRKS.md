@@ -41,10 +41,28 @@
   project" trap: old projects carry `A*` set long ago; any reload silently reverts to A1.
 - Part **OUTPUT** column must read **Main Out** on a stereo track (multi-out buses go nowhere
   otherwise).
-- Presets sound **only inside their mapped key zone** (yellow keys on UVI's keyboard).
-  E.g. PP2 *11 Harmonics* ≈ C3–B3; notes outside are silently ignored.
+- **Keyboard color decoder (patch pages):** **white** = true recorded samples · **tan/brown**
+  = Expand-Range transposition (sounds, but synthetic — D7 tag) · **grey** = unmapped,
+  silent. (KS master patches use the manual's other legend: red = keyswitches, blue =
+  string-select, yellow = extended.) Some patches ship with Expand Range on (Buzzing
+  Pedal, Harmonic in Wood), others off (Tap w/ Stick, PP2 *11 Harmonics*) — check per patch;
+  the sandbox encodes true zones per technique as they're observed.
 - SI2 presets ship with **IR Reverb ON** (e.g. TC Large Hall) — switch off for dry rack use;
   room sound belongs to the demo mix, not the instrument identity (D7).
+
+## Octave display conventions (per-library ledger — sounding vs display)
+
+MIDI 60 ("middle C") has no universal name; every library labels it per its own convention.
+**Sandbox readouts always show both scientific and library label.**
+
+| Library | Middle C (60) shown as | Offset from scientific |
+|---|---|---|
+| UVI Workstation (SI2, PP2) | **C3** | display = scientific − 1 octave |
+| Kontakt 8 | C3 by default, **user-configurable** (Options → display) | confirm per install |
+| Xsample (in Kontakt) | TBD — pin when bass clarinet arrives | — |
+
+Example: UVI zone "D1–F2" = MIDI 38–53 = scientific D2–F3. Keys sound at their own pitch —
+labeling offset only.
 
 ## Kontakt (8)
 
