@@ -17,6 +17,15 @@
 - New loopMIDI ports appear only after **Preferences → Audio → MIDI Devices → [Reset all MIDI
   devices]**, then right-click the port → **Enable input**.
 - Live MIDI input follows the **focused project tab**.
+- **Hardware MIDI inputs are single-client on Windows** — exactly ONE app may open the
+  Keystation at a time. Reaper auto-enables new MIDI devices by default → it silently owns
+  new hardware and starves Chrome/Web MIDI (symptoms: stuck notes, growing latency, frozen
+  tab, browser crash — 2026-08-03). Keep hardware inputs DISABLED in Reaper (sandbox reaches
+  Reaper via loopMIDI); uncheck Reaper's auto-enable option. loopMIDI virtual ports are
+  multi-client and exempt.
+- **Keystation 88 MK3 exposes two ports**: "Keystation 88 MK3" (keys) and "MIDIIN2 (…)"
+  (DAW-control — Mackie-style *note messages* on random-looking pitches; never bind it for
+  capture).
 
 ## UVI Workstation
 
