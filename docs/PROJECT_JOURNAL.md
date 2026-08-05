@@ -87,7 +87,12 @@
 5. **Hands-on probing** — instrument loaded in Reaper: enumerate host-exposed parameters via ReaScript (works for Kontakt & UVI); send MIDI probes sweeping CCs/keyswitches; composer's ears verify (S2.4 pattern). Ground truth.
 6. **Hacks/fudges** — when a sound needs a workaround, the workaround gets recorded in the map entry itself, not in memory.
 
-**Composer facilitates:** approving yt-dlp/ffmpeg installs (or downloading videos manually to a research folder), screenshots of plugin UIs, ears for audition passes.
+**CC/control probe protocol** (per patch; documentation runs concurrently — added 2026-08-03):
+1. **Enumerate candidates** from docs, cheapest first: library manual (global + per-patch sections) · library-specific conventions (e.g. Xsample: CC#0 = articulation select, MW woven into dynamics per-preset, top-of-keyboard layer switches) · standard set always tested: velocity, CC1, CC7, CC11, CC64, pitch bend, aftertouch, CC120/123.
+2. **Completeness check without rabbit-holing (UVI et al.):** the host's parameter list for the plugin instance (Reaper [Param] button / ReaScript enumeration) lists every host-exposed control — if a control exists but no CC is documented, it appears there and is MIDI-learnable. That bounds "did we miss a channel?" definitively.
+3. **Scripted probe battery** — AI sends (hold-note + CC ramp / discrete values / bend sweep / cut messages), composer listens; one-word verdicts: nothing / volume / timbre / mode-switch / artifact.
+4. **Record** in the instrument's deep-map doc as a per-patch "responds to" table; timbre-relevant findings → TIMBRE_VOCAB.
+5. **Escalate to community research (ladder rungs 2–4) only when** a patch under-delivers vs. its live technique. Hacks/combinations are sound-driven, not survey-driven: hunted when the composer wants a specific sound (their stated MO), not cataloged up front.
 
 **Limitations:** AI cannot hear audio or watch motion video; audio verification is composer's ears (or scripted spectral comparison in extreme cases). `.nki`/`.ufs` internals are proprietary — knowledge comes from docs, UI, host-exposed parameters, and probing, not file parsing.
 
