@@ -6,6 +6,21 @@
 
 ---
 
+## 2026-08-03 — Two-way AI↔human real-time communication (for the composer interface)
+
+"When we get to the composer interface: I want two-way AI-human real-time communication.
+For example, I could say 'load this phrase into the score at time x,' and you would do
+so. Then I could say 'look at the fourth note' — you could highlight it in the score and
+give me the stats on it (what pitch, what velocity, etc.) somewhere in the interface.
+Then I could say 'have a bass clarinet low C at that same time,' and in the bass clarinet
+part there would appear some sort of graphic gesture, whatever we decide. Capturing this
+note to build in this fluidity when we get back to revising the composer score."
+
+*(Architecture implication for 1e: AI is a first-class score actor — reads AND writes
+score state, can highlight/inspect elements, conversational commands operate on musical
+addresses ("fourth note", "time x", "bass clarinet part"). The score data model must be
+addressable in those terms from day one.)*
+
 ## 2026-08-02 — The gesture/sequence vision (Motive Builder germ)
 
 "I can play using my MIDI keyboard a sequence of notes — so some sort of sequencer

@@ -110,6 +110,30 @@ Keyboard color legend (all SI2): **red** = keyswitches · **blue** = string-sele
 - The manual's notation suggestions are IRCAM's, aligned with French-school practice —
   strong starting point for D7 notation hooks, refined with the performer later.
 
+## 5a · Ordinario Soft / Ordinario / Ordinario Hard — the pluck-manner dimension
+
+Three sibling patches = three **recorded plucking manners** (how firmly/deeply the finger
+engages the string), each presumably with its own velocity layers. This makes the harp's
+basic timbre space **two-dimensional**:
+
+| Axis | Live meaning | In samples |
+|---|---|---|
+| **Pluck manner** | gentle/fleshy stroke ↔ ordinary ↔ firm/deep "dug-in" pluck | patch choice: Soft / Ordinario / Hard |
+| **Dynamic** | how loud that pluck is | velocity within the patch (v-bands, per TIMBRE_VOCAB) |
+
+Live these correlate but are independent — a harpist can pluck *firmly but quietly*
+(intense pp) or *gently but full* (warm mf). The samples honor that independence.
+
+**Notation:** no standardized symbol for pluck manner. Candidate hooks (decide at
+notation time, per D7): dynamics doing double duty · articulation marks (tenuto/marcato
+family) · explicit text ("dig in", "dolce/flesh"). Identity vocabulary: treat
+`pluckManner: soft|ord|hard` as a first-class parameter now; its notation rendering TBD.
+
+**Switching routes (rendering):** (a) three parts on channels 1–3 — per-note channel;
+(b) `_Harp Classical KS` keyswitches C-1/C#-1/D-1 — per-note KS on one channel;
+(c) sandbox dropdown per patch (probing). Bands per patch to be probed (S2.3a extension:
+Soft and Hard likely band differently than Ordinario's v1–v3).
+
 ## 5b · Performer-perspective control map — Ordinario (first of the patch-by-patch series)
 
 > Only what a live performer can control **in real time**, paired with its MIDI twin.

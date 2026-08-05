@@ -84,6 +84,7 @@ S-IDs are stable; order = position. Each step gets its own broken-down plan (sub
 - **1e — Composition UI** — `todo`
   The custom drawing program: score surface (traditional skeleton — systems, bars, players — bent to this process) · piece-specific palette · fast input (place, draw duration, shape change-over-time) · playback & live edit through the Reaper chain.
   *Why:* its quality decides whether the loop feels like composing or operating machinery.
+  **Two-way AI↔score interaction** (composer, 2026-08-03 — COMPOSER_LOG): AI is a first-class score actor — "load this phrase at time x" / "highlight the fourth note, show its stats" / "bass clarinet low C at that same time" → gesture appears. Score data model must be addressable in musical terms (note ordinals, times, parts) from day one.
 
 ### The loop (the actual product — subsystems exist to make each pass cheaper)
 
