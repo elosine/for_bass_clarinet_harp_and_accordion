@@ -1,0 +1,19 @@
+{
+  "name": "First capture (rescued)",
+  "created": "2026-08-03T00:00:00.000Z",
+  "instrument": "harp_si2_ordinario",
+  "note": "First-ever G1 gesture, rescued from tab memory via console during the lane/save rebuild. 10 notes, ~2.28 s, full-range spray B0-D7.",
+  "events": [
+    { "note": 86, "vel": 110, "on": 0, "off": 97.89999997615814 },
+    { "note": 47, "vel": 114, "on": 38, "off": 143.89999997615814 },
+    { "note": 62, "vel": 71, "on": 215, "off": 308.89999997615814 },
+    { "note": 23, "vel": 107, "on": 1247.8999999761581, "off": 1325.8999999761581 },
+    { "note": 98, "vel": 114, "on": 1360.8999999761581, "off": 1436 },
+    { "note": 84, "vel": 75, "on": 1951.8999999761581, "off": 2056 },
+    { "note": 59, "vel": 101, "on": 2068.899999976158, "off": 2107.899999976158 },
+    { "note": 69, "vel": 103, "on": 2058, "off": 2138 },
+    { "note": 76, "vel": 108, "on": 2228, "off": 2261.899999976158 },
+    { "note": 83, "vel": 121, "on": 2216, "off": 2279.899999976158 }
+  ],
+  "annotations": []
+}
