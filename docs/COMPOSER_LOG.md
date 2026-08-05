@@ -6,6 +6,22 @@
 
 ---
 
+## 2026-08-03 — Groups, continuous strategy, and reusable parameterized units
+
+"Not only change individual notes, but change GROUPS of notes — simple example: grab a
+group of notes in a phrase and apply a crescendo; we'll work out the controls (maybe a
+curve maker). Decisions needed: velocity for crescendo, or some volume control message."
+
+"Where this moves toward: if I establish a crescendo with, say, a parabolic curve, and
+we decide to use a volume control message — then I can SAVE that crescendo as a unit,
+as a thing. Apply it elsewhere from a menu, with parameters — over a different length of
+time, a different volume range, etc."
+
+*(This is the palette concept surfacing in sandbox form: named, parameterized, reusable
+effect-gestures — templates scaled per application. Direct ancestor of the score's
+graphic objects: a unit's parameters ARE the object's handles. Also: capture strip on
+hold until the composer works out the timbre taxonomy.)*
+
 ## 2026-08-03 — Sandbox architecture brain-dump (switching, two branches, fact-checker)
 
 "Gesture window: a cursor so I can pop in where I want; should scroll; eventually a grid;

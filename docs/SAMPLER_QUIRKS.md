@@ -17,6 +17,10 @@
 - New loopMIDI ports appear only after **Preferences → Audio → MIDI Devices → [Reset all MIDI
   devices]**, then right-click the port → **Enable input**.
 - Live MIDI input follows the **focused project tab**.
+- **Multi-part racks need the track input set to ALL channels** (input: `Harp` → Source
+  channel: All). A source-channel filter or "map input to channel" left over from earlier
+  debugging silently starves every part but one. (Composer hit this configuring the
+  16-slot Explorer rack, 2026-08-03.)
 - **Hardware MIDI inputs are single-client on Windows** — exactly ONE app may open the
   Keystation at a time. Reaper auto-enables new MIDI devices by default → it silently owns
   new hardware and starves Chrome/Web MIDI (symptoms: stuck notes, growing latency, frozen
