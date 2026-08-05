@@ -1,5 +1,22 @@
 # Composer Log
 
+## 2026-08-04 — Suspected MO for gestural tools; standing architecture watch
+
+"Not definitive, but suspected MO: I'll probably build gestural tools like the envelopes
+and the gesture library **at composition time**. When I sit down to actually write, I'll
+think 'I wanted this type of sound here,' go into our tool, play around with a sound or
+two, ask for additional tools as I go to make the sandbox more effective — and when I
+settle on a sound, capture that gesture in some easily recallable way. Those activities
+are deferred until that point. Let's continue building the instrument libraries."
+
+"With the harp, since it's not a sustaining instrument, there's fewer continuous-controller
+messages — as a general thing for AI to monitor: **if architectural things should be
+thought of before composition time — where I'd otherwise have to go back and redesign —
+I want to get ahead of those as much as possible.**"
+
+*(→ Standing AI watch: flag architecture-ahead-of-need decisions before gestural-tool
+building begins. G3/G5/SB4 statuses updated to defer-until-composition.)*
+
 > **Standing practice (2026-08-02):** the composer's substantive prompts get captured
 > here as dated journal notes — lightly cleaned from speech-to-text, content untouched —
 > so the original thinking can be referred back to later. AI appends automatically.

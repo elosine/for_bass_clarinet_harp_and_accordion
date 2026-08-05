@@ -37,6 +37,25 @@ const INSTRUMENTS = {
       { key: "xylophonic", label: "Xylophonic",            channel: 16 },
     ],
   },
+
+  accordion_si2: {
+    label: "Accordion (IRCAM SI2)",
+    port: "Accordion",   // loopMIDI port — create + enable in Reaper before use (R4)
+    rangeLow: 36,        // provisional; true zones observed during survey
+    rangeHigh: 96,
+    techniques: [
+      { key: "ord",        label: "Ordinario",              channel: 1  },
+      { key: "staccato",   label: "Staccato",               channel: 2  },
+      { key: "fortepiano", label: "Fortepiano",             channel: 3  },
+      { key: "registers",  label: "Ordinario Registers",    channel: 4  },
+      { key: "reg_comb1",  label: "Register Combinaison 1", channel: 5  },
+      { key: "reg_comb2",  label: "Register Combinaison 2", channel: 6  },
+      { key: "backwards",  label: "Backwards",              channel: 7  },
+      { key: "fx",         label: "FX",                     channel: 8  },
+      { key: "cresc_decr", label: "Cresc & Decresc",        channel: 9  },
+      { key: "ks_wheel",   label: "Classical KS (Wheel)",   channel: 10 },
+    ],
+  },
 };
 
 // Hardware capture input. Keystation 88 MK3 exposes "Keystation 88 MK3" (keys) and
