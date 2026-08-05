@@ -6,6 +6,33 @@
 
 ---
 
+## 2026-08-03 — Sandbox architecture brain-dump (switching, two branches, fact-checker)
+
+"Gesture window: a cursor so I can pop in where I want; should scroll; eventually a grid;
+zoom in/out for sure."
+
+"If I want a phrase to change rapidly between different techniques — every note some
+different timbre — we play that fluidly without manual adjustments. Whether that's a
+keyswitch, or a quick channel switch with a bunch of tracks loaded, or (like Xsample)
+a CC message that changes the articulation patch — it's more the decision architecturally
+we need to make. There might be a variety of techniques; continue building infrastructure
+and let these crop up when necessary."
+
+"Two branches which may converge. One: an interface for continuous messages — some version
+of what I have in the scores, curves, maybe LFOs — to explore the patches that have
+continuous-message possibilities. Two: a quick way to flip through and sample the various
+timbres — a sample phrase, or play live (decide my MO later), then switch between sounds
+as fluidly as possible. Maybe adapt the keyswitch technology on my Keystation 88, or play
+a phrase and change individual notes — designating a patch/articulation (or CC message),
+but ALSO choosing pre-saved gestures or timbres (a preset save, similar to the phrase save)."
+
+"And a companion facility — a live evaluator, fact-checker — maybe not real time, but I
+push a button or do a prompt and it evaluates the playability of a phrase. If I'm asking
+for unrealistic performance possibilities, there's a built-in fact checker."
+
+"I suspect first is building out the exploring sandbox so I can preview and understand
+all that's available in the sample instrument."
+
 ## 2026-08-03 — Two-way AI↔human real-time communication (for the composer interface)
 
 "When we get to the composer interface: I want two-way AI-human real-time communication.

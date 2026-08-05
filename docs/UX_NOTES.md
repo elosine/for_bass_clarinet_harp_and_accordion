@@ -8,6 +8,8 @@
 
 ## Open
 
+- *2026-08-03 · sandbox G1 · composer* — **Gesture window: cursor/playhead** (click to
+  position), **grid** (eventually), **zoom in/out** (for sure). Scrolling shipped.
 - *2026-08-03 · sandbox G1 · composer* — **Velocity color scheme for gesture blocks** ("at
   some point"): color each lane block by velocity — typical scheme, or v-band colors
   (v1/v2/v3) once bands are per-instrument config.
