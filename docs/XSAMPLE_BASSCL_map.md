@@ -101,6 +101,33 @@ into which slots if multiple needed; stereo/mono switch; Room Walker OFF.
 - **XC6** glissandi + undefined tones + noises (lightning)
 - **XC7** quarter-tone check: PB range setting + a ¼-tone bend by ear
 
+## 6b · FLUTTER PROTOCOL — exhaustive (XC-F series; composer directive 2026-08-05)
+
+> "Relatively exhaustive for the first few: velocity response, ALL CC messages affecting
+> the sound, range — documented in the database." Each test short; spec → 'go' → sound.
+
+- **XC-F0 — Meet & range scan** (preset **#5 Flutter Tongue MW**, CC#0=4): CC1 healthy,
+  notes stepped across the keyboard to find mapped edges. → range + character words.
+- **XC-F1 — Velocity response** (still #5): one note at vel 30/60/90/120, CC1 fixed —
+  what does velocity govern on an MW preset (attack? nothing?).
+- **XC-F2 — Full CC sweep battery**: held flutter note; one controller per pass:
+  **CC1 · CC2 · CC4 · aftertouch · CC7 · pitch bend** (~8 s each, one-word verdicts) —
+  the empirical per-preset control map. Key question: does anything deepen the flutter
+  itself (rate/intensity) vs. just dynamics?
+- **XC-F3 — Velocity variant** (**#16 Flutter Velocity**, CC#0=15): 4 velocities —
+  banding? Then CC1 check (expect inert).
+- **XC-F4 — THE MORPH** (**#15 Senza+Flutter Velocity X MW**, CC#0=14): held note,
+  CC1 0→127→0 — does it crossfade senza↔flutter continuously (= the "flutter depth"
+  axis, curve-drawable)? Repeat at two velocities to decode the "Vel X MW" division
+  of labor.
+- **XC-F5 — Inverted variant** (**#29 Flutter Vel + MW inverted**, CC#0=28): quick —
+  what does inversion mean in practice?
+- **XC-F6 — Legato + gliss-depth taste**: overlapped flutter notes (scripted legato on
+  flutter?); one CC#68=127 + CC#24 sweep pass (slur→gliss depth) on flutter.
+- **XC-F7 — Info-Pane peek** (composer, optional): screenshot slots for #5/#15 to
+  confirm empirical CC map.
+- All findings → §7 + TIMBRE_VOCAB (flutter section).
+
 ## 7 · Findings
 
 **XC0a (2026-08-05):** rack proven — CC#0 selection + notes sound, sustains, real bass

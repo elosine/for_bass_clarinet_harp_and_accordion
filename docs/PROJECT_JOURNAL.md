@@ -26,22 +26,20 @@
 
 ## §2 Resume Here
 
-**Last session:** *2026-08-01 (session 1, Claude Code)* —
-- Framed the revision (3 chunks); Composer concept map + PM kit built (adapted from piece #2's protocol); 0c survey of prior repos → map in §1.
-- Spine S1–S8 adopted, **S2 (Instrument map v3) first, harp first**. S2.1 (source inventory) done: IRCAM SI2 (harp+accordion) + PP2 installed (`C:\Program Files\UVISoundBanks\`); Xsample bass clarinet installed to `C:\Users\jwloy\Documents\Xsample Sample Library\Xsample_Collection\` (Kontakt 8); all three manuals in `docs/manuals/`. PP2 entries in piece #2's map = schema template for S2.2. `reaperAutomation` repo noted as S5 context (OSC-only; bridge will need ReaScript).
-- **D6 (Reaper session storage & backups)** decided & built: `reaper/instrument_rack.rpp` in repo; rack walkthrough **R1 (create/save) ✅, R2 (auto-save prefs) ✅**.
-- Workflow rules added to HOW_WE_WORK: go/no-go before long processes · cite IDs with names · name-the-need before disk searches. §5.1 Sound Research playbook written (research escalation ladder, incl. video-frame analysis method).
+**Last session:** *2026-08-05 (session 4, Claude Code)* — **Bass clarinet survey opened.**
+- R5 rack built (track "Bass Clarinet XS", port `BassCl`, Kontakt 8 + elastic `Bass Clarinet.nki`, omni). XC0a first-contact ✓.
+- **XC1 SEAM TEST PASSED**: preset #1 MW crossfade seamless — "like an actual player doing a crescendo." **Standing recipe: sustained BC dynamics = CC1 curves** (re-check per MW preset as adopted). Xsample crossfade > UVI's.
+- Research haul: 2 more Xsample PDFs archived+extracted; **full Controller Overview mined** (CC#0 function space, CC#82 RR control, **CC#68/24 legato slur→gliss depth**, phrase-mode aleatoric engine, ¼-st bend config, pure tunings); VI-Control sweep (LPF-as-diminuendo tip; developer active on VI-C); factory preset list w/ zero-based CC#0 values confirmed.
+- Composer MO sharpened (COMPOSER_LOG 2026-08-05): gesture tools need **continuous intensity axes per sound** (flutter depth, multiphonic crunch, accent strength) drawable as curves. Survey style: exhaustive for first few presets, less time on routine confirmations.
 
-**Next up:** **SB1 (probe page v0)** — build the browser probe UI in `sandbox/`. Rack status: **R3 + SB0 done 2026-08-02** — harp sounds end-to-end from AI-scripted external probes (port `Harp` → monitoring ON → UVI Ordinario at `A*`). The silent-rack debugging session produced `docs/SAMPLER_QUIRKS.md` + Principles 1–2. A Kontakt 8 track exists in the rack (contents TBC — bass clarinet?). Accidental-save scare on old 2P2P projects resolved: nothing was ever written to disk (AutoSaves only).
-**Mid-goal:** unchanged — playable 3-track rack via loopMIDI. **S2 gate:** harp capability queries answered from the map, audition-verified.
+*Session 1–3 (2026-08-01…04), one line each:* S1: PM kit + plan + prior-repo survey + spine adopted (Claude Code). S2: rack R1–R3 + SB0–SB1 + monitoring saga + quirks ledger + Ordinario CC battery (Claude Code). S3: G1 gesture capture (Keystation bugs fixed) + SB3 Explorer + full 16-technique harp survey + full accordion survey + phrases/motives pipeline (Claude Code).
 
-**Open at session end:** *(mid-session checkpoint, 2026-08-04, composer on short break)* —
-**🎉 HARP SURVEY COMPLETE** — all 16 SI2 techniques heard, characterized (composer's words), zone-mapped, channel-reachable. Consolidated table: `SI2_harp_presets.md` §5d. Key findings: velocity banding = Ordinario-family trait; keyswitches proven (Gliss Modes' 3 layers ID'd by ear); CC7/bend/CC120/CC64 behave (§5c); UVI key-color decoder (white/tan/grey) in SAMPLER_QUIRKS; IR Reverb now OFF all parts.
-**🪗 ACCORDION SURVEY ALSO COMPLETE (2026-08-04)** — rack built (10 slots), AC0–AC5 + lightning all done → `SI2_accordion_map.md` §5. Stars: bellows recipe settled (CC1 = flexible w/ crossfade seam; recorded transitions = seamless, canned — choose per exposure), register palette named, Ordinario's hard-velocity reed-combo band, two phasiness kinds distinguished (reed-detune = identity-real vs crossfade = artifact), Backwards reclassified possibly-performed. Anomalies flagged: Transitions Decrescendo KS silent; DBL5 ≈ DBL1.
-**Next major: BASS CLARINET (Xsample/Kontakt)** — R5 rack track + port `BassCl`, protocol to design from Xsample doc (CC#0 articulation-select world, MW-dynamics weaves, top-end layer switches — see extracted doc + SAMPLER_QUIRKS). Then S2.2 schema draft has three instruments of evidence.
-**Test protocol standard:** rundown + listening guide posted → composer says 'go' → 3s lead-in → sound. Lightning rounds may auto-fire after verdicts.
-**Composer MO note (2026-08-04):** gestural tools (G3/G5/SB4 envelopes, gesture library, presets) deferred to COMPOSITION TIME — built on demand while writing. **Standing AI watch:** flag architecture that must precede composition-time building (see PLAN, Gesture Loop watch list).
-Phrase pipeline: motives save/load working (`sandbox/motives/`); reading-time probe protocol (spec → 4-5 s silence → sound) is standard.
+**Next up — CLEAR RESTART POINT:** **XC-F0, the flutter series** — exhaustive protocol fully spec'd in `XSAMPLE_BASSCL_map.md` §6b (range scan → velocity → full CC sweep → #16 velocity variant → **#15 morph test** → #29 inverted → legato/gliss taste → optional Info-Pane peek). First action on resume: post the XC-F0 rundown + listening guide, composer says `'go'`. After flutter: **multiphonics full inventory** (composer priority #1), then remaining presets, exhaustive style for the first few.
+**Mid-goal:** all three instruments surveyed → S2.2 schema draft with three libraries of evidence (the switching abstraction's three cases: UVI channels · keyswitches · Xsample CC#0).
+
+**Open at session end:** —
+
+**Standing context (compressed):** Harp survey COMPLETE (`SI2_harp_presets.md` §5b–d) · Accordion survey COMPLETE (`SI2_accordion_map.md` §5) · BC seam test PASSED — CC1-curve recipe standing. Test protocol: rundown + listening guide → `'go'` → 3 s lead-in → sound; lightning rounds may auto-fire after verdicts. Gestural tools deferred to composition time (continuous-intensity-axes note in COMPOSER_LOG); **standing AI watch** for architecture-before-composition (PLAN watch list). Sandbox: Explorer + phrases/motives working; capture strip on hold (taxonomy). Quirks live in SAMPLER_QUIRKS.md.
 
 **Open questions:**
 - **0d** — per-chunk reuse: fresh vs copy-forward (likely fresh for chunk 1, copy for chunk 3).
