@@ -86,6 +86,24 @@ verify via UVI message line someday. Wheel-CC1 version audibly phasey by contras
 **Recipe confirmed: exposed solo transitions → recorded layers; custom shapes / in-texture
 → CC1.**
 
+**Lightning rounds (2026-08-04, composer's words):**
+| Patch | Verdict |
+|---|---|
+| Staccato (A2) | As expected |
+| Fortepiano (A3) | Natural fp shape; **velocity scales the whole phrase, "as if a player is doing it"** |
+| Reg. Combinaison 1 (A5) | Some phasiness — **from the reeds themselves** (wet/musette-style detuned ranks = identity-real beating, distinct from crossfade-seam artifacts) |
+| Reg. Combinaison 2 (A6) | More standard sound, **clearer octave doublings** |
+| Backwards (A7) | **"Sounds performed rather than a manipulated sample"** — likely performed swell-to-stop gestures, possibly identity-real (reclassified from presumed-synthetic) |
+
+**Difference tones, DIY:** loud dyads on Ordinario conjure combination tones in the
+listener's ear (partly cochlear); near-4ths/5ths give strong beating phantoms — composable
+as rendered dyads AND as live technique (interval chooses phantom pitch, pressure chooses
+prominence).
+
+**SURVEY COMPLETE 2026-08-04** — all 10 slots heard and characterized. Star findings:
+the bellows recipe (CC1 vs recorded transitions), the register palette, the hard-velocity
+reed-combo band on Ordinario, two kinds of phasiness told apart.
+
 **AC5 — FX (2026-08-04):** all five natural, as expected. Key Click + Tap on Body have a
 close-miked contact-mic intimacy (mixing note). **Difference tone**: acoustic phenomenon
 (f₂−f₁ phantom under high pressure; live: interval chooses phantom pitch, pressure chooses
