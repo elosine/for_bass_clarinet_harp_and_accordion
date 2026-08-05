@@ -199,6 +199,21 @@ harp-realistic range (±2 st max) with pedal-speed smoothing; tag wider bends sy
 
 Rack to-do noted during testing: **IR Reverb OFF across all 16 parts** (ships enabled per preset).
 
+## 5d · Patch-by-patch battery results
+
+### Buzzing Pedal (slot A7 / ch 7) — probed 2026-08-04
+
+- **What it is:** pedal held between notches → disc pins touch the vibrating string →
+  sustained metallic rattle (jawari/tanpura-bray cousin). *The composer's original
+  "string rumble" — the sound that started this project.*
+- **Velocity:** volume only, no timbre banding (`patch` scope — contrast Ordinario's v1–v3)
+- **Range reality:** full keyboard *sounds* (Expand Range suspected ON — synthetic
+  transposition, D7 tag). True sample zone per UVI keyboard display ≈ **UVI D#2–F3**
+  (mapped by perceived buzz pitch, above string fundamentals). **Live range = metal
+  strings ∩ pedal-connected ≈ E1–G1 (3–4 strings)**; bottom C/D strings usually lack
+  pedal discs — *harpist-verify*. Sandbox restricted to B0–G1 (per-technique range
+  now supported in `instruments.js`).
+
 ## 6 · Open probes
 
 1. Exact mapped range per preset (silent-edge scan; provisional C1–G7 in sandbox config)

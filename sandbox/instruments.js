@@ -19,7 +19,11 @@ const INSTRUMENTS = {
       { key: "damped",     label: "Damped",                channel: 4  },
       { key: "bisb",       label: "Bisbigliando",          channel: 5  },
       { key: "bisb_stick", label: "Bisbigliando w/ Stick", channel: 6  },
-      { key: "buzz_pedal", label: "Buzzing Pedal",         channel: 7  },
+      // Live-real range: metal strings ∩ pedal-connected ≈ E1–G1 (28–31); bottom C/D
+      // strings usually have no pedal discs (harpist-verify). Sandbox allows B0–G1
+      // (manual's boundary) pending that verification. Patch itself sounds everywhere
+      // via Expand Range (synthetic, D7 tag) — true samples ≈ UVI D#2–F3 zone.
+      { key: "buzz_pedal", label: "Buzzing Pedal",         channel: 7, rangeLow: 23, rangeHigh: 31 },
       { key: "gliss_ks",   label: "Glissando Modes KS",    channel: 8  },
       { key: "harm_fing",  label: "Harmonic Fingering",    channel: 9  },
       { key: "harm_wood",  label: "Harmonic in Wood",      channel: 10 },

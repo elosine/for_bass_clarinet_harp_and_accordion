@@ -143,7 +143,7 @@ function buildTechs() {
     const b = document.createElement('button');
     b.textContent = tq.label;
     b.classList.toggle('on', i === state.techIdx);
-    b.onclick = () => { state.techIdx = i; buildTechs(); pluck(); };
+    b.onclick = () => { state.techIdx = i; buildTechs(); buildKeyboard(); pluck(); };
     t.appendChild(b);
   });
 }
@@ -339,7 +339,8 @@ function renderLane() {
 // ---- on-screen keyboard ----
 function buildKeyboard() {
   const kbd = $('kbd'); kbd.innerHTML = '';
-  const { rangeLow, rangeHigh } = inst();
+  const rangeLow = tech().rangeLow ?? inst().rangeLow;
+  const rangeHigh = tech().rangeHigh ?? inst().rangeHigh;
   let whiteX = 0;
   for (let m = rangeLow; m <= rangeHigh; m++) {
     const black = [1,3,6,8,10].includes(m % 12);
